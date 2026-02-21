@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "Experience Missionary Training from a Korean Perspective",
+    "subtitle": "Join international youth at Vine Baptist Church (포도나무교회) for immersive cross-cultural ministry training",
+    "cta": "Apply Now"
+  },
+  "value": {
+    "title": "Why Train in Korea?",
+    "unique": {
+      "title": "Unique Perspective",
+      "description": "Learn from Korea's dynamic missionary-sending movement"
+    },
+    "reverse": {
+      "title": "Reverse Learning",
+      "description": "Gain insights from those who send, to better serve where you're sent"
+    },
+    "global": {
+      "title": "Global Connection",
+      "description": "Build lasting relationships with believers from around the world"
+    }
+  },
+  "program": {
+    "title": "8-Month Intensive Training",
+    "phases": {
+      "orientation": "Orientation",
+      "training": "Core Training",
+      "ministry": "Practical Ministry",
+      "field": "Field Experience"
+    }
+  },
+  "cta": {
+    "title": "Ready to Begin Your Journey?",
+    "subtitle": "Applications for the 2026 cohort are now open",
+    "button": "Apply Now"
+  }
+}

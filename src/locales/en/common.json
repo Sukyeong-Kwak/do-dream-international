@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Home",
+    "program": "Program",
+    "apply": "Apply",
+    "about": "About",
+    "contact": "Contact",
+    "applyNow": "Apply Now"
+  },
+  "footer": {
+    "about": "About",
+    "program": "Program",
+    "apply": "Apply",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletterPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "copyright": "© 2026 Vine Baptist Church. All rights reserved."
+  },
+  "buttons": {
+    "learnMore": "Learn More",
+    "apply": "Apply Now",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next"
+  }
+}

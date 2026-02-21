@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "title": "8-Month Intensive Training Program",
+    "subtitle": "Comprehensive missionary training from a Korean church perspective"
+  },
+  "overview": {
+    "title": "Program Overview",
+    "description": "Our program provides a unique opportunity to experience missionary training through the lens of Korea's dynamic church movement. You'll gain practical skills, theological depth, and cross-cultural competency while being immersed in one of the world's most vibrant Christian communities."
+  },
+  "curriculum": {
+    "title": "Curriculum",
+    "subjects": [
+      {
+        "title": "Korean Church History & Theology",
+        "description": "Explore the unique development and theology of the Korean church, from persecution to explosive growth."
+      },
+      {
+        "title": "Cross-Cultural Communication",
+        "description": "Learn effective communication strategies across cultural boundaries and develop cultural intelligence."
+      },
+      {
+        "title": "Bible Study Methods",
+        "description": "Master various approaches to Scripture study including Korean inductive methods and devotional practices."
+      },
+      {
+        "title": "Worship & Prayer",
+        "description": "Experience Korean worship styles and prayer traditions, including early morning prayer (Saemoonsuk)."
+      },
+      {
+        "title": "Korean Language Basics",
+        "description": "Gain functional Korean language skills for daily life and ministry contexts."
+      },
+      {
+        "title": "Leadership Development",
+        "description": "Develop leadership skills through hands-on ministry and mentorship relationships."
+      }
+    ]
+  },
+  "schedule": {
+    "title": "Daily Schedule",
+    "monday": "Monday - Friday",
+    "weekend": "Saturday - Sunday"
+  }
+}
