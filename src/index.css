@@ -1,47 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #f5f3ff;
-  --color-primary-100: #ede9fe;
-  --color-primary-200: #ddd6fe;
-  --color-primary-300: #c4b5fd;
-  --color-primary-400: #a78bfa;
-  --color-primary-500: #8b5cf6;
-  --color-primary-600: #7c3aed;
-  --color-primary-700: #6d28d9;
-  --color-primary-800: #5b21b6;
-  --color-primary-900: #4c1d95;
-  --color-primary-950: #2e1065;
+  --color-brand-bg: #FAFAF9;
+  /* Soft Oatmeal/Warm Off-White - 눈이 편안하고 따뜻한 미색 */
+  --color-brand-primary: #57534E;
+  /* Warm Stone (Stone 600) - 짙은 그레이 대신 따뜻한 톤이 도는 묵직한 돌색 */
+  --color-brand-primary-dark: #44403C;
+  /* Deep Taupe (Stone 700) - 더 깊이 있는 제목/구조용 색상 */
+  --color-brand-accent: #3B82F6;
+  /* Structured Blue (Blue 500) - 절제된 포인트 컬러, 명확한 상호작용 지시 */
+  --color-brand-accent-hover: #2563EB;
+  --color-brand-text: #292524;
+  /* Dark Warm Gray (Stone 800) for sharp but warm readability */
+  --color-brand-muted: #78716C;
+  /* Warm Muted Gray (Stone 500) */
 
-  --color-accent-50: #fff7ed;
-  --color-accent-100: #ffedd5;
-  --color-accent-200: #fed7aa;
-  --color-accent-300: #fdba74;
-  --color-accent-400: #fb923c;
-  --color-accent-500: #f97316;
-  --color-accent-600: #ea580c;
-  --color-accent-700: #c2410c;
-  --color-accent-800: #9a3412;
-  --color-accent-900: #7c2d12;
-  --color-accent-950: #431407;
+  --font-heading: 'Playfair Display', 'Noto Serif KR', serif;
+  /* 클래식, 권위, 진정성 */
+  --font-body: 'Inter', 'Pretendard', sans-serif;
+  /* 세련됨, 가독성, 모던함 */
 
-  --color-teal-50: #f0fdfa;
-  --color-teal-100: #ccfbf1;
-  --color-teal-200: #99f6e4;
-  --color-teal-300: #5eead4;
-  --color-teal-400: #2dd4bf;
-  --color-teal-500: #14b8a6;
-  --color-teal-600: #0d9488;
-  --color-teal-700: #0f766e;
-  --color-teal-800: #115e59;
-  --color-teal-900: #134e4a;
-  --color-teal-950: #042f2e;
+  --font-sans: 'Inter', 'Pretendard', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', 'Noto Serif KR', serif;
 
-  --font-sans: 'Inter', 'Pretendard', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+  --radius-lg: 4px;
+  /* 단정한 모서리 */
+  --radius-sm: 2px;
 }
 
 @utility container-custom {
   max-width: 80rem;
+  /* Reverted to wider width */
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -68,17 +57,26 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  color: rgb(17 24 39);
-  background-color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  body {
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-body);
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-brand-primary);
+  }
 }

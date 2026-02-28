@@ -1,121 +1,57 @@
+// Removed framer-motion import
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import Button from '../../common/Button/Button';
+import { HiBookOpen, HiGlobeAsiaAustralia, HiUserGroup } from 'react-icons/hi2';
 
 export default function ProgramOverview() {
   const { t } = useTranslation('home');
 
-  const phases = [
+  const features = [
     {
-      number: '01',
-      title: t('program.phases.orientation'),
-      duration: '2 weeks',
-      description: 'Korean culture, language basics, community integration',
+      icon: HiBookOpen,
+      title: t('program.f1_title'),
+      description: t('program.f1_desc'),
     },
     {
-      number: '02',
-      title: t('program.phases.training'),
-      duration: '3 months',
-      description: 'Theology, missiology, leadership development',
+      icon: HiGlobeAsiaAustralia,
+      title: t('program.f2_title'),
+      description: t('program.f2_desc'),
     },
     {
-      number: '03',
-      title: t('program.phases.ministry'),
-      duration: '2 months',
-      description: 'Local church service, outreach projects',
-    },
-    {
-      number: '04',
-      title: t('program.phases.field'),
-      duration: '1 month',
-      description: 'Short-term missions in Asia',
-    },
+      icon: HiUserGroup,
+      title: t('program.f3_title'),
+      description: t('program.f3_desc'),
+    }
   ];
 
   return (
-    <section className="section-padding bg-white">
-      <div className="container-custom">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {t('program.title')}
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Comprehensive training through four distinct phases
+    <section className="section-padding bg-brand-bg/40 relative overflow-hidden" id="program">
+      <div className="container-custom relative z-10">
+        <div className="text-center mb-16">
+          <h2
+            className="text-3xl md:text-4xl font-serif font-bold text-brand-primary mb-6"
+            dangerouslySetInnerHTML={{ __html: t('program.title') }}
+          />
+          <p className="text-lg text-brand-text max-w-2xl mx-auto leading-relaxed">
+            {t('program.desc')}
           </p>
-        </motion.div>
-
-        {/* Desktop Timeline */}
-        <div className="hidden md:block relative">
-          {/* Timeline Line */}
-          <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary-500 to-accent-500 transform -translate-y-1/2"></div>
-
-          <div className="grid grid-cols-4 gap-4">
-            {phases.map((phase, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="relative"
-              >
-                {/* Circle */}
-                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 relative z-10 border-4 border-white shadow-lg">
-                  <span className="text-white font-bold text-lg">{phase.number}</span>
-                </div>
-
-                {/* Content */}
-                <div className="text-center">
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">{phase.title}</h3>
-                  <p className="text-sm text-accent-600 font-semibold mb-2">{phase.duration}</p>
-                  <p className="text-sm text-gray-600">{phase.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
 
-        {/* Mobile Timeline */}
-        <div className="md:hidden space-y-6">
-          {phases.map((phase, index) => (
-            <motion.div
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+          {features.map((feature, index) => (
+            <div
               key={index}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex items-start space-x-4"
+              className="bg-white rounded p-8 lg:p-10 border border-t-4 border-t-brand-primary border-gray-200"
             >
-              <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold">{phase.number}</span>
+              <div className="w-16 h-16 bg-brand-bg rounded-full flex items-center justify-center mb-6 text-brand-primary">
+                <feature.icon className="w-8 h-8" />
               </div>
-              <div>
-                <h3 className="text-lg font-bold text-gray-900 mb-1">{phase.title}</h3>
-                <p className="text-sm text-accent-600 font-semibold mb-2">{phase.duration}</p>
-                <p className="text-sm text-gray-600">{phase.description}</p>
-              </div>
-            </motion.div>
+              <h3 className="text-xl font-bold text-brand-primary mb-4 font-serif">{feature.title}</h3>
+              <p className="text-brand-text leading-relaxed text-base">
+                {feature.description}
+              </p>
+            </div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-12"
-        >
-          <Link to="/program">
-            <Button variant="secondary">Learn More About the Program</Button>
-          </Link>
-        </motion.div>
       </div>
     </section>
   );

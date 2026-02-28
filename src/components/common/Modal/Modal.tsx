@@ -1,4 +1,5 @@
-import { ReactNode, useEffect } from 'react';
+import { useEffect } from 'react';
+import type { ReactNode } from 'react';
 import { HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 

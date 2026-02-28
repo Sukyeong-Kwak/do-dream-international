@@ -7,23 +7,23 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-brand-primary-dark text-white">
+      <div className="container-custom py-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">VB</span>
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-md">
+                <span className="text-brand-primary font-serif font-bold text-2xl">DD</span>
               </div>
-              <span className="text-xl font-bold text-white">
-                Vine Global
+              <span className="text-2xl font-serif font-bold text-white">
+                Do Dream Int.
               </span>
             </div>
-            <p className="text-sm text-gray-400 max-w-md">
-              International Youth Training Program - Experience missionary training from a Korean perspective at Vine Baptist Church (포도나무교회).
+            <p className="text-sm text-gray-200 text-center md:text-left max-w-md leading-relaxed">
+              {t('footer.description')}
             </p>
-            <div className="flex space-x-4 mt-6">
+            <div className="flex justify-center md:justify-start space-x-4 mt-8">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -64,9 +64,9 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
+          <div className="text-center md:text-left">
+            <h3 className="text-white font-semibold mb-4">{t('footer.quickLinks')}</h3>
+            <ul className="space-y-2 text-sm flex flex-col items-center md:items-start">
               <li>
                 <Link to="/program" className="hover:text-white transition-colors">
                   {t('footer.program')}
@@ -92,16 +92,16 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-white font-semibold mb-4">{t('footer.newsletter')}</h3>
-            <form className="space-y-2">
+            <h3 className="text-white font-semibold mb-4 text-lg">{t('footer.newsletter')}</h3>
+            <form className="space-y-3">
               <input
                 type="email"
                 placeholder={t('footer.newsletterPlaceholder')}
-                className="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all"
               />
               <button
                 type="submit"
-                className="w-full bg-primary-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                className="w-full bg-brand-accent text-white px-4 py-3 rounded-lg font-semibold hover:bg-brand-accent-hover transition-colors shadow-md text-sm"
               >
                 {t('footer.subscribe')}
               </button>
@@ -110,7 +110,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center text-gray-500">
+        <div className="border-t border-white/10 mt-12 pt-8 text-sm text-center text-gray-300">
           <p>{t('footer.copyright').replace('2026', currentYear.toString())}</p>
         </div>
       </div>

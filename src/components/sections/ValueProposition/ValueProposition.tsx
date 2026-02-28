@@ -1,61 +1,38 @@
+// Removed framer-motion import
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { HiGlobeAlt, HiLightBulb, HiUserGroup } from 'react-icons/hi';
-import Card from '../../common/Card/Card';
 
 export default function ValueProposition() {
   const { t } = useTranslation('home');
 
-  const values = [
-    {
-      icon: HiLightBulb,
-      title: t('value.unique.title'),
-      description: t('value.unique.description'),
-      color: 'text-accent-500',
-    },
-    {
-      icon: HiGlobeAlt,
-      title: t('value.reverse.title'),
-      description: t('value.reverse.description'),
-      color: 'text-primary-500',
-    },
-    {
-      icon: HiUserGroup,
-      title: t('value.global.title'),
-      description: t('value.global.description'),
-      color: 'text-teal-500',
-    },
-  ];
-
   return (
-    <section className="section-padding bg-gray-50">
+    <section className="section-padding bg-white" id="about">
       <div className="container-custom">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12"
-        >
-          {t('value.title')}
-        </motion.h2>
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+          <div className="flex-1 w-full max-w-md mx-auto md:max-w-none">
+            <div className="relative aspect-square lg:aspect-[4/5] rounded bg-gray-100 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1506803682981-6e718a9dd3ee?auto=format&fit=crop&q=80&w=1974"
+                alt="Rev. Yeojubong"
+                className="w-full h-full object-cover grayscale opacity-90 transition-opacity duration-500"
+              />
+              <div className="absolute inset-0 bg-brand-primary/10 mix-blend-color"></div>
+            </div>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {values.map((value, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-            >
-              <Card hoverable className="h-full text-center">
-                <value.icon className={`w-16 h-16 ${value.color} mx-auto mb-4`} />
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{value.description}</p>
-              </Card>
-            </motion.div>
-          ))}
+          <div className="flex-1">
+            <h2 className="text-3xl lg:text-4xl font-serif text-brand-primary font-bold mb-8 leading-tight">
+              {t('value.title')}
+            </h2>
+            <div className="space-y-6 text-lg text-brand-text leading-relaxed">
+              <p>{t('value.p1')}</p>
+              <p>{t('value.p2')}</p>
+              <p>{t('value.p3')}</p>
+              <div className="pt-6 border-t border-gray-200 mt-8">
+                <p className="font-serif font-bold text-2xl text-brand-primary">{t('value.name')}</p>
+                <p className="text-brand-muted text-sm mt-1 uppercase tracking-wider font-semibold">{t('value.role')}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

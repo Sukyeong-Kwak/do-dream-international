@@ -1,36 +1,40 @@
 {
   "hero": {
-    "title": "Experience Missionary Training from a Korean Perspective",
-    "subtitle": "Join international youth at Vine Baptist Church (포도나무교회) for immersive cross-cultural ministry training",
-    "cta": "Apply Now"
+    "title": "Embrace<br />The Cross,<br />Walk with God",
+    "subtitle": "Build your firm foundation on the Gospel of the Cross and cultivate a deep, intimate fellowship with God. Join our global community in Korea for intense spiritual training, with the joyful addition of experiencing a vibrant culture.",
+    "cta": "Explore the Program"
   },
   "value": {
-    "title": "Why Train in Korea?",
-    "unique": {
-      "title": "Unique Perspective",
-      "description": "Learn from Korea's dynamic missionary-sending movement"
-    },
-    "reverse": {
-      "title": "Reverse Learning",
-      "description": "Gain insights from those who send, to better serve where you're sent"
-    },
-    "global": {
-      "title": "Global Connection",
-      "description": "Build lasting relationships with believers from around the world"
-    }
+    "title": "A Letter from Our Director",
+    "p1": "Welcome to Do Dream International. It is our greatest joy to invite young adults from all over the world to join us in seeking a deeper relationship with our Creator.",
+    "p2": "Our community is built upon one absolute foundation: the Gospel of the Cross. We are here to train together from the very basics of our faith, passionately pursuing a genuine, intimate fellowship with God.",
+    "p3": "As you learn, grow, and follow Him with all your heart, you will also have the wonderful, motivating opportunity to experience the beautiful culture and vibrant life of Korea. We invite you to embark on this unforgettable journey of faith with us.",
+    "name": "Rev. Daniel Yeojubong",
+    "role": "Senior Pastor, Podonamu Church & Director of Do Dream International"
   },
   "program": {
-    "title": "8-Month Intensive Training",
-    "phases": {
-      "orientation": "Orientation",
-      "training": "Core Training",
-      "ministry": "Practical Ministry",
-      "field": "Field Experience"
-    }
+    "title": "The Gospel Foundation,<br className=\"md:hidden\" /> Experiencing Grace",
+    "desc": "A comprehensive journey designed for young adults seeking true spiritual awakening through the Gospel of the Cross and intimacy with God.",
+    "f1_title": "Spiritual Training",
+    "f1_desc": "Lay a robust foundation in the Gospel of the Cross. Grow through deep, intimate fellowship with God and dedicated mentorship.",
+    "f2_title": "Korean Immersion",
+    "f2_desc": "As a joyful addition to your spiritual growth, experience the vibrant culture, food, and history of modern Korea with your new community.",
+    "f3_title": "Global Community",
+    "f3_desc": "Build lifelong friendships with young adults from all around the world, sharing together in faith and purpose."
+  },
+  "stories": {
+    "title": "Stories of Grace",
+    "classOf": "Class of"
   },
   "cta": {
-    "title": "Ready to Begin Your Journey?",
-    "subtitle": "Applications for the 2026 cohort are now open",
+    "title": "Ready to Begin?",
+    "subtitle": "The journey of faith requires a bold step. Follow these simple steps to apply for the upcoming training program.",
+    "s1_title": "Review the Schedule",
+    "s1_desc": "Check the upcoming dates and ensure you are available for the full duration.",
+    "s2_title": "Prepare Your Documents",
+    "s2_desc": "Gather your passport, recommendation letter from your pastor, and personal testimony.",
+    "s3_title": "Submit Your Application",
+    "s3_desc": "Fill out our online form and our admissions team will contact you shortly.",
     "button": "Apply Now"
   }
 }

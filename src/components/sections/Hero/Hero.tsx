@@ -1,72 +1,55 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import Button from '../../common/Button/Button';
 
 export default function Hero() {
   const { t } = useTranslation('home');
 
   return (
-    <section className="relative h-screen md:h-[70vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&q=80&w=2070)',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/90 to-primary-600/70"></div>
-      </div>
+    <section className="relative flex items-center justify-center overflow-hidden bg-white pt-12 pb-16 lg:pt-20">
 
-      {/* Content */}
-      <div className="relative z-10 container-custom text-center text-white px-4">
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
-        >
-          {t('hero.title')}
-        </motion.h1>
+      <div className="container-custom relative z-10 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
 
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto text-gray-100"
-        >
-          {t('hero.subtitle')}
-        </motion.p>
+          {/* Left Content column */}
+          <div className="flex-1 text-center lg:text-left pt-10 lg:pt-0">
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 leading-tight text-brand-primary tracking-tight"
+              dangerouslySetInnerHTML={{ __html: t('hero.title') }}
+            />
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <Link to="/apply">
-            <Button size="lg" className="shadow-lg hover:shadow-xl">
-              {t('hero.cta')}
-            </Button>
-          </Link>
-        </motion.div>
-      </div>
+            <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto lg:mx-0 text-brand-text leading-relaxed font-body">
+              {t('hero.subtitle')}
+            </p>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1 h-3 bg-white rounded-full mt-2"
-          />
+            <div className="flex justify-center lg:justify-start">
+              <Link to="/program">
+                <Button
+                  size="lg"
+                  className="bg-brand-accent text-white hover:bg-brand-accent-hover transition-colors duration-300 rounded px-10 py-4 text-base font-medium tracking-wide shadow-sm"
+                >
+                  {t('hero.cta')}
+                </Button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Right Image column */}
+          <div className="flex-1 w-full max-w-2xl lg:max-w-none relative mt-12 lg:mt-0 p-4">
+            <div className="relative w-full aspect-[4/3] rounded overflow-hidden">
+              {/* Image base */}
+              <img
+                src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&q=80&w=1974"
+                alt="Worship Scene in Korea"
+                className="w-full h-full object-cover grayscale opacity-90 transition-opacity duration-500"
+              />
+              {/* Color overlay to unify tone with brand-primary */}
+              <div className="absolute inset-0 bg-brand-primary/20 mix-blend-color"></div>
+            </div>
+          </div>
+
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

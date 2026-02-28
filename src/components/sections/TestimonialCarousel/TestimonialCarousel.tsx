@@ -1,6 +1,4 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import { useTranslation } from 'react-i18next';
 import Card from '../../common/Card/Card';
 
 interface Testimonial {
@@ -12,6 +10,8 @@ interface Testimonial {
 }
 
 export default function TestimonialCarousel() {
+  const { t } = useTranslation('home');
+
   const testimonials: Testimonial[] = [
     {
       quote: "This program transformed my understanding of missions. Learning from the Korean church's perspective gave me insights I never could have gained elsewhere.",
@@ -43,101 +43,38 @@ export default function TestimonialCarousel() {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-
   return (
-    <section className="section-padding bg-gradient-to-br from-primary-50 to-teal-50">
+    <section className="section-padding bg-brand-bg/30 border-y border-gray-200">
       <div className="container-custom">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12"
-        >
-          Hear from Our Alumni
-        </motion.h2>
+        <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-brand-primary mb-12">
+          {t('stories.title')}
+        </h2>
 
-        <div className="max-w-4xl mx-auto relative">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentIndex}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Card className="p-8 md:p-12">
-                <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
-                  {/* Photo */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-col space-y-6">
+                <p className="text-lg text-brand-text italic leading-relaxed font-serif">
+                  "{testimonial.quote}"
+                </p>
+                <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">
                   <img
-                    src={testimonials[currentIndex].photo}
-                    alt={testimonials[currentIndex].name}
-                    className="w-24 h-24 rounded-full object-cover flex-shrink-0"
+                    src={testimonial.photo}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover"
                   />
-
-                  {/* Content */}
-                  <div className="flex-1 text-center md:text-left">
-                    <p className="text-lg md:text-xl text-gray-700 italic mb-6 leading-relaxed">
-                      "{testimonials[currentIndex].quote}"
+                  <div>
+                    <p className="font-bold text-brand-primary text-sm">
+                      {testimonial.name}
                     </p>
-                    <div>
-                      <p className="font-bold text-gray-900 text-lg">
-                        {testimonials[currentIndex].name}
-                      </p>
-                      <p className="text-gray-600">
-                        {testimonials[currentIndex].country} • Class of{' '}
-                        {testimonials[currentIndex].year}
-                      </p>
-                    </div>
+                    <p className="text-brand-muted text-xs">
+                      {testimonial.country} • {t('stories.classOf')} {testimonial.year}
+                    </p>
                   </div>
                 </div>
-              </Card>
-            </motion.div>
-          </AnimatePresence>
-
-          {/* Navigation Buttons */}
-          <div className="flex items-center justify-center space-x-4 mt-8">
-            <button
-              onClick={prevTestimonial}
-              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all hover:bg-primary-50"
-              aria-label="Previous testimonial"
-            >
-              <HiChevronLeft className="w-6 h-6 text-primary-600" />
-            </button>
-
-            {/* Dots */}
-            <div className="flex space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentIndex
-                      ? 'bg-primary-600 w-8'
-                      : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                />
-              ))}
-            </div>
-
-            <button
-              onClick={nextTestimonial}
-              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all hover:bg-primary-50"
-              aria-label="Next testimonial"
-            >
-              <HiChevronRight className="w-6 h-6 text-primary-600" />
-            </button>
-          </div>
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

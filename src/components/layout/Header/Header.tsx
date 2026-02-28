@@ -5,8 +5,13 @@ import { HiMenu, HiX } from 'react-icons/hi';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
   const location = useLocation();
+
+  const toggleLanguage = () => {
+    const nextLang = i18n.language === 'ko' ? 'en' : 'ko';
+    i18n.changeLanguage(nextLang);
+  };
 
   const navigation = [
     { name: t('nav.home'), href: '/' },
@@ -19,16 +24,16 @@ export default function Header() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-brand-bg/85 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-200/50">
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">VB</span>
+            <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center shadow-sm">
+              <span className="text-white font-serif font-bold text-xl">DD</span>
             </div>
-            <span className="text-xl font-bold text-gray-900 hidden sm:block">
-              Vine Global
+            <span className="text-2xl font-serif font-bold text-brand-primary hidden sm:block">
+              Do Dream Int.
             </span>
           </Link>
 
@@ -38,27 +43,36 @@ export default function Header() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors ${
-                  isActive(item.href)
-                    ? 'text-primary-600'
-                    : 'text-gray-700 hover:text-primary-600'
-                }`}
+                className={`text-sm font-medium transition-colors ${isActive(item.href)
+                  ? 'text-brand-primary'
+                  : 'text-brand-text hover:text-brand-accent'
+                  }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Link
-              to="/apply"
-              className="bg-accent-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-accent-600 transition-colors"
-            >
-              {t('nav.applyNow')}
-            </Link>
+            <div className="flex items-center space-x-4 border-l border-gray-200 pl-4">
+              <button
+                onClick={toggleLanguage}
+                className="text-sm font-semibold text-brand-text hover:text-brand-primary-dark transition-colors flex items-center space-x-1"
+                aria-label="Toggle language"
+              >
+                <span>{i18n.language === 'ko' ? 'EN' : 'KO'}</span>
+              </button>
+
+              <Link
+                to="/apply"
+                className="bg-brand-accent text-white px-5 py-2 rounded font-medium hover:bg-brand-accent-hover transition-all duration-300 shadow-sm text-sm"
+              >
+                {t('nav.applyNow')}
+              </Link>
+            </div>
           </div>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100"
+            className="md:hidden p-2 rounded-lg text-brand-text hover:bg-white/50"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
@@ -78,11 +92,10 @@ export default function Header() {
                   key={item.name}
                   to={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`text-base font-medium transition-colors ${
-                    isActive(item.href)
-                      ? 'text-primary-600'
-                      : 'text-gray-700 hover:text-primary-600'
-                  }`}
+                  className={`text-base font-medium transition-colors ${isActive(item.href)
+                    ? 'text-brand-primary'
+                    : 'text-brand-text hover:text-brand-accent'
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -90,10 +103,20 @@ export default function Header() {
               <Link
                 to="/apply"
                 onClick={() => setMobileMenuOpen(false)}
-                className="bg-accent-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-accent-600 transition-colors text-center"
+                className="bg-brand-accent text-white px-6 py-3 rounded font-medium hover:bg-brand-accent-hover transition-colors text-center shadow-md w-full mt-2"
               >
                 {t('nav.applyNow')}
               </Link>
+
+              <button
+                onClick={() => {
+                  toggleLanguage();
+                  setMobileMenuOpen(false);
+                }}
+                className="w-full text-center py-2 text-brand-primary font-medium border border-gray-200 rounded mt-2 hover:bg-gray-50 transition-colors"
+              >
+                {i18n.language === 'ko' ? 'Switch to English' : '한국어로 보기'}
+              </button>
             </div>
           </div>
         )}
