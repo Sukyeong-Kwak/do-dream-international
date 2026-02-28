@@ -14,7 +14,7 @@ export default function Hero() {
           {/* Left Content column */}
           <div className="flex-1 text-center lg:text-left pt-10 lg:pt-0">
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight text-brand-primary-blue tracking-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-tight text-brand-primary-blue tracking-tighter"
               dangerouslySetInnerHTML={{ __html: t('hero.title') }}
             />
 

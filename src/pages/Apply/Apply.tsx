@@ -20,7 +20,7 @@ export default function Apply() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+            className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tighter"
           >
             {t('hero.title')}
           </motion.h1>
@@ -44,7 +44,7 @@ export default function Apply() {
 
             {/* Info Cards */}
             <Card className="p-8 border-t-4 border-brand-primary-teal shadow-xl rounded-2xl">
-              <h2 className="text-2xl font-bold text-brand-primary-blue mb-8 border-b border-gray-100 pb-4">
+              <h2 className="text-2xl font-extrabold text-brand-primary-blue mb-8 border-b border-gray-100 pb-4 tracking-tighter">
                 {t('info.title')}
               </h2>
 
@@ -90,7 +90,7 @@ export default function Apply() {
 
             {/* Application Process */}
             <Card className="p-8 shadow-md rounded-2xl border border-gray-100">
-              <h2 className="text-2xl font-bold text-brand-primary-blue mb-8">
+              <h2 className="text-2xl font-extrabold text-brand-primary-blue mb-8 tracking-tighter">
                 {t('steps.title')}
               </h2>
               <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-brand-primary-teal before:to-brand-primary-blue before:opacity-30">
@@ -137,7 +137,7 @@ export default function Apply() {
                 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <HiDocumentText className="w-8 h-8 text-brand-primary-teal" />
                 </div>
-                <h2 className="text-2xl font-bold mb-4">{t('cta.title')}</h2>
+                <h2 className="text-2xl font-extrabold mb-4 tracking-tighter">{t('cta.title')}</h2>
                 <p className="text-white/80 mb-8 leading-relaxed">
                   {t('cta.desc')}
                 </p>

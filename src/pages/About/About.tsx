@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import Card from '../../components/common/Card/Card';
-import { HiCheckCircle, HiGlobeAsiaAustralia, HiAcademicCap, HiHeart } from 'react-icons/hi2';
+import { HiGlobeAsiaAustralia, HiAcademicCap, HiHeart } from 'react-icons/hi2';
 
 export default function About() {
   const { t } = useTranslation('about');
@@ -22,15 +21,15 @@ export default function About() {
             animate={{ opacity: 1, scale: 1 }}
             className="mb-8 flex justify-center"
           >
-            <div className="bg-white/10 p-6 rounded-full backdrop-blur-sm border border-white/20">
-              <img src="/logo-white.png" alt="Do Dream International Logo" className="h-16 w-auto" />
+            <div className="bg-white/10 p-6 md:p-8 rounded-full backdrop-blur-sm border border-white/20">
+              <img src="/logo-white.png" alt="Do Dream International Logo" className="h-20 md:h-24 w-auto" />
             </div>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+            className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tighter"
           >
             {t('hero.title')}
           </motion.h1>
@@ -58,7 +57,7 @@ export default function About() {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-bold text-brand-primary-blue mb-6 flex items-center">
+                <h2 className="text-3xl font-extrabold text-brand-primary-blue mb-6 flex items-center tracking-tighter">
                   <span className="w-10 h-1 bg-brand-primary-teal rounded-full mr-4 inline-block"></span>
                   {t('overview.title')}
                 </h2>
@@ -83,7 +82,7 @@ export default function About() {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-bold text-brand-primary-blue mb-6 flex items-center">
+                <h2 className="text-3xl font-extrabold text-brand-primary-blue mb-6 flex items-center tracking-tighter">
                   <span className="w-10 h-1 bg-brand-primary-teal rounded-full mr-4 inline-block"></span>
                   {t('purpose.title')}
                 </h2>
@@ -96,7 +95,7 @@ export default function About() {
 
               {/* Organization */}
               <div className="pt-6">
-                <h3 className="text-2xl font-bold text-brand-primary-blue mb-4">{t('organization.title')}</h3>
+                <h3 className="text-2xl font-extrabold text-brand-primary-blue mb-4 tracking-tight">{t('organization.title')}</h3>
                 <div className="flex flex-col space-y-2 text-brand-text bg-white border border-gray-100 p-6 rounded-2xl shadow-sm">
                   <p className="font-semibold">{t('organization.director')}</p>
                   <p className="text-brand-muted">{t('organization.dept')}</p>
@@ -112,43 +111,47 @@ export default function About() {
       <section className="section-padding bg-brand-bg/50 border-y border-gray-200">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-primary-blue mb-4">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-brand-primary-blue mb-4 tracking-tighter">
               {t('vision.title')}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Vision Card */}
-            <Card className="bg-brand-primary-blue text-white p-10 border-none shadow-xl">
-              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-8">
-                <HiGlobeAsiaAustralia className="w-8 h-8 text-brand-primary-teal" />
+            <div className="bg-white p-10 rounded-2xl border-t-4 border-brand-primary-blue shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+              <div className="w-16 h-16 bg-brand-primary-blue/10 rounded-full flex items-center justify-center mb-8">
+                <HiGlobeAsiaAustralia className="w-8 h-8 text-brand-primary-blue" />
               </div>
-              <h3 className="text-3xl font-bold mb-6">{t('vision.v_title')}</h3>
+              <h3 className="text-3xl font-extrabold text-brand-primary-blue mb-6 tracking-tighter">{t('vision.v_title')}</h3>
               <ul className="space-y-4">
                 {(t('vision.v_items', { returnObjects: true }) as string[]).map((item, idx) => (
-                  <li key={idx} className="flex items-start text-lg opacity-90">
-                    <HiCheckCircle className="w-6 h-6 text-brand-accent-pink mr-3 flex-shrink-0 mt-0.5" />
+                  <li key={idx} className="flex items-start text-lg text-brand-text font-medium">
+                    <span className="w-6 h-6 rounded-full bg-brand-primary-blue text-white flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0 mt-0.5">
+                      {idx + 1}
+                    </span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-            </Card>
+            </div>
 
             {/* Core Values Card */}
-            <Card className="bg-white p-10 border-2 border-brand-primary-teal/20 shadow-xl">
+            <div className="bg-white p-10 rounded-2xl border-t-4 border-brand-primary-teal shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
               <div className="w-16 h-16 bg-brand-primary-teal/10 rounded-full flex items-center justify-center mb-8">
                 <HiHeart className="w-8 h-8 text-brand-primary-teal" />
               </div>
-              <h3 className="text-3xl font-bold text-brand-primary-blue mb-6">{t('vision.c_title')}</h3>
+              <h3 className="text-3xl font-extrabold text-brand-primary-teal mb-6 tracking-tighter">{t('vision.c_title')}</h3>
               <ul className="space-y-4">
                 {(t('vision.c_items', { returnObjects: true }) as string[]).map((item, idx) => (
                   <li key={idx} className="flex items-start text-lg text-brand-text font-medium">
-                    <HiCheckCircle className="w-6 h-6 text-brand-primary-teal mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="w-6 h-6 rounded-full bg-brand-primary-teal text-white flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0 mt-0.5">
+                      {idx + 1}
+                    </span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-            </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -160,7 +163,7 @@ export default function About() {
 
             {/* Activities */}
             <div>
-              <h2 className="text-3xl font-bold text-brand-primary-blue mb-8 flex items-center">
+              <h2 className="text-3xl font-extrabold text-brand-primary-blue mb-8 flex items-center tracking-tighter">
                 <HiAcademicCap className="w-8 h-8 mr-3 text-brand-primary-teal" />
                 {t('activities.title')}
               </h2>
@@ -176,7 +179,7 @@ export default function About() {
 
             {/* Effects */}
             <div>
-              <h2 className="text-3xl font-bold text-brand-primary-blue mb-8 flex items-center">
+              <h2 className="text-3xl font-extrabold text-brand-primary-blue mb-8 flex items-center tracking-tighter">
                 <span className="w-8 h-8 bg-brand-accent-pink/20 text-brand-accent-pink rounded-full flex items-center justify-center mr-3 font-bold">!</span>
                 {t('effects.title')}
               </h2>
@@ -205,13 +208,13 @@ export default function About() {
             {t('partners.title')}
           </h2>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-70 hover:opacity-100 transition-opacity">
-            <div className="text-2xl font-serif font-bold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer">
+            <div className="text-2xl font-extrabold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer tracking-tight">
               KWMF
             </div>
-            <div className="text-2xl font-serif font-bold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer">
+            <div className="text-2xl font-extrabold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer tracking-tight">
               Y Mission
             </div>
-            <div className="text-2xl font-serif font-bold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer">
+            <div className="text-2xl font-extrabold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer tracking-tight">
               Podonamu Church
             </div>
           </div>

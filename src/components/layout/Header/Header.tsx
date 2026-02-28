@@ -25,11 +25,11 @@ export default function Header() {
 
   return (
     <header className="bg-brand-bg/85 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-200/50">
-      <nav className="container-custom py-4">
+      <nav className="container-custom py-1">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/logo-horizontal.png" alt="Do Dream International" className="h-12 w-auto" />
+            <img src="/logo-horizontal.png" alt="Do Dream International" className="h-16 md:h-[5rem] w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

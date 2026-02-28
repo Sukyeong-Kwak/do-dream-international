@@ -21,7 +21,7 @@ export default function Contact() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+            className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tighter"
           >
             {t('hero.title')}
           </motion.h1>
@@ -42,7 +42,7 @@ export default function Contact() {
 
           {/* Contact Info */}
           <Card className="p-8 shadow-xl rounded-2xl border-t-4 border-brand-primary-teal">
-            <h2 className="text-2xl font-bold text-brand-primary-blue mb-8">
+            <h2 className="text-2xl font-extrabold text-brand-primary-blue mb-8 tracking-tighter">
               {t('info.title')}
             </h2>
 
@@ -102,7 +102,7 @@ export default function Contact() {
 
           {/* Contact Form */}
           <Card className="p-8 shadow-md rounded-2xl border border-gray-100">
-            <h2 className="text-2xl font-bold text-brand-primary-blue mb-8">
+            <h2 className="text-2xl font-extrabold text-brand-primary-blue mb-8 tracking-tighter">
               {t('message.title')}
             </h2>
 

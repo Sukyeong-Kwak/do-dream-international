@@ -46,7 +46,7 @@ export default function TestimonialCarousel() {
   return (
     <section className="section-padding bg-brand-bg/30 border-y border-gray-200">
       <div className="container-custom">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-brand-primary mb-12">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-brand-primary mb-12 tracking-tighter">
           {t('stories.title')}
         </h2>
 
@@ -54,7 +54,7 @@ export default function TestimonialCarousel() {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex flex-col space-y-6">
-                <p className="text-lg text-brand-text italic leading-relaxed font-serif">
+                <p className="text-lg text-brand-text italic leading-relaxed">
                   "{testimonial.quote}"
                 </p>
                 <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">

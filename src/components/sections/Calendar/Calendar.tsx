@@ -116,7 +116,7 @@ export default function Calendar() {
                         >
                             <HiChevronLeft className="w-6 h-6" />
                         </button>
-                        <h3 className="text-2xl font-bold text-brand-primary-teal font-serif">
+                        <h3 className="text-2xl font-extrabold text-brand-primary-teal tracking-tight">
                             {currentMonth.name[lang]} {lang === 'en' ? 'Phase' : '여정'}
                         </h3>
                         <button

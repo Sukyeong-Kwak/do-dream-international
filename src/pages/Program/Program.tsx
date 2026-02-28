@@ -60,7 +60,7 @@ export default function Program() {
       <section className="section-padding bg-brand-bg/50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-brand-primary-blue mb-6">{t('overview.title')}</h2>
+            <h2 className="text-3xl font-extrabold text-brand-primary-blue mb-6 tracking-tighter">{t('overview.title')}</h2>
             <p className="text-lg text-brand-text leading-relaxed mb-10">
               {t('overview.description')}
             </p>
@@ -87,7 +87,7 @@ export default function Program() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-brand-primary-blue mb-4">{t('curriculum.title')}</h2>
+            <h2 className="text-3xl font-extrabold text-brand-primary-blue mb-4 tracking-tighter">{t('curriculum.title')}</h2>
             <div className="flex items-center justify-center space-x-4 text-brand-primary-teal font-medium">
               <span className="bg-brand-primary-teal/10 px-4 py-1 rounded-full">{t('curriculum.total_lectures')}</span>
               <span className="bg-brand-primary-blue/10 text-brand-primary-blue px-4 py-1 rounded-full">{t('curriculum.total_time')}</span>
@@ -113,7 +113,7 @@ export default function Program() {
                         <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg ${openAccordion === index ? 'bg-brand-primary-teal text-white' : 'bg-brand-bg text-brand-primary-blue'}`}>
                           {index + 1}
                         </div>
-                        <h3 className={`text-xl font-bold ${openAccordion === index ? 'text-brand-primary-teal' : 'text-brand-primary-blue'}`}>
+                        <h3 className={`text-xl font-extrabold tracking-tighter ${openAccordion === index ? 'text-brand-primary-teal' : 'text-brand-primary-blue'}`}>
                           {item.title}
                         </h3>
                       </div>
@@ -169,7 +169,7 @@ export default function Program() {
       <section className="section-padding bg-brand-bg/30 border-t border-gray-100">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-brand-primary-blue mb-4">{t('schedule.title')}</h2>
+            <h2 className="text-3xl font-extrabold text-brand-primary-blue mb-4 tracking-tighter">{t('schedule.title')}</h2>
             <p className="text-lg text-brand-text">{t('schedule.monday')}</p>
           </div>
 
@@ -213,7 +213,7 @@ export default function Program() {
       {/* CTA */}
       <section className="section-padding bg-brand-primary-blue text-white text-center py-20">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-4">{t('cta.title')}</h2>
+          <h2 className="text-3xl font-extrabold mb-4 tracking-tighter">{t('cta.title')}</h2>
           <p className="text-lg text-white/80 mb-10 max-w-2xl mx-auto">
             {t('cta.subtitle')}
           </p>
