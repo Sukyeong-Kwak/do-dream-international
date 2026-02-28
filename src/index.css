@@ -1,31 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-bg: #FAFAF9;
-  /* Soft Oatmeal/Warm Off-White - 눈이 편안하고 따뜻한 미색 */
-  --color-brand-primary: #57534E;
-  /* Warm Stone (Stone 600) - 짙은 그레이 대신 따뜻한 톤이 도는 묵직한 돌색 */
-  --color-brand-primary-dark: #44403C;
-  /* Deep Taupe (Stone 700) - 더 깊이 있는 제목/구조용 색상 */
-  --color-brand-accent: #3B82F6;
-  /* Structured Blue (Blue 500) - 절제된 포인트 컬러, 명확한 상호작용 지시 */
-  --color-brand-accent-hover: #2563EB;
-  --color-brand-text: #292524;
-  /* Dark Warm Gray (Stone 800) for sharp but warm readability */
-  --color-brand-muted: #78716C;
-  /* Warm Muted Gray (Stone 500) */
+  --color-brand-bg: #F4F8FA;
+  /* New background-soft */
+  --color-brand-primary-blue: #3A75A3;
+  /* Steel blue from logo */
+  --color-brand-primary-teal: #5EBCD2;
+  /* Soft cyan/teal from logo */
+  --color-brand-accent-pink: #E993A6;
+  /* Soft rose from logo */
+  --color-brand-text: #1E293B;
+  /* Slate 800 - dark but softer than black */
+  --color-brand-muted: #64748B;
+  /* Slate 500 */
 
-  --font-heading: 'Playfair Display', 'Noto Serif KR', serif;
-  /* 클래식, 권위, 진정성 */
-  --font-body: 'Inter', 'Pretendard', sans-serif;
-  /* 세련됨, 가독성, 모던함 */
+  --font-heading: 'Pretendard', 'Inter', system-ui, sans-serif;
+  /* Modern sans-serif */
+  --font-body: 'Pretendard', 'Inter', system-ui, sans-serif;
+  --font-sans: 'Pretendard', 'Inter', system-ui, sans-serif;
 
-  --font-sans: 'Inter', 'Pretendard', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Playfair Display', 'Noto Serif KR', serif;
-
-  --radius-lg: 4px;
-  /* 단정한 모서리 */
-  --radius-sm: 2px;
+  --radius-xl: 12px;
+  /* Soft rounding for cards */
+  --radius-2xl: 16px;
+  /* Larger rounding for massive cards or hero */
+  --radius-full: 9999px;
+  /* For pills and buttons */
 }
 
 @utility container-custom {
@@ -77,6 +76,6 @@
   h5,
   h6 {
     font-family: var(--font-heading);
-    color: var(--color-brand-primary);
+    color: var(--color-brand-primary-blue);
   }
 }

@@ -14,11 +14,11 @@ export default function Hero() {
           {/* Left Content column */}
           <div className="flex-1 text-center lg:text-left pt-10 lg:pt-0">
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 leading-tight text-brand-primary tracking-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight text-brand-primary-blue tracking-tight"
               dangerouslySetInnerHTML={{ __html: t('hero.title') }}
             />
 
-            <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto lg:mx-0 text-brand-text leading-relaxed font-body">
+            <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto lg:mx-0 text-brand-text leading-relaxed">
               {t('hero.subtitle')}
             </p>
 
@@ -26,7 +26,7 @@ export default function Hero() {
               <Link to="/program">
                 <Button
                   size="lg"
-                  className="bg-brand-accent text-white hover:bg-brand-accent-hover transition-colors duration-300 rounded px-10 py-4 text-base font-medium tracking-wide shadow-sm"
+                  className="bg-brand-primary-teal hover:opacity-90 text-white transition-opacity duration-300 rounded-xl px-10 py-4 text-base font-medium tracking-wide shadow-lg"
                 >
                   {t('hero.cta')}
                 </Button>
@@ -43,8 +43,8 @@ export default function Hero() {
                 alt="Worship Scene in Korea"
                 className="w-full h-full object-cover grayscale opacity-90 transition-opacity duration-500"
               />
-              {/* Color overlay to unify tone with brand-primary */}
-              <div className="absolute inset-0 bg-brand-primary/20 mix-blend-color"></div>
+              {/* Color overlay to unify tone with brand-primary-blue */}
+              <div className="absolute inset-0 bg-brand-primary-blue/20 mix-blend-color"></div>
             </div>
           </div>
 

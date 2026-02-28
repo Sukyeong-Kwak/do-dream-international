@@ -28,13 +28,8 @@ export default function Header() {
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center shadow-sm">
-              <span className="text-white font-serif font-bold text-xl">DD</span>
-            </div>
-            <span className="text-2xl font-serif font-bold text-brand-primary hidden sm:block">
-              Do Dream Int.
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src="/logo-horizontal.png" alt="Do Dream International" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -44,8 +39,8 @@ export default function Header() {
                 key={item.name}
                 to={item.href}
                 className={`text-sm font-medium transition-colors ${isActive(item.href)
-                  ? 'text-brand-primary'
-                  : 'text-brand-text hover:text-brand-accent'
+                  ? 'text-brand-primary-blue'
+                  : 'text-brand-text hover:text-brand-primary-teal'
                   }`}
               >
                 {item.name}
@@ -54,18 +49,20 @@ export default function Header() {
             <div className="flex items-center space-x-4 border-l border-gray-200 pl-4">
               <button
                 onClick={toggleLanguage}
-                className="text-sm font-semibold text-brand-text hover:text-brand-primary-dark transition-colors flex items-center space-x-1"
+                className="text-sm font-semibold text-brand-text hover:text-brand-primary-teal transition-colors flex items-center space-x-1"
                 aria-label="Toggle language"
               >
                 <span>{i18n.language === 'ko' ? 'EN' : 'KO'}</span>
               </button>
 
-              <Link
-                to="/apply"
-                className="bg-brand-accent text-white px-5 py-2 rounded font-medium hover:bg-brand-accent-hover transition-all duration-300 shadow-sm text-sm"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScwgPF5kPO--Yw41STnVkPKYTDJuCNmGZa7r_I2r5JTQOhdBg/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-brand-primary-teal text-white px-5 py-2 rounded-lg font-medium hover:opacity-90 transition-all duration-300 shadow-sm text-sm"
               >
                 {t('nav.applyNow')}
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -93,27 +90,29 @@ export default function Header() {
                   to={item.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={`text-base font-medium transition-colors ${isActive(item.href)
-                    ? 'text-brand-primary'
-                    : 'text-brand-text hover:text-brand-accent'
+                    ? 'text-brand-primary-blue'
+                    : 'text-brand-text hover:text-brand-primary-teal'
                     }`}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Link
-                to="/apply"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScwgPF5kPO--Yw41STnVkPKYTDJuCNmGZa7r_I2r5JTQOhdBg/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="bg-brand-accent text-white px-6 py-3 rounded font-medium hover:bg-brand-accent-hover transition-colors text-center shadow-md w-full mt-2"
+                className="bg-brand-primary-teal text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-colors text-center shadow-md w-full mt-2"
               >
                 {t('nav.applyNow')}
-              </Link>
+              </a>
 
               <button
                 onClick={() => {
                   toggleLanguage();
                   setMobileMenuOpen(false);
                 }}
-                className="w-full text-center py-2 text-brand-primary font-medium border border-gray-200 rounded mt-2 hover:bg-gray-50 transition-colors"
+                className="w-full text-center py-2 text-brand-primary-blue font-medium border border-gray-200 rounded-lg mt-2 hover:bg-gray-50 transition-colors"
               >
                 {i18n.language === 'ko' ? 'Switch to English' : '한국어로 보기'}
               </button>

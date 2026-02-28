@@ -18,7 +18,7 @@ export default function Layout({ children }: LayoutProps) {
       />
 
       {/* Structured top accent line - Warm Stone */}
-      <div className="h-1 w-full bg-brand-primary relative z-10"></div>
+      <div className="h-1 w-full bg-brand-primary-blue relative z-10"></div>
 
       {/* Main Content Area */}
       <div className="relative z-10 flex flex-col flex-grow">

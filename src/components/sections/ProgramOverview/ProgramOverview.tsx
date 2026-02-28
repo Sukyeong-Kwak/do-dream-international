@@ -28,7 +28,7 @@ export default function ProgramOverview() {
       <div className="container-custom relative z-10">
         <div className="text-center mb-16">
           <h2
-            className="text-3xl md:text-4xl font-serif font-bold text-brand-primary mb-6"
+            className="text-3xl md:text-4xl font-bold text-brand-primary-blue mb-6"
             dangerouslySetInnerHTML={{ __html: t('program.title') }}
           />
           <p className="text-lg text-brand-text max-w-2xl mx-auto leading-relaxed">
@@ -40,12 +40,12 @@ export default function ProgramOverview() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded p-8 lg:p-10 border border-t-4 border-t-brand-primary border-gray-200"
+              className="bg-white rounded-2xl shadow-lg p-8 lg:p-10 border-t-4 border-t-brand-primary-blue"
             >
-              <div className="w-16 h-16 bg-brand-bg rounded-full flex items-center justify-center mb-6 text-brand-primary">
+              <div className="w-16 h-16 bg-brand-bg rounded-full flex items-center justify-center mb-6 text-brand-primary-teal">
                 <feature.icon className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-brand-primary mb-4 font-serif">{feature.title}</h3>
+              <h3 className="text-xl font-bold text-brand-primary-blue mb-4">{feature.title}</h3>
               <p className="text-brand-text leading-relaxed text-base">
                 {feature.description}
               </p>

@@ -22,6 +22,16 @@
     "f3_title": "Global Community",
     "f3_desc": "Build lifelong friendships with young adults from all around the world, sharing together in faith and purpose."
   },
+  "process": {
+    "title": "The Gospel Cycle",
+    "subtitle": "Discover the profound flow of training and sending in our program.",
+    "s1_title": "World → Korea",
+    "s1_desc": "Young adults from all over the world, hungry for a God-centered life, gather in Korea.",
+    "s2_title": "Training in Korea",
+    "s2_desc": "Intensive training in prayer, worship, gospel-centered living, spiritual identity in Christ, servant leadership, and cross-cultural experiences.",
+    "s3_title": "Korea → World",
+    "s3_desc": "Sent back as spiritual leaders to serve local churches, impact global communities, and raise the next generation."
+  },
   "stories": {
     "title": "Stories of Grace",
     "classOf": "Class of"

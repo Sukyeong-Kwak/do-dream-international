@@ -7,18 +7,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-brand-primary-dark text-white">
+    <footer className="bg-brand-primary-blue text-white">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-md">
-                <span className="text-brand-primary font-serif font-bold text-2xl">DD</span>
-              </div>
-              <span className="text-2xl font-serif font-bold text-white">
-                Do Dream Int.
-              </span>
+            <div className="mb-6">
+              <img src="/logo-white.png" alt="Do Dream International" className="h-16 w-auto" />
             </div>
             <p className="text-sm text-gray-200 text-center md:text-left max-w-md leading-relaxed">
               {t('footer.description')}
@@ -101,7 +96,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="w-full bg-brand-accent text-white px-4 py-3 rounded-lg font-semibold hover:bg-brand-accent-hover transition-colors shadow-md text-sm"
+                className="w-full bg-brand-primary-teal text-white px-4 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors shadow-md text-sm"
               >
                 {t('footer.subscribe')}
               </button>
