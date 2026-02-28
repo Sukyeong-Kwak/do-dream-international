@@ -1,44 +1,155 @@
 {
   "hero": {
-    "title": "8-Month Intensive Training Program",
-    "subtitle": "Comprehensive missionary training from a Korean church perspective"
+    "title": "Do Dream Together International Program",
+    "subtitle": "Overseas Christian Youth Invitation Medium/Long-term Stay Spiritual Training Program"
   },
   "overview": {
     "title": "Program Overview",
-    "description": "Our program provides a unique opportunity to experience missionary training through the lens of Korea's dynamic church movement. You'll gain practical skills, theological depth, and cross-cultural competency while being immersed in one of the world's most vibrant Christian communities."
+    "description": "An intensive training program designed to nurture next-generation church leaders by inviting overseas Christian youth for a deep, systematic spiritual training on the essence of the Christian faith.",
+    "duration_label": "Duration",
+    "duration_value": "3, 6, or 12 Months",
+    "target_label": "Target",
+    "target_value": "Youth (20-30s)",
+    "community_label": "Community",
+    "community_value": "24/7 Living Together"
   },
   "curriculum": {
     "title": "Curriculum",
+    "total_lectures": "120 Lectures",
+    "total_time": "206.3 Hours",
+    "lecture": "lectures",
+    "hour": "hours",
     "subjects": [
       {
-        "title": "Korean Church History & Theology",
-        "description": "Explore the unique development and theology of the Korean church, from persecution to explosive growth."
+        "title": "Our Great Salvation",
+        "lectures": 13,
+        "time_per_lecture": 110,
+        "total_hours": 23.8,
+        "description": "Understanding the profound depth of salvation and our identity in Christ."
       },
       {
-        "title": "Cross-Cultural Communication",
-        "description": "Learn effective communication strategies across cultural boundaries and develop cultural intelligence."
+        "title": "The Gospel of the Cross",
+        "lectures": 57,
+        "time_per_lecture": 110,
+        "total_hours": 104.5,
+        "description": "An in-depth study of the core of our faith: the transformative power of the cross."
       },
       {
-        "title": "Bible Study Methods",
-        "description": "Master various approaches to Scripture study including Korean inductive methods and devotional practices."
+        "title": "Missional Church Vol. 1",
+        "lectures": 9,
+        "time_per_lecture": 110,
+        "total_hours": 16.5,
+        "description": "Learning what it means to be a church sent out into the world."
       },
       {
-        "title": "Worship & Prayer",
-        "description": "Experience Korean worship styles and prayer traditions, including early morning prayer (Saemoonsuk)."
-      },
-      {
-        "title": "Korean Language Basics",
-        "description": "Gain functional Korean language skills for daily life and ministry contexts."
-      },
-      {
-        "title": "Leadership Development",
-        "description": "Develop leadership skills through hands-on ministry and mentorship relationships."
+        "title": "Spiritual Leadership",
+        "lectures": 41,
+        "time_per_lecture": 90,
+        "total_hours": 61.5,
+        "description": "Equipping future leaders with spiritual principles and servant leadership skills."
       }
     ]
   },
   "schedule": {
     "title": "Daily Schedule",
     "monday": "Monday - Friday",
-    "weekend": "Saturday - Sunday"
+    "weekend_note": "* Weekends include church services, cultural activities, and free time for rest and exploration.",
+    "items": [
+      {
+        "time": "07:30-08:00",
+        "title": "Morning QT",
+        "description": "English Bible & Personal Quiet Time"
+      },
+      {
+        "time": "08:00-09:30",
+        "title": "Breakfast",
+        "description": "Breakfast & Personal Preparation"
+      },
+      {
+        "time": "09:30-10:20",
+        "title": "Lecture 1",
+        "description": "[Part 1] Main Curriculum"
+      },
+      {
+        "time": "10:20-10:30",
+        "title": "Break 1",
+        "description": "Short Rest"
+      },
+      {
+        "time": "10:30-11:20",
+        "title": "Lecture 2",
+        "description": "[Part 2] Main Curriculum"
+      },
+      {
+        "time": "11:20-11:40",
+        "title": "Wrap-up",
+        "description": "Morning Lecture Q&A & Small Group Sharing"
+      },
+      {
+        "time": "11:40-12:40",
+        "title": "Lunch",
+        "description": "Lunch & Recharge"
+      },
+      {
+        "time": "12:40-13:30",
+        "title": "Lecture 3",
+        "description": "[Part 3] Main Curriculum"
+      },
+      {
+        "time": "13:30-13:40",
+        "title": "Break 2",
+        "description": "Short Rest"
+      },
+      {
+        "time": "13:40-14:30",
+        "title": "Lecture 4",
+        "description": "[Part 4] Main Curriculum"
+      },
+      {
+        "time": "14:30-14:50",
+        "title": "Daily Reflection",
+        "description": "Daily Review & Journaling"
+      },
+      {
+        "time": "15:00-15:50",
+        "title": "K-Language 1",
+        "description": "Practical Conversation & Basic Grammar"
+      },
+      {
+        "time": "15:50-16:00",
+        "title": "Break 3",
+        "description": "Short Rest"
+      },
+      {
+        "time": "16:00-16:50",
+        "title": "K-Language 2",
+        "description": "Cultural Understanding & Application Practice"
+      },
+      {
+        "time": "16:50-18:30",
+        "title": "K-Life",
+        "description": "Local Area Tour, Mentor/Buddy Exchange"
+      },
+      {
+        "time": "18:30-20:00",
+        "title": "Dinner",
+        "description": "Dinner & Rest"
+      },
+      {
+        "time": "20:00-22:00",
+        "title": "Isaiah 62",
+        "description": "Isaiah 62 Worship Service"
+      },
+      {
+        "time": "22:00-23:00",
+        "title": "Personal Time",
+        "description": "Preparation for Sleep & Wrap-up"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Apply?",
+    "subtitle": "Join us for an unforgettable journey of growth, learning, and transformation.",
+    "button": "Apply Now"
   }
 }

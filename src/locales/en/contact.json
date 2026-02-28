@@ -1,0 +1,26 @@
+{
+    "hero": {
+        "title": "Get in Touch",
+        "subtitle": "Have questions? We're here to help you on your spiritual journey."
+    },
+    "info": {
+        "title": "Contact Information",
+        "phone": "Phone",
+        "phone_value": "(715) 685-1425",
+        "website": "Website",
+        "website_value": "https://www.nwwib.com/youth",
+        "location": "Location",
+        "location_value": "11-17, Sinjeong-ro 151beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do, South Korea"
+    },
+    "message": {
+        "title": "Send a Message",
+        "name": "Your Name",
+        "email": "Email Address",
+        "subject": "Subject",
+        "message": "Message",
+        "button": "Send Message"
+    },
+    "social": {
+        "title": "Follow Us"
+    }
+}

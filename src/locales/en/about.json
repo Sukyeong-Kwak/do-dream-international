@@ -1,0 +1,66 @@
+{
+    "hero": {
+        "title": "Trained and Sent as Spiritual Leaders",
+        "subtitle": "Discover the vision and heart behind Do Dream Together International."
+    },
+    "overview": {
+        "title": "Program Overview",
+        "name": "Project Name: Do Dream Together International",
+        "organizer": "Organizer: Podonamu Church",
+        "type": "Type: Overseas Christian Youth Invitation Spiritual Training Program",
+        "location": "Location: 11-17, Sinjeong-ro 151beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do",
+        "target": "Target: Overseas foreign Christian youth (20-30s)",
+        "duration": "Duration: 3-month, 6-month, 1-year options"
+    },
+    "purpose": {
+        "title": "Our Purpose",
+        "description": "To invite overseas Christian youth for intensive education and systematic spiritual training on the essence of the Christian faith, nurturing the next generation of church leaders."
+    },
+    "activities": {
+        "title": "Program Activities",
+        "items": [
+            {
+                "title": "Spiritual Training",
+                "desc": "Basic Christian faith, spiritual training, worship, community activities, and leadership training."
+            },
+            {
+                "title": "Korean Language",
+                "desc": "Basic Korean conversation, reading, and writing education."
+            },
+            {
+                "title": "Cultural Experience",
+                "desc": "Visiting Korean tourist attractions, experiencing Korean history and traditional culture."
+            }
+        ]
+    },
+    "vision": {
+        "title": "Vision & Core Values",
+        "v_title": "Vision",
+        "v_items": [
+            "Revival of the Younger Generation",
+            "Spiritual Leadership for the Nations"
+        ],
+        "c_title": "Core Values",
+        "c_items": [
+            "Spiritual Leadership for the Nations",
+            "Living the Essence of Faith",
+            "Life Together in Community"
+        ]
+    },
+    "effects": {
+        "title": "Expected Effects",
+        "items": [
+            "Spiritual maturity and leadership capacity building for overseas Christian youth",
+            "Formation of an international faith network",
+            "Expansion of global communication capabilities"
+        ]
+    },
+    "partners": {
+        "title": "Our Partners"
+    },
+    "organization": {
+        "title": "Organization",
+        "director": "General Director: Rev. Junhyung Kim (Young Adult Pastor, Podonamu Church)",
+        "dept": "Department: Do Dream International Team"
+    }
+}

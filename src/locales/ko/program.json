@@ -1,0 +1,155 @@
+{
+    "hero": {
+        "title": "Do Dream Together International Program",
+        "subtitle": "해외 기독 청년 초청 중·장기 체류형 영성훈련 프로그램"
+    },
+    "overview": {
+        "title": "프로그램 개요",
+        "description": "해외 기독 청년을 초청하여 기독교 신앙의 본질에 대한 집중교육과 체계적인 영성 훈련을 실시하여 차세대 교회 리더를 양성하기 위한 집중 훈련 프로그램입니다.",
+        "duration_label": "운영 기간",
+        "duration_value": "3/6/12개월 옵션",
+        "target_label": "참가 대상",
+        "target_value": "20-30대 청년",
+        "community_label": "공동체",
+        "community_value": "24/7 공동체 생활"
+    },
+    "curriculum": {
+        "title": "커리큘럼",
+        "total_lectures": "총 120강",
+        "total_time": "총 206.3시간",
+        "lecture": "강",
+        "hour": "시간",
+        "subjects": [
+            {
+                "title": "우리의 위대한 구원",
+                "lectures": 13,
+                "time_per_lecture": 110,
+                "total_hours": 23.8,
+                "description": "구원의 깊은 의미와 그리스도 안에서의 새로운 정체성을 확립합니다."
+            },
+            {
+                "title": "십자가의 복음",
+                "lectures": 57,
+                "time_per_lecture": 110,
+                "total_hours": 104.5,
+                "description": "신앙의 핵심인 십자가의 변화시키는 능력을 심도 있게 학습합니다."
+            },
+            {
+                "title": "선교적 교회 1권",
+                "lectures": 9,
+                "time_per_lecture": 110,
+                "total_hours": 16.5,
+                "description": "세상으로 보냄 받은 교회로서의 사명과 의미를 배웁니다."
+            },
+            {
+                "title": "영적 리더십",
+                "lectures": 41,
+                "time_per_lecture": 90,
+                "total_hours": 61.5,
+                "description": "영적 원리와 섬김의 리더십 기술을 갖춘 미래의 리더를 양성합니다."
+            }
+        ]
+    },
+    "schedule": {
+        "title": "데일리 스케줄",
+        "monday": "평일 (월-금)",
+        "weekend_note": "* 주말에는 주일 예배, 문화 체험 활동, 그리고 개인 휴식 시간이 포함됩니다.",
+        "items": [
+            {
+                "time": "07:30-08:00",
+                "title": "Morning QT",
+                "description": "영문 성경 / 큐티 개인 묵상"
+            },
+            {
+                "time": "08:00-09:30",
+                "title": "Breakfast",
+                "description": "아침 식사 및 개인 정비"
+            },
+            {
+                "time": "09:30-10:20",
+                "title": "Lecture 1",
+                "description": "[Part 1] 메인 커리큘럼"
+            },
+            {
+                "time": "10:20-10:30",
+                "title": "Break 1",
+                "description": "짧은 휴식"
+            },
+            {
+                "time": "10:30-11:20",
+                "title": "Lecture 2",
+                "description": "[Part 2] 메인 커리큘럼"
+            },
+            {
+                "time": "11:20-11:40",
+                "title": "Wrap-up",
+                "description": "오전 강의 Q&A 및 소그룹 나눔"
+            },
+            {
+                "time": "11:40-12:40",
+                "title": "Lunch",
+                "description": "점심 식사 및 재충전"
+            },
+            {
+                "time": "12:40-13:30",
+                "title": "Lecture 3",
+                "description": "[Part 3] 메인 커리큘럼"
+            },
+            {
+                "time": "13:30-13:40",
+                "title": "Break 2",
+                "description": "짧은 휴식"
+            },
+            {
+                "time": "13:40-14:30",
+                "title": "Lecture 4",
+                "description": "[Part 4] 메인 커리큘럼"
+            },
+            {
+                "time": "14:30-14:50",
+                "title": "Daily Reflection",
+                "description": "데일리 회고 (기록)"
+            },
+            {
+                "time": "15:00-15:50",
+                "title": "K-Language 1",
+                "description": "실전 회화 및 기초 문법"
+            },
+            {
+                "time": "15:50-16:00",
+                "title": "Break 3",
+                "description": "짧은 휴식"
+            },
+            {
+                "time": "16:00-16:50",
+                "title": "K-Language 2",
+                "description": "문화 이해 및 응용 연습"
+            },
+            {
+                "time": "16:50-18:30",
+                "title": "K-Life",
+                "description": "주변 탐방, 멘토/버디 교류"
+            },
+            {
+                "time": "18:30-20:00",
+                "title": "Dinner",
+                "description": "저녁 식사 및 휴식"
+            },
+            {
+                "time": "20:00-22:00",
+                "title": "Isaiah 62",
+                "description": "이사야 62 예배"
+            },
+            {
+                "time": "22:00-23:00",
+                "title": "Personal Time",
+                "description": "취침 준비 및 마무리"
+            }
+        ]
+    },
+    "cta": {
+        "title": "지원할 준비가 되셨나요?",
+        "subtitle": "성장과 배움, 그리고 변화가 있는 영구적인 여정에 함께 하세요.",
+        "button": "지원하기"
+    }
+}

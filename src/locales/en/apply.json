@@ -1,0 +1,33 @@
+{
+    "hero": {
+        "title": "Begin Your Journey",
+        "subtitle": "Join our global community and experience transformative training in Korea."
+    },
+    "info": {
+        "title": "Application Information",
+        "cost_label": "Estimated Cost",
+        "cost_value": "₩1,200,000 KRW / month",
+        "duration_label": "Duration Options",
+        "duration_value": "3, 6, or 12 months",
+        "docs_label": "Required Documents",
+        "docs_items": [
+            "Valid Passport Copy",
+            "Recommendation Letter from Senior Pastor",
+            "Personal Testimony of Faith"
+        ]
+    },
+    "steps": {
+        "title": "Application Process",
+        "s1_title": "Check Schedule & Cost",
+        "s1_desc": "Review the program dates and estimate your financial preparation.",
+        "s2_title": "Prepare Documents",
+        "s2_desc": "Gather your passport, pastor's recommendation, and personal testimony.",
+        "s3_title": "Submit Application",
+        "s3_desc": "Fill out our online Google Form to start the process."
+    },
+    "cta": {
+        "title": "Apply Online",
+        "desc": "Click the button below to submit your application form.",
+        "button": "Fill out Google Form"
+    }
+}

@@ -2,8 +2,16 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import commonEn from './en/common.json';
 import homeEn from './en/home.json';
+import programEn from './en/program.json';
+import aboutEn from './en/about.json';
+import applyEn from './en/apply.json';
+import contactEn from './en/contact.json';
 import commonKo from './ko/common.json';
 import homeKo from './ko/home.json';
+import programKo from './ko/program.json';
+import aboutKo from './ko/about.json';
+import applyKo from './ko/apply.json';
+import contactKo from './ko/contact.json';
 
 i18n
   .use(initReactI18next)
@@ -12,10 +20,18 @@ i18n
       en: {
         common: commonEn,
         home: homeEn,
+        program: programEn,
+        about: aboutEn,
+        apply: applyEn,
+        contact: contactEn,
       },
       ko: {
         common: commonKo,
         home: homeKo,
+        program: programKo,
+        about: aboutKo,
+        apply: applyKo,
+        contact: contactKo,
       }
     },
     lng: 'en',
