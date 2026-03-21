@@ -72,16 +72,7 @@ export default function Footer() {
                   {t('footer.apply')}
                 </Link>
               </li>
-              <li>
-                <Link to="/about" className="hover:text-white transition-colors">
-                  {t('footer.about')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-white transition-colors">
-                  {t('footer.contact')}
-                </Link>
-              </li>
+
             </ul>
           </div>
 

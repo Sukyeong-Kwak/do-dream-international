@@ -6,8 +6,7 @@ import Layout from '../components/layout/Layout';
 const Home = lazy(() => import('../pages/Home/Home'));
 const Program = lazy(() => import('../pages/Program/Program'));
 const Apply = lazy(() => import('../pages/Apply/Apply'));
-const About = lazy(() => import('../pages/About/About'));
-const Contact = lazy(() => import('../pages/Contact/Contact'));
+
 
 // Loading component
 const PageLoader = () => (
@@ -44,26 +43,6 @@ const router = createBrowserRouter([
       <Layout>
         <Suspense fallback={<PageLoader />}>
           <Apply />
-        </Suspense>
-      </Layout>
-    ),
-  },
-  {
-    path: '/about',
-    element: (
-      <Layout>
-        <Suspense fallback={<PageLoader />}>
-          <About />
-        </Suspense>
-      </Layout>
-    ),
-  },
-  {
-    path: '/contact',
-    element: (
-      <Layout>
-        <Suspense fallback={<PageLoader />}>
-          <Contact />
         </Suspense>
       </Layout>
     ),

@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Embrace<br />The Cross,<br />Walk with God",
-    "subtitle": "Build your firm foundation on the Gospel of the Cross and cultivate a deep, intimate fellowship with God. Join our global community in Korea for intense spiritual training, with the joyful addition of experiencing a vibrant culture.",
+    "title": "Am I on the Right Path?<br />A Journey to Truly Know God",
+    "subtitle": "Assurance of salvation, hearing God's voice, deep prayer, and meditative living—we invite you to a concrete training program rooted in Revine's Bible study content, where every area of life is reinterpreted through God's perspective.",
     "cta": "Explore the Program"
   },
   "value": {
@@ -10,7 +10,31 @@
     "p2": "Our community is built upon one absolute foundation: the Gospel of the Cross. We are here to train together from the very basics of our faith, passionately pursuing a genuine, intimate fellowship with God.",
     "p3": "As you learn, grow, and follow Him with all your heart, you will also have the wonderful, motivating opportunity to experience the beautiful culture and vibrant life of Korea. We invite you to embark on this unforgettable journey of faith with us.",
     "name": "Rev. Daniel Yeojubong",
-    "role": "Senior Pastor, Podonamu Church & Director of Do Dream International"
+    "role": "Senior Pastor, Podonamu Church & Director of Do Dream International",
+    "bio": [
+      "Graduated from California Baptist University, USA",
+      "Graduated from Southwestern Baptist Theological Seminary, USA",
+      "Studied at Princeton Theological Seminary, USA",
+      "Honorary Doctorate in Theology from Westminster Graduate School of Theology",
+      "Former Lecturer at Korea Baptist Theological University/Seminary",
+      "Recipient of the 2nd Korea Christian Award in Missions (2025)",
+      "Current Senior Pastor of Podonamu Church",
+      "Current President of New Wave Mission",
+      "Current Chairman of Youth Mission",
+      "Current Director of GOODTV Christian Gospel Broadcasting",
+      "Current Chairman of the Korea Christian Academic Society",
+      "Current Chairman of the Steering Committee, Korea World Missions Association (KWMA)",
+      "Current Director of the Foreign Mission Board, Korea Baptist Convention",
+      "Current Central Committee Member of the Korea Evangelical Fellowship",
+      "Current Standing Co-president of the Yongin Christian Association",
+      "Current Standing Director of Shalom Butterfly",
+      "Current Chairman of the Korea Cultural Exchange Foundation (under KWMA)",
+      "Current Chairman of Culture & Art Mission Executive Committee, KWMA",
+      "Current Chairman of Next Generation Mission Executive Committee, KWMA",
+      "Current Representative of Africa Project (NGO)",
+      "Current Principal of New Wave Christian School",
+      "Current Chairman of the Vision 2030 Military Mission Committee, Korea Baptist Convention"
+    ]
   },
   "program": {
     "title": "The Gospel Foundation,<br className=\"md:hidden\" /> Experiencing Grace",
@@ -34,7 +58,46 @@
   },
   "stories": {
     "title": "Stories of Grace",
-    "classOf": "Class of"
+    "subtitle": "Hear the sincere testimonies of intern missionaries who experienced God's grace through this program.",
+    "classOf": "Cohort",
+    "items": [
+      {
+        "quote": "What a blessing it is to go out to the nations in my youth and spend each day with God. I invite you to join us on that very field.",
+        "name": "Intern Missionary Gaeul Kim",
+        "region": "Germany",
+        "cohort": "7th"
+      },
+      {
+        "quote": "I learned to fellowship with God in love each day, to know Jesus more deeply, and to share that love with those around me.",
+        "name": "Intern Missionary Musun Choi",
+        "region": "Central Asia",
+        "cohort": "4th"
+      },
+      {
+        "quote": "To everyone who wants to recognize God as Father in every area of life and desires a place of training — don't miss this opportunity.",
+        "name": "Intern Missionary Jinhdalrae Kim",
+        "region": "Middle East Asia",
+        "cohort": "5th"
+      },
+      {
+        "quote": "In the end, when God — not myself — becomes the true owner of my life, the one thing I can do is 'mission.'",
+        "name": "Intern Missionary Yeolmae Ha",
+        "region": "Central Asia",
+        "cohort": "2nd"
+      },
+      {
+        "quote": "The greatest thing I learned was that 'ministry is not something I do — it is something God does through me.'",
+        "name": "Intern Missionary Bonggil Yun",
+        "region": "Central Asia",
+        "cohort": "3rd"
+      },
+      {
+        "quote": "I experienced God's grace covering me, even in my fear of relationships. I realized that relationships are always an area where I must depend on God anew.",
+        "name": "Intern Missionary Nari Choi",
+        "region": "Middle East Asia",
+        "cohort": "7th"
+      }
+    ]
   },
   "cta": {
     "title": "Ready to Begin?",

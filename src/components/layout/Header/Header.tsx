@@ -17,8 +17,6 @@ export default function Header() {
     { name: t('nav.home'), href: '/' },
     { name: t('nav.program'), href: '/program' },
     { name: t('nav.apply'), href: '/apply' },
-    { name: t('nav.about'), href: '/about' },
-    { name: t('nav.contact'), href: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

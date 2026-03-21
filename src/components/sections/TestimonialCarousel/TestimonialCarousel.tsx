@@ -1,80 +1,93 @@
 import { useTranslation } from 'react-i18next';
-import Card from '../../common/Card/Card';
+import { motion } from 'framer-motion';
 
 interface Testimonial {
   quote: string;
   name: string;
-  country: string;
-  year: string;
-  photo: string;
+  region: string;
+  cohort: string;
 }
+
+// Alternating card accent colors
+const cardAccents = [
+  { bg: 'bg-white', border: 'border-brand-primary-teal/30', badge: 'bg-brand-primary-teal/10 text-brand-primary-teal', avatar: 'bg-brand-primary-teal' },
+  { bg: 'bg-brand-primary-blue/5', border: 'border-brand-primary-blue/20', badge: 'bg-brand-primary-blue/10 text-brand-primary-blue', avatar: 'bg-brand-primary-blue' },
+  { bg: 'bg-white', border: 'border-brand-primary-teal/30', badge: 'bg-brand-primary-teal/10 text-brand-primary-teal', avatar: 'bg-brand-primary-teal' },
+  { bg: 'bg-brand-primary-blue/5', border: 'border-brand-primary-blue/20', badge: 'bg-brand-primary-blue/10 text-brand-primary-blue', avatar: 'bg-brand-primary-blue' },
+  { bg: 'bg-white', border: 'border-brand-primary-teal/30', badge: 'bg-brand-primary-teal/10 text-brand-primary-teal', avatar: 'bg-brand-primary-teal' },
+  { bg: 'bg-brand-primary-blue/5', border: 'border-brand-primary-blue/20', badge: 'bg-brand-primary-blue/10 text-brand-primary-blue', avatar: 'bg-brand-primary-blue' },
+];
 
 export default function TestimonialCarousel() {
   const { t } = useTranslation('home');
-
-  const testimonials: Testimonial[] = [
-    {
-      quote: "This program transformed my understanding of missions. Learning from the Korean church's perspective gave me insights I never could have gained elsewhere.",
-      name: 'Sarah Johnson',
-      country: 'USA',
-      year: '2025',
-      photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200',
-    },
-    {
-      quote: 'The community here is incredible. I made friends from 15 different countries and experienced Korean hospitality that exceeded all my expectations.',
-      name: 'Miguel Torres',
-      country: 'Mexico',
-      year: '2025',
-      photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200',
-    },
-    {
-      quote: 'The training was rigorous but deeply enriching. I returned home equipped not just with knowledge, but with a heart transformed for cross-cultural ministry.',
-      name: 'Aditi Sharma',
-      country: 'India',
-      year: '2024',
-      photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200',
-    },
-    {
-      quote: "Experiencing Korea's vibrant church culture firsthand was eye-opening. The early morning prayers, the fellowship, the worship - it all left a lasting impact.",
-      name: 'Emmanuel Okafor',
-      country: 'Nigeria',
-      year: '2024',
-      photo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200',
-    },
-  ];
+  const testimonials = t('stories.items', { returnObjects: true }) as Testimonial[];
 
   return (
-    <section className="section-padding bg-brand-bg/30 border-y border-gray-200">
+    <section className="section-padding bg-brand-bg/40 border-y border-gray-200 overflow-hidden">
       <div className="container-custom">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-brand-primary mb-12 tracking-tighter">
-          {t('stories.title')}
-        </h2>
+        {/* Header */}
+        <div className="text-center mb-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-primary-blue mb-3 tracking-tighter">
+            {t('stories.title')}
+          </h2>
+          <p className="text-brand-muted text-base max-w-xl mx-auto">
+            {t('stories.subtitle')}
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex flex-col space-y-6">
-                <p className="text-lg text-brand-text italic leading-relaxed">
-                  "{testimonial.quote}"
-                </p>
-                <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">
-                  <img
-                    src={testimonial.photo}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div>
-                    <p className="font-bold text-brand-primary text-sm">
-                      {testimonial.name}
+        {/* Big quote decoration */}
+        <div className="text-center mb-10 text-7xl text-brand-primary-teal/20 font-serif leading-none select-none">
+          "
+        </div>
+
+        {/* Cards grid — 3 columns on desktop, 1 on mobile */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {Array.isArray(testimonials) && testimonials.map((t_item, index) => {
+            const accent = cardAccents[index % cardAccents.length];
+            // Initials from name — take first two characters
+            const initials = t_item.name.replace(/인턴선교사|Intern Missionary/g, '').trim().slice(0, 2);
+
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                className="relative"
+              >
+                {/* Card */}
+                <div className={`${accent.bg} border ${accent.border} rounded-2xl p-8 pt-12 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-full`}>
+                  {/* Circular avatar — overlaps top */}
+                  <div className={`absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full ${accent.avatar} text-white flex items-center justify-center text-lg font-bold shadow-md border-4 border-white`}>
+                    {initials}
+                  </div>
+
+                  {/* Quote text */}
+                  <p className="text-brand-text text-base leading-relaxed italic flex-1 mb-6">
+                    "{t_item.quote}"
+                  </p>
+
+                  {/* Divider */}
+                  <div className="border-t border-gray-100 pt-5">
+                    {/* Name */}
+                    <p className={`font-bold text-sm ${accent.avatar === 'bg-brand-primary-teal' ? 'text-brand-primary-teal' : 'text-brand-primary-blue'}`}>
+                      {t_item.name}
                     </p>
-                    <p className="text-brand-muted text-xs">
-                      {testimonial.country} • {t('stories.classOf')} {testimonial.year}
-                    </p>
+                    {/* Region & Cohort */}
+                    <div className="flex items-center justify-center gap-2 mt-2 flex-wrap">
+                      <span className={`text-xs font-semibold px-3 py-1 rounded-full ${accent.badge}`}>
+                        {t_item.region}
+                      </span>
+                      <span className="text-xs text-brand-muted">
+                        {t('stories.classOf')} {t_item.cohort}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Card>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
