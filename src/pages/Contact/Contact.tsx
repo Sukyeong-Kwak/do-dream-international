@@ -9,6 +9,7 @@ import { FaFacebook, FaTiktok, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+
   const { t } = useTranslation('contact');
   const form = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
