@@ -1,14 +1,43 @@
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/common/Card/Card';
 import Button from '../../components/common/Button/Button';
+import Modal from '../../components/common/Modal/Modal';
 import { HiDocumentText, HiOutlineCurrencyDollar, HiOutlineCalendar } from 'react-icons/hi2';
 import { HiOutlineLocationMarker, HiOutlinePhone, HiOutlineGlobeAlt } from 'react-icons/hi';
 import { FaFacebook, FaTiktok, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 export default function Apply() {
   const { t: tApply } = useTranslation('apply');
   const { t: tContact } = useTranslation('contact');
+  const form = useRef<HTMLFormElement>(null);
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!form.current) return;
+    try {
+      setStatus('loading');
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || ''
+      );
+      setStatus('success');
+      setIsSuccessModalOpen(true);
+      form.current.reset();
+      setTimeout(() => setStatus('idle'), 5000);
+    } catch (error: any) {
+      console.error('EmailJS Error:', error);
+      setStatus('error');
+      alert(`[전송 에러] ${error?.text || error?.message || JSON.stringify(error)}`);
+      setTimeout(() => setStatus('idle'), 5000);
+    }
+  };
 
   return (
     <div className="bg-brand-bg/30 min-h-screen pb-24">
@@ -137,20 +166,29 @@ export default function Apply() {
                 {tContact('message.title')}
               </h2>
 
-              <form className="space-y-6">
+              <form ref={form} onSubmit={sendEmail} className="space-y-6">
+                {status === 'error' && (
+                  <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="p-4 bg-red-50 text-red-700 rounded-xl border border-red-200 font-semibold text-center text-sm shadow-sm">
+                    메시지 전송 중 오류가 발생했습니다.<br />
+                    <span className="text-sm font-normal text-red-600">Please make sure the EmailJS keys are configured in .env and are correct.</span>
+                  </motion.div>
+                )}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">{tContact('message.name')}</label>
-                    <input
+                  <input
                       type="text"
+                      name="user_name"
                       className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-primary-teal focus:border-transparent transition-all bg-gray-50 focus:bg-white"
                       placeholder={tContact('message.name')}
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">{tContact('message.email')}</label>
-                    <input
+                  <input
                       type="email"
+                      name="user_email"
+                      required
                       className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-primary-teal focus:border-transparent transition-all bg-gray-50 focus:bg-white"
                       placeholder={tContact('message.email')}
                     />
@@ -161,6 +199,7 @@ export default function Apply() {
                   <label className="block text-sm font-semibold text-gray-700 mb-2">{tContact('message.subject')}</label>
                   <input
                     type="text"
+                    name="subject"
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-primary-teal focus:border-transparent transition-all bg-gray-50 focus:bg-white"
                     placeholder={tContact('message.subject')}
                   />
@@ -169,14 +208,16 @@ export default function Apply() {
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">{tContact('message.message')}</label>
                   <textarea
+                    name="message"
+                    required
                     rows={5}
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-primary-teal focus:border-transparent transition-all bg-gray-50 focus:bg-white resize-none"
                     placeholder={tContact('message.message')}
                   ></textarea>
                 </div>
 
-                <Button type="submit" size="lg" className="w-full bg-brand-primary-blue hover:opacity-90 rounded-xl py-4 shadow-md mt-4 transition-all hover:-translate-y-1">
-                  {tContact('message.button')}
+                <Button type="submit" size="lg" disabled={status === 'loading'} className="w-full bg-brand-primary-blue hover:opacity-90 rounded-xl py-4 shadow-md mt-4 transition-all hover:-translate-y-1 disabled:opacity-75">
+                  {status === 'loading' ? '전송 중 (Sending)...' : tContact('message.button')}
                 </Button>
               </form>
             </Card>
@@ -272,6 +313,26 @@ export default function Apply() {
 
         </div>
       </div>
+
+      {/* Success Modal */}
+      <Modal isOpen={isSuccessModalOpen} onClose={() => setIsSuccessModalOpen(false)} size="sm">
+        <div className="text-center py-4 space-y-4">
+          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-500">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 className="text-xl font-bold text-gray-900">전송 완료</h3>
+          <p className="text-gray-600">
+            의견을 보내주셔서 감사합니다.<br />
+            확인 후 빠른 시일 내에 답변을 드리겠습니다.
+          </p>
+          <p className="text-sm text-gray-500">Message sent successfully! We will get back to you soon.</p>
+          <div className="pt-4">
+            <Button onClick={() => setIsSuccessModalOpen(false)} className="w-full">확인 (OK)</Button>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 }
