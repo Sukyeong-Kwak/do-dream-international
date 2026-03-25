@@ -1,10 +1,21 @@
 {
+  "coreValues": {
+    "label": "Core Values",
+    "title": "Returning to the Essence of Faith,<br />A Journey to Encounter God",
+    "v1_title": "Intimate Encounter with God",
+    "v1_desc": "Experience a deep, personal fellowship with our Creator through prayer and the Word. Train to hear and respond to God's voice in every moment of your daily life.",
+    "v2_title": "Learning the Essence of Faith",
+    "v2_desc": "Standing on the foundation of the Gospel of the Cross, build your assurance of salvation and the fundamentals of belief, one step at a time. Understand the Gospel not just in mind, but through life.",
+    "v3_title": "Living What You Learn",
+    "v3_desc": "Training doesn't end in the classroom. Within our community, what you learn becomes the way you live — through worship, service, and relationships, the Gospel becomes your life."
+  },
   "hero": {
     "title": "Am I on the Right Path?<br />A Journey to Truly Know God",
     "subtitle": "Assurance of salvation, hearing God's voice, deep prayer, and meditative living—we invite you to a concrete training program rooted in Revine's Bible study content, where every area of life is reinterpreted through God's perspective.",
     "cta": "Explore the Program"
   },
   "value": {
+    "label": "From Our Director",
     "title": "A Letter from Our Director",
     "p1": "Welcome to Do Dream International. It is our greatest joy to invite young adults from all over the world to join us in seeking a deeper relationship with our Creator.",
     "p2": "Our community is built upon one absolute foundation: the Gospel of the Cross. We are here to train together from the very basics of our faith, passionately pursuing a genuine, intimate fellowship with God.",
@@ -34,17 +45,22 @@
       "Current Representative of Africa Project (NGO)",
       "Current Principal of New Wave Christian School",
       "Current Chairman of the Vision 2030 Military Mission Committee, Korea Baptist Convention"
-    ]
+    ],
+    "showMore": "View full credentials",
+    "showLess": "Show less"
   },
   "program": {
     "title": "The Gospel Foundation,<br className=\"md:hidden\" /> Experiencing Grace",
     "desc": "A comprehensive journey designed for young adults seeking true spiritual awakening through the Gospel of the Cross and intimacy with God.",
     "f1_title": "Spiritual Training",
     "f1_desc": "Lay a robust foundation in the Gospel of the Cross. Grow through deep, intimate fellowship with God and dedicated mentorship.",
+    "f1_highlight": "Gospel of the Cross",
     "f2_title": "Korean Immersion",
     "f2_desc": "As a joyful addition to your spiritual growth, experience the vibrant culture, food, and history of modern Korea with your new community.",
+    "f2_highlight": "Life in Korea",
     "f3_title": "Global Community",
-    "f3_desc": "Build lifelong friendships with young adults from all around the world, sharing together in faith and purpose."
+    "f3_desc": "Build lifelong friendships with young adults from all around the world, sharing together in faith and purpose.",
+    "f3_highlight": "Global Family"
   },
   "process": {
     "title": "The Gospel Cycle",
@@ -58,7 +74,7 @@
   },
   "stories": {
     "title": "Stories of Grace",
-    "subtitle": "Hear the sincere testimonies of intern missionaries who experienced God's grace through this program.",
+    "subtitle": "Stories from missionaries who experienced God's grace through the Do Dream Intern Mission program around the world.",
     "classOf": "Cohort",
     "items": [
       {

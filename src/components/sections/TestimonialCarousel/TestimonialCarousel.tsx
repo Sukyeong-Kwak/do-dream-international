@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2';
 
 interface Testimonial {
   quote: string;
@@ -8,93 +10,116 @@ interface Testimonial {
   cohort: string;
 }
 
-const cardStyles = [
-  {
-    wrapper: 'bg-white border border-brand-primary-teal/25',
-    avatar: 'bg-brand-primary-teal',
-    badge: 'bg-brand-primary-teal/10 text-brand-primary-teal',
-    name: 'text-brand-primary-teal',
-  },
-  {
-    wrapper: 'bg-brand-primary-blue/5 border border-brand-primary-blue/20',
-    avatar: 'bg-brand-primary-blue',
-    badge: 'bg-brand-primary-blue/10 text-brand-primary-blue',
-    name: 'text-brand-primary-blue',
-  },
-];
-
 export default function TestimonialCarousel() {
   const { t } = useTranslation('home');
   const testimonials = t('stories.items', { returnObjects: true }) as Testimonial[];
+  const [current, setCurrent] = useState(0);
+
+  if (!Array.isArray(testimonials) || testimonials.length === 0) return null;
+
+  const prev = () => setCurrent((c) => (c === 0 ? testimonials.length - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1));
+
+  const item = testimonials[current];
+  const cleanName = item.name
+    .replace(/인턴선교사/g, '')
+    .replace(/Intern Missionary/g, '')
+    .trim();
 
   return (
-    <section className="section-padding bg-brand-bg/40 border-y border-gray-200">
-      <div className="container-custom">
+    <section className="py-16 md:py-24 bg-brand-primary-blue relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-brand-primary-teal blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-brand-accent-pink blur-3xl" />
+      </div>
+
+      <div className="container-custom relative z-10">
         {/* Header */}
         <div className="text-center mb-4">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-primary-blue mb-3 tracking-tighter">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4"
+          >
             {t('stories.title')}
-          </h2>
-          <p className="text-brand-muted text-base max-w-xl mx-auto">
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-white/60 text-sm md:text-base max-w-xl mx-auto"
+          >
             {t('stories.subtitle')}
-          </p>
+          </motion.p>
         </div>
 
-        {/* Big decorative quote */}
-        <div className="text-center text-8xl text-brand-primary-teal/15 font-serif leading-none select-none mb-8">
+        {/* Big quote mark */}
+        <div className="text-center text-[8rem] md:text-[10rem] text-white/5 font-serif leading-none select-none -mb-16 md:-mb-20">
           "
         </div>
 
-        {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 max-w-6xl mx-auto">
-          {Array.isArray(testimonials) && testimonials.map((item, index) => {
-            const style = cardStyles[index % cardStyles.length];
-            // Extract initials: remove role suffix, take first 2 chars of name
-            const cleanName = item.name
-              .replace(/인턴선교사/g, '')
-              .replace(/Intern Missionary/g, '')
-              .trim();
-            const initials = cleanName.slice(0, 2);
+        {/* Carousel */}
+        <div className="max-w-3xl mx-auto text-center relative min-h-[220px] flex items-center">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={current}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
+              className="w-full"
+            >
+              <p className="text-xl md:text-2xl lg:text-3xl text-white font-medium leading-relaxed md:leading-relaxed mb-10 italic">
+                "{item.quote}"
+              </p>
 
-            return (
-              <motion.div
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-white font-bold text-lg">{cleanName}</p>
+                <div className="flex items-center gap-3 text-sm">
+                  <span className="text-brand-primary-teal font-medium">{item.region}</span>
+                  <span className="text-white/30">|</span>
+                  <span className="text-white/50">{t('stories.classOf')} {item.cohort}</span>
+                </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        {/* Navigation */}
+        <div className="flex items-center justify-center gap-6 mt-12">
+          <button
+            onClick={prev}
+            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:bg-white/10 hover:text-white transition-all"
+            aria-label="Previous testimonial"
+          >
+            <HiChevronLeft className="w-5 h-5" />
+          </button>
+
+          {/* Dots */}
+          <div className="flex items-center gap-2">
+            {testimonials.map((_, index) => (
+              <button
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.08, duration: 0.5 }}
-                className="relative pt-8"
-              >
-                {/* Avatar — overlaps top of card */}
-                <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full ${style.avatar} text-white flex items-center justify-center text-lg font-bold shadow-md border-4 border-white z-10`}>
-                  {initials}
-                </div>
+                onClick={() => setCurrent(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === current
+                    ? 'w-8 bg-brand-primary-teal'
+                    : 'w-2 bg-white/30 hover:bg-white/50'
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
 
-                {/* Card body */}
-                <div className={`${style.wrapper} rounded-2xl pt-10 pb-8 px-7 text-center shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-full`}>
-                  {/* Quote */}
-                  <p className="text-brand-text text-base leading-relaxed italic flex-1 mb-6">
-                    "{item.quote}"
-                  </p>
-
-                  {/* Footer */}
-                  <div className="border-t border-gray-100 pt-4">
-                    <p className={`font-bold text-sm mb-2 ${style.name}`}>
-                      {item.name}
-                    </p>
-                    <div className="flex items-center justify-center gap-2 flex-wrap">
-                      <span className={`text-xs font-semibold px-3 py-1 rounded-full ${style.badge}`}>
-                        {item.region}
-                      </span>
-                      <span className="text-xs text-brand-muted">
-                        {t('stories.classOf')} {item.cohort}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            );
-          })}
+          <button
+            onClick={next}
+            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:bg-white/10 hover:text-white transition-all"
+            aria-label="Next testimonial"
+          >
+            <HiChevronRight className="w-5 h-5" />
+          </button>
         </div>
       </div>
     </section>
