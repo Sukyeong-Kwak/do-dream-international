@@ -40,58 +40,57 @@ export default function TrainingJourney() {
           </motion.h2>
         </div>
 
-        {/* Phases */}
-        <div className="max-w-4xl mx-auto relative">
-          {/* Vertical line */}
-          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-brand-primary-teal via-white/30 to-brand-accent-pink md:-translate-x-px" />
+        {/* Mobile: Vertical timeline */}
+        <div className="md:hidden max-w-4xl mx-auto relative">
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-brand-primary-teal via-white/30 to-brand-accent-pink" />
 
-          {Array.isArray(phases) && phases.map((phase, index) => {
-            const isEven = index % 2 === 0;
-            return (
+          {Array.isArray(phases) && phases.map((phase, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              className="relative flex items-start gap-8 mb-12 last:mb-0"
+            >
+              <div className="relative z-10 shrink-0 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border-2 border-brand-primary-teal flex items-center justify-center">
+                <span className="text-brand-primary-teal font-bold text-sm">{phase.num}</span>
+              </div>
+              <div className="flex-1">
+                <span className="text-brand-primary-teal text-xs font-semibold tracking-wider">{phase.timeframe}</span>
+                <h3 className="text-lg font-bold text-white mb-1">{phase.title}</h3>
+                <p className="text-white/60 leading-relaxed text-sm">{phase.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Desktop: Horizontal 3-column layout */}
+        <div className="hidden md:block max-w-5xl mx-auto">
+          <div className="grid grid-cols-3 gap-8 relative">
+            {/* Horizontal connector line — vertically centered on the phase circles */}
+            <div className="absolute top-[calc(1.25rem+0.75rem+1.5rem)] left-[16.67%] right-[16.67%] h-0.5 -translate-y-1/2 bg-gradient-to-r from-brand-primary-teal via-white/30 to-brand-accent-pink" />
+
+            {Array.isArray(phases) && phases.map((phase, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: isEven ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="relative flex items-start gap-8 mb-12 last:mb-0 md:items-center"
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="relative text-center flex flex-col items-center"
               >
-                {/* Desktop: left */}
-                <div className={`hidden md:block flex-1 ${isEven ? 'text-right pr-12' : 'order-last pl-12'}`}>
-                  {isEven && (
-                    <>
-                      <span className="text-brand-primary-teal text-sm font-semibold tracking-wider">{phase.timeframe}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2">{phase.title}</h3>
-                      <p className="text-white/60 leading-relaxed">{phase.desc}</p>
-                    </>
-                  )}
-                </div>
-
-                {/* Center node */}
-                <div className="relative z-10 shrink-0 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border-2 border-brand-primary-teal flex items-center justify-center">
+                <span className="text-brand-primary-teal text-sm font-semibold tracking-wider mb-3">
+                  {phase.timeframe}
+                </span>
+                <div className="relative z-10 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border-2 border-brand-primary-teal flex items-center justify-center mb-5">
                   <span className="text-brand-primary-teal font-bold text-sm">{phase.num}</span>
                 </div>
-
-                {/* Desktop: right */}
-                <div className={`hidden md:block flex-1 ${isEven ? 'order-last pl-12' : 'text-right pr-12'}`}>
-                  {!isEven && (
-                    <>
-                      <span className="text-brand-primary-teal text-sm font-semibold tracking-wider">{phase.timeframe}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2">{phase.title}</h3>
-                      <p className="text-white/60 leading-relaxed">{phase.desc}</p>
-                    </>
-                  )}
-                </div>
-
-                {/* Mobile */}
-                <div className="md:hidden flex-1">
-                  <span className="text-brand-primary-teal text-xs font-semibold tracking-wider">{phase.timeframe}</span>
-                  <h3 className="text-lg font-bold text-white mb-1">{phase.title}</h3>
-                  <p className="text-white/60 leading-relaxed text-sm">{phase.desc}</p>
-                </div>
+                <h3 className="text-xl font-bold text-white mb-2">{phase.title}</h3>
+                <p className="text-white/60 leading-relaxed text-sm max-w-xs">{phase.desc}</p>
               </motion.div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>

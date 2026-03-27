@@ -95,6 +95,86 @@
     "partners": {
         "subtitle": "In Partnership With"
     },
+    "klife": {
+        "label": "K-LIFE CULTURAL PROGRAM",
+        "title": "Experience Korean Culture Firsthand",
+        "subtitle": "Curriculum-based monthly cultural excursions featuring short and long-distance trips to explore Korea's history, culture, and nature.",
+        "scheduleTitle": "Monthly Excursion Schedule",
+        "detailsTitle": "Program Details by Category",
+        "short": "Short",
+        "long": "Long",
+        "priceVaries": "Pricing Varies",
+        "free": "FREE",
+        "months": [
+            {
+                "month": "Month 1",
+                "trips": [
+                    { "week": "Week 2", "distance": "short", "location": "Korean Folk Village" },
+                    { "week": "Week 4", "distance": "long", "location": "Gyeongbokgung Palace → Bukchon Hanok Village → N Tower" }
+                ]
+            },
+            {
+                "month": "Month 2",
+                "trips": [
+                    { "week": "Week 2", "distance": "short", "location": "Everland" },
+                    { "week": "Week 4", "distance": "long", "location": "National Museum of Korea → Nodeul Island (Han River)" }
+                ]
+            },
+            {
+                "month": "Month 3",
+                "trips": [
+                    { "week": "Week 2", "distance": "short", "location": "Local Volunteering → Visiting Local Market → Suwon Sports Game (Evening)" },
+                    { "week": "Week 4", "distance": "long", "location": "Visiting Korean Island - Jebudo Island" }
+                ]
+            }
+        ],
+        "categories": [
+            {
+                "title": "History & Main Spots",
+                "icon": "history",
+                "spots": [
+                    { "name": "Gyeongbokgung Palace", "price": "KRW 3,000 (Free for Hanbok wearers)" },
+                    { "name": "Korean Folk Village", "price": "KRW 16,000~" },
+                    { "name": "National Museum of Korea", "price": "FREE (Permanent) / Special varies" },
+                    { "name": "Korean War Memorial Museum", "price": "FREE (Permanent) / Special varies" },
+                    { "name": "National Museum of Korean Contemporary History", "price": "FREE (Permanent) / Special varies" },
+                    { "name": "Bukchon Hanok Village", "price": "FREE" },
+                    { "name": "Seoul N Tower", "price": "KRW 21,000" }
+                ]
+            },
+            {
+                "title": "Entertainment",
+                "icon": "entertainment",
+                "spots": [
+                    { "name": "Everland", "price": "KRW 46,000~" },
+                    { "name": "Lotte World", "price": "KRW 64,000" }
+                ]
+            },
+            {
+                "title": "Relaxation",
+                "icon": "relaxation",
+                "spots": [
+                    { "name": "Glamping (Near Yongin-si)", "price": "Pricing Varies" },
+                    { "name": "Haetgol Glamping", "price": "KRW 60,000 (Tent, 2 ppl, 16:00~20:00)" },
+                    { "name": "Forest Garden", "price": "KRW 5,000 (3 hours, 1 person)" },
+                    { "name": "Camp Cook", "price": "KRW 30,000~ (Tent, 4 ppl)" },
+                    { "name": "Hiking", "price": "FREE (Aerial Tramway avg. KRW 14,000)" },
+                    { "name": "Jebudo Island", "price": "Pricing Varies (Glamby Glamping KRW 78,000~)" }
+                ]
+            },
+            {
+                "title": "Experience",
+                "icon": "experience",
+                "spots": [
+                    { "name": "Korean Dish Cooking Class", "price": "Pricing Varies" },
+                    { "name": "Local Festival", "price": "Pricing Varies" },
+                    { "name": "Local Volunteering", "price": "FREE (Orphanage, Coal Briquettes, etc.)" },
+                    { "name": "Visiting Local Market", "price": "FREE (Meal prices vary)" },
+                    { "name": "Watching Sports Game", "price": "Pricing Varies (Baseball, Football)" }
+                ]
+            }
+        ]
+    },
     "schedule": {
         "title": "Daily Schedule",
         "monday": "Monday - Friday",

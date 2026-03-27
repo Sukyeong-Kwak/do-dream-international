@@ -3,6 +3,7 @@ import ProgramIdentity from '../../components/sections/ProgramIdentity/ProgramId
 import ProgramVision from '../../components/sections/ProgramVision/ProgramVision';
 import ProgramCurriculum from '../../components/sections/ProgramCurriculum/ProgramCurriculum';
 import DayInProgram from '../../components/sections/DayInProgram/DayInProgram';
+import KLifeProgram from '../../components/sections/KLifeProgram/KLifeProgram';
 import TrainingJourney from '../../components/sections/TrainingJourney/TrainingJourney';
 import ProgramCTA from '../../components/sections/ProgramCTA/ProgramCTA';
 
@@ -14,6 +15,7 @@ export default function Program() {
       <ProgramVision />
       <ProgramCurriculum />
       <DayInProgram />
+      <KLifeProgram />
       <TrainingJourney />
       <ProgramCTA />
     </>

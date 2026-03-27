@@ -66,57 +66,59 @@ export default function ProcessFlow() {
           </motion.h2>
         </div>
 
-        {/* Timeline */}
-        <div className="relative max-w-4xl mx-auto">
-          {/* Vertical line */}
-          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-brand-primary-blue via-brand-primary-teal to-brand-accent-pink md:-translate-x-px" />
+        {/* Mobile: Vertical timeline */}
+        <div className="md:hidden relative max-w-4xl mx-auto">
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-brand-primary-blue via-brand-primary-teal to-brand-accent-pink" />
 
           {steps.map((step, index) => {
-            const isEven = index % 2 === 0;
             const Icon = step.icon;
-
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: isEven ? -30 : 30 }}
+                initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="relative flex items-start gap-8 mb-10 last:mb-0 md:items-center"
+                className="relative flex items-start gap-8 mb-10 last:mb-0"
               >
-                {/* Desktop: left side */}
-                <div className={`hidden md:block flex-1 ${isEven ? 'text-right pr-12' : 'order-last pl-12'}`}>
-                  {isEven && (
-                    <>
-                      <h3 className={`text-2xl font-bold ${step.textColor} mb-3`}>{step.title}</h3>
-                      <p className="text-brand-text/70 leading-relaxed">{step.desc}</p>
-                    </>
-                  )}
-                </div>
-
-                {/* Center dot */}
                 <div className={`relative z-10 shrink-0 w-12 h-12 rounded-full bg-white shadow-lg border-2 ${step.borderColor} flex items-center justify-center`}>
                   <Icon className={`w-5 h-5 ${step.iconColor}`} />
                 </div>
-
-                {/* Desktop: right side */}
-                <div className={`hidden md:block flex-1 ${isEven ? 'order-last pl-12' : 'text-right pr-12'}`}>
-                  {!isEven && (
-                    <>
-                      <h3 className={`text-2xl font-bold ${step.textColor} mb-3`}>{step.title}</h3>
-                      <p className="text-brand-text/70 leading-relaxed">{step.desc}</p>
-                    </>
-                  )}
-                </div>
-
-                {/* Mobile: content right of dot */}
-                <div className="md:hidden flex-1">
+                <div className="flex-1">
                   <h3 className={`text-xl font-bold ${step.textColor} mb-2`}>{step.title}</h3>
                   <p className="text-brand-text/70 leading-relaxed text-sm">{step.desc}</p>
                 </div>
               </motion.div>
             );
           })}
+        </div>
+
+        {/* Desktop: Horizontal 3-column layout */}
+        <div className="hidden md:block max-w-5xl mx-auto">
+          <div className="grid grid-cols-3 gap-8 relative">
+            {/* Horizontal connector line — vertically centered on the icon circles */}
+            <div className="absolute top-8 left-[16.67%] right-[16.67%] h-0.5 -translate-y-px bg-gradient-to-r from-brand-primary-blue via-brand-primary-teal to-brand-accent-pink" />
+
+            {steps.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  className="relative text-center flex flex-col items-center"
+                >
+                  <div className={`relative z-10 w-16 h-16 rounded-full bg-white shadow-lg border-2 ${step.borderColor} flex items-center justify-center mb-5`}>
+                    <Icon className={`w-7 h-7 ${step.iconColor}`} />
+                  </div>
+                  <h3 className={`text-xl font-bold ${step.textColor} mb-3`}>{step.title}</h3>
+                  <p className="text-brand-text/70 leading-relaxed text-sm max-w-xs">{step.desc}</p>
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

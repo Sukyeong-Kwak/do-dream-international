@@ -95,6 +95,86 @@
     "partners": {
         "subtitle": "파트너십"
     },
+    "klife": {
+        "label": "K-LIFE 문화체험 프로그램",
+        "title": "한국 문화를 직접 경험하세요",
+        "subtitle": "커리큘럼 기반 월별 문화체험 일정으로, 단거리·장거리 탐방을 통해 한국의 역사, 문화, 자연을 깊이 체험합니다.",
+        "scheduleTitle": "월별 문화체험 일정",
+        "detailsTitle": "카테고리별 프로그램 상세",
+        "short": "단거리",
+        "long": "장거리",
+        "priceVaries": "가격 변동",
+        "free": "무료",
+        "months": [
+            {
+                "month": "1개월차",
+                "trips": [
+                    { "week": "2주차", "distance": "short", "location": "한국민속촌" },
+                    { "week": "4주차", "distance": "long", "location": "경복궁 → 북촌 한옥마을 → N서울타워" }
+                ]
+            },
+            {
+                "month": "2개월차",
+                "trips": [
+                    { "week": "2주차", "distance": "short", "location": "에버랜드" },
+                    { "week": "4주차", "distance": "long", "location": "국립중앙박물관 → 노들섬 (한강)" }
+                ]
+            },
+            {
+                "month": "3개월차",
+                "trips": [
+                    { "week": "2주차", "distance": "short", "location": "지역 봉사활동 → 재래시장 탐방 → 수원시 스포츠 관람 (저녁)" },
+                    { "week": "4주차", "distance": "long", "location": "한국의 섬 탐방 - 제부도" }
+                ]
+            }
+        ],
+        "categories": [
+            {
+                "title": "역사 & 주요 명소",
+                "icon": "history",
+                "spots": [
+                    { "name": "경복궁", "price": "₩3,000 (한복 착용 시 무료)" },
+                    { "name": "한국민속촌", "price": "₩16,000~" },
+                    { "name": "국립중앙박물관", "price": "무료 (상설) / 특별전 별도" },
+                    { "name": "전쟁기념관", "price": "무료 (상설) / 특별전 별도" },
+                    { "name": "대한민국역사박물관", "price": "무료 (상설) / 특별전 별도" },
+                    { "name": "북촌 한옥마을", "price": "무료" },
+                    { "name": "N서울타워", "price": "₩21,000" }
+                ]
+            },
+            {
+                "title": "엔터테인먼트",
+                "icon": "entertainment",
+                "spots": [
+                    { "name": "에버랜드", "price": "₩46,000~" },
+                    { "name": "롯데월드", "price": "₩64,000" }
+                ]
+            },
+            {
+                "title": "힐링",
+                "icon": "relaxation",
+                "spots": [
+                    { "name": "글램핑 (용인시 인근)", "price": "가격 변동" },
+                    { "name": "햇골 글램핑", "price": "₩60,000 (텐트, 2인, 16:00~20:00)" },
+                    { "name": "포레스트가든", "price": "₩5,000 (3시간, 1인)" },
+                    { "name": "캠프쿡", "price": "₩30,000~ (텐트, 4인)" },
+                    { "name": "등산", "price": "무료 (에어리얼 트램웨이 평균 ₩14,000)" },
+                    { "name": "제부도", "price": "가격 변동 (글램비 글램핑 ₩78,000~)" }
+                ]
+            },
+            {
+                "title": "체험",
+                "icon": "experience",
+                "spots": [
+                    { "name": "한식 쿠킹 클래스", "price": "가격 변동" },
+                    { "name": "지역 축제", "price": "가격 변동" },
+                    { "name": "지역 봉사활동", "price": "무료 (고아원, 연탄 봉사 등)" },
+                    { "name": "재래시장 탐방", "price": "무료 (식사비 별도)" },
+                    { "name": "스포츠 관람", "price": "가격 변동 (야구, 축구)" }
+                ]
+            }
+        ]
+    },
     "schedule": {
         "title": "데일리 스케줄",
         "monday": "평일 (월-금)",
