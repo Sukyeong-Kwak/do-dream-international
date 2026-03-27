@@ -13,12 +13,19 @@
         "location_value": "경기도 용인시 기흥구 신정로 151번길 11-17"
     },
     "message": {
+        "label": "문의하기",
         "title": "메시지 보내기",
         "name": "이름",
         "email": "이메일",
         "subject": "제목",
         "message": "내용",
-        "button": "보내기"
+        "button": "보내기",
+        "error": "메시지 전송 중 오류가 발생했습니다.",
+        "error_hint": "잠시 후 다시 시도해 주세요.",
+        "sending": "전송 중...",
+        "success_title": "전송 완료",
+        "success_body": "의견을 보내주셔서 감사합니다. 확인 후 빠른 시일 내에 답변을 드리겠습니다.",
+        "ok": "확인"
     },
     "social": {
         "title": "소셜 미디어"

@@ -1,155 +1,123 @@
 {
-  "hero": {
-    "title": "Do Dream Together International Program",
-    "subtitle": "Overseas Christian Youth Invitation Medium/Long-term Stay Spiritual Training Program"
-  },
-  "overview": {
-    "title": "Program Overview",
-    "description": "An intensive training program designed to nurture next-generation church leaders by inviting overseas Christian youth for a deep, systematic spiritual training on the essence of the Christian faith.",
-    "duration_label": "Duration",
-    "duration_value": "3, 6, or 12 Months",
-    "target_label": "Target",
-    "target_value": "Youth (20-30s)",
-    "community_label": "Community",
-    "community_value": "24/7 Living Together"
-  },
-  "curriculum": {
-    "title": "Curriculum",
-    "total_lectures": "120 Lectures",
-    "total_time": "206.3 Hours",
-    "lecture": "lectures",
-    "hour": "hours",
-    "subjects": [
-      {
-        "title": "Our Great Salvation",
-        "lectures": 13,
-        "time_per_lecture": 110,
-        "total_hours": 23.8,
-        "description": "This is Book 1 of the Foundational Bible Study Series. Through exploring the nature of salvation, the character of sin, the elements of faith, and what it means to know God intellectually, spiritually, and morally, you will discover concretely how to learn from God and how to pray. If you attend church faithfully but feel you lack assurance in your faith, this is a highly recommended course."
-      },
-      {
-        "title": "The Gospel of the Cross",
-        "lectures": 57,
-        "time_per_lecture": 110,
-        "total_hours": 104.5,
-        "description": "This is Book 1 of the Core Bible Study Series. Topics include intimate fellowship with God, a God-centered life, the nature of legalism and its fruits, spiritual discernment, and the true meaning of knowing God. This series guides you back to the essence of faith through the Gospel of the Cross, which is at the very heart of the Christian life."
-      },
-      {
-        "title": "Missional Church — The Comprehensive Nature of Redemption",
-        "lectures": 9,
-        "time_per_lecture": 110,
-        "total_hours": 16.5,
-        "description": "This series examines the historical reality of the Resurrection, the Lordship of Christ, and the overarching nature of redemption through the biblical narrative. Through the integration of the Cultural Mandate and the Great Commission, you will learn why the church must be a missional community and understand the calling of Christians sent into the world."
-      },
-      {
-        "title": "Spiritual Leadership",
-        "lectures": 41,
-        "time_per_lecture": 90,
-        "total_hours": 61.5,
-        "description": "This series trains servant leadership for the Kingdom of God. Through practical study of spiritual growth, team ministry, cross-cultural communication, and the principles of raising up the next generation, participants discover and develop their individual gifts and callings."
-      }
-    ]
-  },
-  "schedule": {
-    "title": "Daily Schedule",
-    "monday": "Monday - Friday",
-    "weekend_note": "* Weekends include church services, cultural activities, and free time for rest and exploration.",
-    "items": [
-      {
-        "time": "07:30-08:00",
-        "title": "Morning QT",
-        "description": "English Bible & Personal Quiet Time"
-      },
-      {
-        "time": "08:00-09:30",
-        "title": "Breakfast",
-        "description": "Breakfast & Personal Preparation"
-      },
-      {
-        "time": "09:30-10:20",
-        "title": "Lecture 1",
-        "description": "[Part 1] Main Curriculum"
-      },
-      {
-        "time": "10:20-10:30",
-        "title": "Break 1",
-        "description": "Short Rest"
-      },
-      {
-        "time": "10:30-11:20",
-        "title": "Lecture 2",
-        "description": "[Part 2] Main Curriculum"
-      },
-      {
-        "time": "11:20-11:40",
-        "title": "Wrap-up",
-        "description": "Morning Lecture Q&A & Small Group Sharing"
-      },
-      {
-        "time": "11:40-12:40",
-        "title": "Lunch",
-        "description": "Lunch & Recharge"
-      },
-      {
-        "time": "12:40-13:30",
-        "title": "Lecture 3",
-        "description": "[Part 3] Main Curriculum"
-      },
-      {
-        "time": "13:30-13:40",
-        "title": "Break 2",
-        "description": "Short Rest"
-      },
-      {
-        "time": "13:40-14:30",
-        "title": "Lecture 4",
-        "description": "[Part 4] Main Curriculum"
-      },
-      {
-        "time": "14:30-14:50",
-        "title": "Daily Reflection",
-        "description": "Daily Review & Journaling"
-      },
-      {
-        "time": "15:00-15:50",
-        "title": "K-Language 1",
-        "description": "Practical Conversation & Basic Grammar"
-      },
-      {
-        "time": "15:50-16:00",
-        "title": "Break 3",
-        "description": "Short Rest"
-      },
-      {
-        "time": "16:00-16:50",
-        "title": "K-Language 2",
-        "description": "Cultural Understanding & Application Practice"
-      },
-      {
-        "time": "16:50-18:30",
-        "title": "K-Life",
-        "description": "Local Area Tour, Mentor/Buddy Exchange"
-      },
-      {
-        "time": "18:30-20:00",
-        "title": "Dinner",
-        "description": "Dinner & Rest"
-      },
-      {
-        "time": "20:00-22:00",
-        "title": "Isaiah 62",
-        "description": "Isaiah 62 Worship Service"
-      },
-      {
-        "time": "22:00-23:00",
-        "title": "Personal Time",
-        "description": "Preparation for Sleep & Wrap-up"
-      }
-    ]
-  },
-  "cta": {
-    "title": "Ready to Apply?",
-    "subtitle": "Join us for an unforgettable journey of growth, learning, and transformation.",
-    "button": "Apply Now"
-  }
+    "hero": {
+        "label": "TRAINING PROGRAM",
+        "title": "Do Dream Together International Program",
+        "subtitle": "Overseas Christian Youth Invitation Medium/Long-term Stay Spiritual Training Program",
+        "cta": "View Curriculum"
+    },
+    "identity": {
+        "label": "ABOUT THE PROGRAM",
+        "purpose": "An intensive training program designed to nurture next-generation church leaders by inviting overseas Christian youth for a deep, systematic spiritual training on the essence of the Christian faith.",
+        "stats": [
+            { "value": "3 / 6 / 12 mo", "label": "Duration" },
+            { "value": "Ages 20-30s", "label": "Target" },
+            { "value": "24/7", "label": "Community Living" }
+        ],
+        "director": "General Director: Rev. Junhyung Kim",
+        "dept": "Department: Do Dream International Team",
+        "org": "Organized by Podonamu Church"
+    },
+    "vision": {
+        "label": "VISION & VALUES",
+        "title": "What We Stand For",
+        "items": [
+            { "title": "Revival of the Next Generation", "desc": "Leading the spiritual awakening and faith restoration of the younger generation." },
+            { "title": "Spiritual Leadership for the Nations", "desc": "Training world-embracing vision and servant leadership." },
+            { "title": "Living the Essence of Faith", "desc": "Living out a life built on the Gospel of the Cross — not in theory, but in practice." },
+            { "title": "Life Together in Community", "desc": "Eating, praying, and learning together — experiencing unity in Christ." }
+        ]
+    },
+    "curriculum": {
+        "label": "CURRICULUM",
+        "title": "Curriculum",
+        "total_lectures": "120 Lectures",
+        "total_time": "206.3 Hours",
+        "lecture": "lectures",
+        "hour": "hours",
+        "subjects": [
+            {
+                "title": "Our Great Salvation",
+                "lectures": 13,
+                "time_per_lecture": 110,
+                "total_hours": 23.8,
+                "description": "This is Book 1 of the Foundational Bible Study Series. Through exploring the nature of salvation, the character of sin, the elements of faith, and what it means to know God intellectually, spiritually, and morally, you will discover concretely how to learn from God and how to pray. If you attend church faithfully but feel you lack assurance in your faith, this is a highly recommended course."
+            },
+            {
+                "title": "The Gospel of the Cross",
+                "lectures": 57,
+                "time_per_lecture": 110,
+                "total_hours": 104.5,
+                "description": "This is Book 1 of the Core Bible Study Series. Topics include intimate fellowship with God, a God-centered life, the nature of legalism and its fruits, spiritual discernment, and the true meaning of knowing God. This series guides you back to the essence of faith through the Gospel of the Cross, which is at the very heart of the Christian life."
+            },
+            {
+                "title": "Missional Church — The Comprehensive Nature of Redemption",
+                "lectures": 9,
+                "time_per_lecture": 110,
+                "total_hours": 16.5,
+                "description": "This series examines the historical reality of the Resurrection, the Lordship of Christ, and the overarching nature of redemption through the biblical narrative. Through the integration of the Cultural Mandate and the Great Commission, you will learn why the church must be a missional community and understand the calling of Christians sent into the world."
+            },
+            {
+                "title": "Spiritual Leadership",
+                "lectures": 41,
+                "time_per_lecture": 90,
+                "total_hours": 61.5,
+                "description": "This series trains servant leadership for the Kingdom of God. Through practical study of spiritual growth, team ministry, cross-cultural communication, and the principles of raising up the next generation, participants discover and develop their individual gifts and callings."
+            }
+        ]
+    },
+    "dayInProgram": {
+        "label": "A DAY IN THE PROGRAM",
+        "title": "Experience the Daily Rhythm",
+        "blocks": [
+            { "time": "07:30 – 09:30", "title": "Morning Devotion & Breakfast", "desc": "Start the day with English Bible QT and personal reflection, then prepare for lectures after breakfast." },
+            { "time": "09:30 – 14:50", "title": "Core Lectures (4 Sessions)", "desc": "Intensive study of the core curriculum: Gospel of the Cross, Salvation, Missional Church, and Spiritual Leadership." },
+            { "time": "15:00 – 18:30", "title": "Korean Language & Culture", "desc": "Learn practical Korean conversation and grammar, then explore local areas and connect with mentors." },
+            { "time": "18:30 – 23:00", "title": "Evening & Worship", "desc": "After dinner, join the Isaiah 62 worship service and wind down with personal time." }
+        ],
+        "weekday": "Monday – Friday",
+        "weekend_note": "* Weekends include church services, cultural activities, and free time for rest and exploration."
+    },
+    "journey": {
+        "label": "TRAINING JOURNEY",
+        "title": "Your Path of Transformation",
+        "phases": [
+            { "num": "01", "title": "Foundation", "timeframe": "Months 1-3", "desc": "Build assurance of salvation and the basics of prayer. Settle into community and begin fellowship with God." },
+            { "num": "02", "title": "Deepening", "timeframe": "Months 4-6", "desc": "Go deeper into the Gospel of the Cross. Begin living out the essence of faith within the community." },
+            { "num": "03", "title": "Leadership", "timeframe": "Months 7-12", "desc": "Study Missional Church and Spiritual Leadership. Discover your gifts and prepare to be sent out." }
+        ]
+    },
+    "cta": {
+        "label": "JOIN US",
+        "title": "Ready to Apply?",
+        "subtitle": "Join us for an unforgettable journey of growth, learning, and transformation.",
+        "button": "Apply Now"
+    },
+    "partners": {
+        "subtitle": "In Partnership With"
+    },
+    "schedule": {
+        "title": "Daily Schedule",
+        "monday": "Monday - Friday",
+        "weekend_note": "* Weekends include church services, cultural activities, and free time for rest and exploration.",
+        "items": [
+            { "time": "07:30-08:00", "title": "Morning QT", "description": "English Bible & Personal Quiet Time" },
+            { "time": "08:00-09:30", "title": "Breakfast", "description": "Breakfast & Personal Preparation" },
+            { "time": "09:30-10:20", "title": "Lecture 1", "description": "[Part 1] Main Curriculum" },
+            { "time": "10:20-10:30", "title": "Break 1", "description": "Short Rest" },
+            { "time": "10:30-11:20", "title": "Lecture 2", "description": "[Part 2] Main Curriculum" },
+            { "time": "11:20-11:40", "title": "Wrap-up", "description": "Morning Lecture Q&A & Small Group Sharing" },
+            { "time": "11:40-12:40", "title": "Lunch", "description": "Lunch & Recharge" },
+            { "time": "12:40-13:30", "title": "Lecture 3", "description": "[Part 3] Main Curriculum" },
+            { "time": "13:30-13:40", "title": "Break 2", "description": "Short Rest" },
+            { "time": "13:40-14:30", "title": "Lecture 4", "description": "[Part 4] Main Curriculum" },
+            { "time": "14:30-14:50", "title": "Daily Reflection", "description": "Daily Review & Journaling" },
+            { "time": "15:00-15:50", "title": "K-Language 1", "description": "Practical Conversation & Basic Grammar" },
+            { "time": "15:50-16:00", "title": "Break 3", "description": "Short Rest" },
+            { "time": "16:00-16:50", "title": "K-Language 2", "description": "Cultural Understanding & Application Practice" },
+            { "time": "16:50-18:30", "title": "K-Life", "description": "Local Area Tour, Mentor/Buddy Exchange" },
+            { "time": "18:30-20:00", "title": "Dinner", "description": "Dinner & Rest" },
+            { "time": "20:00-22:00", "title": "Isaiah 62", "description": "Isaiah 62 Worship Service" },
+            { "time": "22:00-23:00", "title": "Personal Time", "description": "Preparation for Sleep & Wrap-up" }
+        ]
+    }
 }

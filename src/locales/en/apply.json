@@ -1,22 +1,12 @@
 {
     "hero": {
+        "label": "APPLICATION",
         "title": "Begin Your Journey",
-        "subtitle": "Join our global community and experience transformative training in Korea."
-    },
-    "info": {
-        "title": "Application Information",
-        "cost_label": "Estimated Cost",
-        "cost_value": "₩1,200,000 KRW / month",
-        "duration_label": "Duration Options",
-        "duration_value": "3, 6, or 12 months",
-        "docs_label": "Required Documents",
-        "docs_items": [
-            "Valid Passport Copy",
-            "Recommendation Letter from Senior Pastor",
-            "Personal Testimony of Faith"
-        ]
+        "subtitle": "Join our global community and experience transformative training in Korea.",
+        "cta": "Apply Now"
     },
     "steps": {
+        "label": "HOW TO APPLY",
         "title": "Application Process",
         "s1_title": "Check Schedule & Cost",
         "s1_desc": "Review the program dates and estimate your financial preparation.",
@@ -25,7 +15,25 @@
         "s3_title": "Submit Application",
         "s3_desc": "Fill out our online Google Form to start the process."
     },
+    "info": {
+        "label": "WHAT YOU NEED",
+        "title": "Application Information",
+        "cost_label": "Estimated Cost",
+        "cost_value": "₩1,200,000 / mo",
+        "cost_desc": "Includes accommodation, meals, lectures, and activities.",
+        "duration_label": "Duration Options",
+        "duration_value": "3, 6, or 12 months",
+        "duration_desc": "Choose the duration that fits your situation.",
+        "docs_label": "Required Documents",
+        "docs_items": [
+            "Valid Passport Copy",
+            "Recommendation Letter from Senior Pastor",
+            "Personal Testimony of Faith"
+        ],
+        "docs_desc": "Submit documents together with your application form."
+    },
     "cta": {
+        "label": "START YOUR JOURNEY",
         "title": "Apply Online",
         "desc": "Click the button below to submit your application form.",
         "button": "Fill out Google Form"

@@ -11,9 +11,9 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement | HTMLTextArea
 
 const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
   ({ label, error, helperText, multiline = false, rows = 4, className = '', ...props }, ref) => {
-    const baseInputStyles = `w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors ${error
+    const baseInputStyles = `w-full px-4 py-2 border rounded-lg bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-primary-teal transition-colors ${error
         ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
-        : 'border-gray-300 focus:border-primary-500'
+        : 'border-gray-200 focus:border-brand-primary-teal'
       }`;
 
     return (
