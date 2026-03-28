@@ -1,4 +1,5 @@
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
@@ -7,6 +8,11 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="relative min-h-screen flex flex-col font-body">
       {/* Subtle Analog Paper Texture (Noise) for warmth and sincerity */}
