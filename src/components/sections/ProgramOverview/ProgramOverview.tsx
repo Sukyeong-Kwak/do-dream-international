@@ -66,11 +66,13 @@ export default function ProgramOverview() {
           </motion.p>
         </div>
 
-        {/* Alternating feature rows */}
-        <div className="space-y-10 md:space-y-14">
+        {/* Feature cards grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
-            const isReversed = index % 2 !== 0;
+            const bgColor = index === 0 ? 'bg-brand-primary-blue/5' : index === 1 ? 'bg-brand-primary-teal/5' : 'bg-brand-accent-pink/5';
+            const iconColor = index === 0 ? 'bg-brand-primary-blue/10 text-brand-primary-blue' : index === 1 ? 'bg-brand-primary-teal/10 text-brand-primary-teal' : 'bg-brand-accent-pink/10 text-brand-accent-pink';
+            const highlightColor = index === 0 ? 'text-brand-primary-blue/15' : index === 1 ? 'text-brand-primary-teal/15' : 'text-brand-accent-pink/15';
 
             return (
               <motion.div
@@ -78,42 +80,21 @@ export default function ProgramOverview() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 md:gap-12`}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                className={`relative rounded-2xl p-8 md:p-10 ${bgColor} flex flex-col`}
               >
-                {/* Visual block */}
-                <div className="flex-1 w-full">
-                  <div className={`relative rounded-2xl p-8 md:p-10 ${
-                    index === 0 ? 'bg-brand-primary-blue/5' :
-                    index === 1 ? 'bg-brand-primary-teal/5' :
-                    'bg-brand-accent-pink/5'
-                  }`}>
-                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
-                      index === 0 ? 'bg-brand-primary-blue/10 text-brand-primary-blue' :
-                      index === 1 ? 'bg-brand-primary-teal/10 text-brand-primary-teal' :
-                      'bg-brand-accent-pink/10 text-brand-accent-pink'
-                    }`}>
-                      <Icon className="w-8 h-8" />
-                    </div>
-                    <p className={`text-4xl md:text-5xl font-bold leading-tight tracking-tighter ${
-                      index === 0 ? 'text-brand-primary-blue/15' :
-                      index === 1 ? 'text-brand-primary-teal/15' :
-                      'text-brand-accent-pink/15'
-                    }`}>
-                      {feature.highlight}
-                    </p>
-                  </div>
+                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 ${iconColor}`}>
+                  <Icon className="w-7 h-7" />
                 </div>
-
-                {/* Text block */}
-                <div className="flex-1">
-                  <h3 className="text-2xl md:text-3xl font-bold text-brand-primary-blue mb-5">
-                    {feature.title}
-                  </h3>
-                  <p className="text-brand-text/70 text-base md:text-lg leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
+                <p className={`text-3xl md:text-4xl font-bold leading-tight tracking-tighter mb-6 ${highlightColor}`}>
+                  {feature.highlight}
+                </p>
+                <h3 className="text-xl md:text-2xl font-bold text-brand-primary-blue mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-brand-text/70 text-sm md:text-base leading-relaxed">
+                  {feature.description}
+                </p>
               </motion.div>
             );
           })}
