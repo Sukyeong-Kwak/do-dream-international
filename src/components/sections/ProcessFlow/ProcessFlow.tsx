@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { HiGlobeAsiaAustralia, HiAcademicCap, HiRocketLaunch } from 'react-icons/hi2';
 import type { IconType } from 'react-icons';
+import { fadeIn, fadeInUpSlow } from '../../../lib/motion';
 
 interface Step {
   title: string;
@@ -17,51 +18,30 @@ export default function ProcessFlow() {
 
   const steps: Step[] = [
     {
-      title: t('process.s1_title'),
-      desc: t('process.s1_desc'),
-      icon: HiGlobeAsiaAustralia,
-      textColor: 'text-brand-primary-blue',
-      borderColor: 'border-brand-primary-blue',
-      iconColor: 'text-brand-primary-blue',
+      title: t('process.s1_title'), desc: t('process.s1_desc'),
+      icon: HiGlobeAsiaAustralia, textColor: 'text-brand-primary-blue',
+      borderColor: 'border-brand-primary-blue', iconColor: 'text-brand-primary-blue',
     },
     {
-      title: t('process.s2_title'),
-      desc: t('process.s2_desc'),
-      icon: HiAcademicCap,
-      textColor: 'text-brand-primary-teal',
-      borderColor: 'border-brand-primary-teal',
-      iconColor: 'text-brand-primary-teal',
+      title: t('process.s2_title'), desc: t('process.s2_desc'),
+      icon: HiAcademicCap, textColor: 'text-brand-primary-teal',
+      borderColor: 'border-brand-primary-teal', iconColor: 'text-brand-primary-teal',
     },
     {
-      title: t('process.s3_title'),
-      desc: t('process.s3_desc'),
-      icon: HiRocketLaunch,
-      textColor: 'text-brand-accent-pink',
-      borderColor: 'border-brand-accent-pink',
-      iconColor: 'text-brand-accent-pink',
+      title: t('process.s3_title'), desc: t('process.s3_desc'),
+      icon: HiRocketLaunch, textColor: 'text-brand-accent-pink',
+      borderColor: 'border-brand-accent-pink', iconColor: 'text-brand-accent-pink',
     },
   ];
 
   return (
     <section className="py-12 md:py-16 bg-brand-bg/60 relative overflow-hidden">
       <div className="container-custom relative z-10">
-        {/* Header */}
         <div className="text-center mb-10">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4"
-          >
+          <motion.p {...fadeIn} className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4">
             {t('process.title')}
           </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-brand-primary-blue mb-6"
-          >
+          <motion.h2 {...fadeInUpSlow} className="text-3xl md:text-4xl font-bold text-brand-primary-blue mb-6">
             {t('process.subtitle')}
           </motion.h2>
         </div>
@@ -69,7 +49,6 @@ export default function ProcessFlow() {
         {/* Mobile: Vertical timeline */}
         <div className="md:hidden relative max-w-4xl mx-auto">
           <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-brand-primary-blue via-brand-primary-teal to-brand-accent-pink" />
-
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
@@ -96,9 +75,7 @@ export default function ProcessFlow() {
         {/* Desktop: Horizontal 3-column layout */}
         <div className="hidden md:block max-w-5xl mx-auto">
           <div className="grid grid-cols-3 gap-8 relative">
-            {/* Horizontal connector line — vertically centered on the icon circles */}
             <div className="absolute top-8 left-[16.67%] right-[16.67%] h-0.5 -translate-y-px bg-gradient-to-r from-brand-primary-blue via-brand-primary-teal to-brand-accent-pink" />
-
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (

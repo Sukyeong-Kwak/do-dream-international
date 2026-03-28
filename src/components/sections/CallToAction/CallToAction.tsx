@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { fadeInUp } from '../../../lib/motion';
+import { APPLY_FORM_URL } from '../../../lib/constants';
 import Button from '../../common/Button/Button';
 
 export default function CallToAction() {
@@ -13,14 +15,11 @@ export default function CallToAction() {
 
   return (
     <section className="py-16 md:py-24 bg-white relative overflow-hidden">
-      {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-brand-bg/30 to-brand-bg/50" />
 
       <div className="container-custom relative z-10 max-w-4xl mx-auto text-center">
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          {...fadeInUp}
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary-blue mb-6 tracking-tight"
         >
@@ -37,21 +36,16 @@ export default function CallToAction() {
           {t('cta.subtitle')}
         </motion.p>
 
-        {/* Steps - horizontal */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          {...fadeInUp}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
         >
           {steps.map((step, index) => (
             <div key={index} className="relative">
-              {/* Connector line (desktop) */}
               {index < steps.length - 1 && (
                 <div className="hidden md:block absolute top-6 left-[60%] w-[80%] h-px bg-gray-200" />
               )}
-
               <div className="relative z-10 flex flex-col items-center">
                 <div className="w-12 h-12 rounded-full bg-brand-primary-blue/10 flex items-center justify-center mb-4">
                   <span className="text-brand-primary-blue font-bold text-sm">{step.num}</span>
@@ -63,18 +57,11 @@ export default function CallToAction() {
           ))}
         </motion.div>
 
-        {/* CTA Button */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          {...fadeInUp}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScwgPF5kPO--Yw41STnVkPKYTDJuCNmGZa7r_I2r5JTQOhdBg/viewform?usp=dialog"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={APPLY_FORM_URL} target="_blank" rel="noopener noreferrer">
             <Button
               size="lg"
               className="bg-brand-primary-blue text-white hover:bg-brand-primary-blue/90 px-16 py-5 rounded-full font-bold tracking-wide text-base shadow-xl shadow-brand-primary-blue/20 transition-all duration-300 hover:-translate-y-1 border-none"

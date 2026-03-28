@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import Input from '../../common/Input/Input';
 import Modal from '../../common/Modal/Modal';
+import { fadeInUp } from '../../../lib/motion';
+import SectionHeader from '../../common/SectionHeader';
 
 export default function ContactForm() {
   const { t } = useTranslation('contact');
@@ -36,31 +38,12 @@ export default function ContactForm() {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container-custom max-w-2xl mx-auto">
-        <div className="text-center mb-14">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4"
-          >
-            {t('message.label')}
-          </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-brand-primary-blue"
-          >
-            {t('message.title')}
-          </motion.h2>
-        </div>
+        <SectionHeader label={t('message.label')} title={t('message.title')} />
 
         <motion.form
           ref={form}
           onSubmit={sendEmail}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          {...fadeInUp}
           className="space-y-6"
         >
           {status === 'error' && (
@@ -71,34 +54,12 @@ export default function ContactForm() {
           )}
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Input
-              label={t('message.name')}
-              name="user_name"
-              placeholder={t('message.name')}
-            />
-            <Input
-              label={t('message.email')}
-              name="user_email"
-              type="email"
-              required
-              placeholder={t('message.email')}
-            />
+            <Input label={t('message.name')} name="user_name" placeholder={t('message.name')} />
+            <Input label={t('message.email')} name="user_email" type="email" required placeholder={t('message.email')} />
           </div>
 
-          <Input
-            label={t('message.subject')}
-            name="subject"
-            placeholder={t('message.subject')}
-          />
-
-          <Input
-            label={t('message.message')}
-            name="message"
-            multiline
-            rows={5}
-            required
-            placeholder={t('message.message')}
-          />
+          <Input label={t('message.subject')} name="subject" placeholder={t('message.subject')} />
+          <Input label={t('message.message')} name="message" multiline rows={5} required placeholder={t('message.message')} />
 
           <button
             type="submit"
@@ -110,7 +71,6 @@ export default function ContactForm() {
         </motion.form>
       </div>
 
-      {/* Success Modal */}
       <Modal isOpen={isSuccessModalOpen} onClose={() => setIsSuccessModalOpen(false)} size="sm">
         <div className="text-center py-4 space-y-4">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-500">

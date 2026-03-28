@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import Layout from '../components/layout/Layout';
 
@@ -18,34 +18,18 @@ const PageLoader = () => (
 // Create router
 const router = createBrowserRouter([
   {
-    path: '/',
     element: (
       <Layout>
         <Suspense fallback={<PageLoader />}>
-          <Home />
+          <Outlet />
         </Suspense>
       </Layout>
     ),
-  },
-  {
-    path: '/program',
-    element: (
-      <Layout>
-        <Suspense fallback={<PageLoader />}>
-          <Program />
-        </Suspense>
-      </Layout>
-    ),
-  },
-  {
-    path: '/apply',
-    element: (
-      <Layout>
-        <Suspense fallback={<PageLoader />}>
-          <Apply />
-        </Suspense>
-      </Layout>
-    ),
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/program', element: <Program /> },
+      { path: '/apply', element: <Apply /> },
+    ],
   },
 ]);
 

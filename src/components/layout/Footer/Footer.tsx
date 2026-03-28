@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { SOCIAL_LINKS } from '../../../lib/constants';
 
 export default function Footer() {
   const { t } = useTranslation('common');
@@ -19,42 +19,18 @@ export default function Footer() {
               {t('footer.description')}
             </p>
             <div className="flex justify-center md:justify-start space-x-4 mt-8">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label="Facebook"
-              >
-                <FaFacebook className="w-6 h-6" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label="Instagram"
-              >
-                <FaInstagram className="w-6 h-6" />
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label="YouTube"
-              >
-                <FaYoutube className="w-6 h-6" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label="Twitter"
-              >
-                <FaTwitter className="w-6 h-6" />
-              </a>
+              {SOCIAL_LINKS.map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                  aria-label={label}
+                >
+                  <Icon className="w-6 h-6" />
+                </a>
+              ))}
             </div>
           </div>
 
@@ -72,7 +48,6 @@ export default function Footer() {
                   {t('footer.apply')}
                 </Link>
               </li>
-
             </ul>
           </div>
 

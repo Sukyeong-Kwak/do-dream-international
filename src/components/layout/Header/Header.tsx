@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { HiMenu, HiX } from 'react-icons/hi';
+import { APPLY_FORM_URL } from '../../../lib/constants';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,8 +10,7 @@ export default function Header() {
   const location = useLocation();
 
   const toggleLanguage = () => {
-    const nextLang = i18n.language === 'ko' ? 'en' : 'ko';
-    i18n.changeLanguage(nextLang);
+    i18n.changeLanguage(i18n.language === 'ko' ? 'en' : 'ko');
   };
 
   const navigation = [
@@ -25,7 +25,6 @@ export default function Header() {
     <header className="bg-brand-bg/85 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-200/50">
       <nav className="container-custom py-1">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Link to="/" className="flex items-center">
             <img src="/logo-horizontal.png" alt="Do Dream International" className="h-16 md:h-[5rem] w-auto" />
           </Link>
@@ -36,10 +35,9 @@ export default function Header() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors ${isActive(item.href)
-                  ? 'text-brand-primary-blue'
-                  : 'text-brand-text hover:text-brand-primary-teal'
-                  }`}
+                className={`text-sm font-medium transition-colors ${
+                  isActive(item.href) ? 'text-brand-primary-blue' : 'text-brand-text hover:text-brand-primary-teal'
+                }`}
               >
                 {item.name}
               </Link>
@@ -52,9 +50,8 @@ export default function Header() {
               >
                 <span>{i18n.language === 'ko' ? 'EN' : 'KO'}</span>
               </button>
-
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScwgPF5kPO--Yw41STnVkPKYTDJuCNmGZa7r_I2r5JTQOhdBg/viewform?usp=dialog"
+                href={APPLY_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-brand-primary-teal text-white px-5 py-2 rounded-lg font-medium hover:opacity-90 transition-all duration-300 shadow-sm text-sm"
@@ -70,11 +67,7 @@ export default function Header() {
             className="md:hidden p-2 rounded-lg text-brand-text hover:bg-white/50"
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? (
-              <HiX className="w-6 h-6" />
-            ) : (
-              <HiMenu className="w-6 h-6" />
-            )}
+            {mobileMenuOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
           </button>
         </div>
 
@@ -87,16 +80,15 @@ export default function Header() {
                   key={item.name}
                   to={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`text-base font-medium transition-colors ${isActive(item.href)
-                    ? 'text-brand-primary-blue'
-                    : 'text-brand-text hover:text-brand-primary-teal'
-                    }`}
+                  className={`text-base font-medium transition-colors ${
+                    isActive(item.href) ? 'text-brand-primary-blue' : 'text-brand-text hover:text-brand-primary-teal'
+                  }`}
                 >
                   {item.name}
                 </Link>
               ))}
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScwgPF5kPO--Yw41STnVkPKYTDJuCNmGZa7r_I2r5JTQOhdBg/viewform?usp=dialog"
+                href={APPLY_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
@@ -104,12 +96,8 @@ export default function Header() {
               >
                 {t('nav.applyNow')}
               </a>
-
               <button
-                onClick={() => {
-                  toggleLanguage();
-                  setMobileMenuOpen(false);
-                }}
+                onClick={() => { toggleLanguage(); setMobileMenuOpen(false); }}
                 className="w-full text-center py-2 text-brand-primary-blue font-medium border border-gray-200 rounded-lg mt-2 hover:bg-gray-50 transition-colors"
               >
                 {i18n.language === 'ko' ? 'Switch to English' : '한국어로 보기'}

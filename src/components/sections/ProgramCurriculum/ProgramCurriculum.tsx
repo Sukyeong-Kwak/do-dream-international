@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiChevronDown } from 'react-icons/hi2';
+import { fadeIn, fadeInUp, staggerItem } from '../../../lib/motion';
 
 interface CurriculumSubject {
   title: string;
@@ -19,24 +20,12 @@ export default function ProgramCurriculum() {
   return (
     <section className="py-16 md:py-24 bg-white" id="curriculum">
       <div className="container-custom">
-        {/* Header */}
         <div className="text-center mb-14">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4"
-          >
+          <motion.p {...fadeIn} className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4">
             {t('curriculum.label')}
           </motion.p>
 
-          {/* Large stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex items-center justify-center gap-12 mb-6"
-          >
+          <motion.div {...fadeInUp} className="flex items-center justify-center gap-12 mb-6">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-brand-primary-blue">120</div>
               <div className="text-sm text-brand-muted uppercase tracking-wider font-semibold mt-1">{t('curriculum.lecture')}</div>
@@ -49,15 +38,11 @@ export default function ProgramCurriculum() {
           </motion.div>
         </div>
 
-        {/* Accordion */}
         <div className="max-w-3xl mx-auto space-y-3">
           {Array.isArray(subjects) && subjects.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.08 }}
+              {...staggerItem(index, 0.08)}
               className={`rounded-2xl border transition-all duration-300 ${
                 openIndex === index
                   ? 'border-brand-primary-teal shadow-md bg-white'
@@ -70,15 +55,11 @@ export default function ProgramCurriculum() {
               >
                 <div className="flex items-center gap-4">
                   <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm ${
-                    openIndex === index
-                      ? 'bg-brand-primary-teal text-white'
-                      : 'bg-brand-bg text-brand-primary-blue'
+                    openIndex === index ? 'bg-brand-primary-teal text-white' : 'bg-brand-bg text-brand-primary-blue'
                   }`}>
                     {index + 1}
                   </div>
-                  <h3 className={`text-lg font-bold ${
-                    openIndex === index ? 'text-brand-primary-teal' : 'text-brand-primary-blue'
-                  }`}>
+                  <h3 className={`text-lg font-bold ${openIndex === index ? 'text-brand-primary-teal' : 'text-brand-primary-blue'}`}>
                     {item.title}
                   </h3>
                 </div>
@@ -96,9 +77,7 @@ export default function ProgramCurriculum() {
                     className="overflow-hidden"
                   >
                     <div className="px-6 pb-6 border-t border-gray-100 pt-4">
-                      <p className="text-brand-text/80 leading-relaxed mb-5">
-                        {item.description}
-                      </p>
+                      <p className="text-brand-text/80 leading-relaxed mb-5">{item.description}</p>
                       <div className="flex flex-wrap gap-3 text-sm">
                         <span className="bg-gray-50 px-3 py-1.5 rounded-lg text-brand-muted">
                           <span className="font-semibold text-brand-primary-blue">{item.lectures}</span> {t('curriculum.lecture')}

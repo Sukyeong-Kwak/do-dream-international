@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2';
+import { fadeIn, fadeInUp } from '../../../lib/motion';
+import BackgroundBlobs from '../../common/BackgroundBlobs';
 
 interface Testimonial {
   quote: string;
@@ -28,39 +30,22 @@ export default function TestimonialCarousel() {
 
   return (
     <section className="py-16 md:py-24 bg-brand-primary-blue relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-brand-primary-teal blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-brand-accent-pink blur-3xl" />
-      </div>
+      <BackgroundBlobs />
 
       <div className="container-custom relative z-10">
-        {/* Header */}
         <div className="text-center mb-4">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4"
-          >
+          <motion.p {...fadeIn} className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4">
             {t('stories.title')}
           </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-white/60 text-sm md:text-base max-w-xl mx-auto"
-          >
+          <motion.p {...fadeInUp} className="text-white/60 text-sm md:text-base max-w-xl mx-auto">
             {t('stories.subtitle')}
           </motion.p>
         </div>
 
-        {/* Big quote mark */}
         <div className="text-center text-[8rem] md:text-[10rem] text-white/5 font-serif leading-none select-none -mb-16 md:-mb-20">
           "
         </div>
 
-        {/* Carousel */}
         <div className="max-w-3xl mx-auto text-center relative min-h-[220px] flex items-center">
           <AnimatePresence mode="wait">
             <motion.div
@@ -74,7 +59,6 @@ export default function TestimonialCarousel() {
               <p className="text-xl md:text-2xl lg:text-3xl text-white font-medium leading-relaxed md:leading-relaxed mb-10 italic">
                 "{item.quote}"
               </p>
-
               <div className="flex flex-col items-center gap-2">
                 <p className="text-white font-bold text-lg">{cleanName}</p>
                 <div className="flex items-center gap-3 text-sm">
@@ -87,7 +71,6 @@ export default function TestimonialCarousel() {
           </AnimatePresence>
         </div>
 
-        {/* Navigation */}
         <div className="flex items-center justify-center gap-6 mt-12">
           <button
             onClick={prev}
@@ -96,23 +79,18 @@ export default function TestimonialCarousel() {
           >
             <HiChevronLeft className="w-5 h-5" />
           </button>
-
-          {/* Dots */}
           <div className="flex items-center gap-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  index === current
-                    ? 'w-8 bg-brand-primary-teal'
-                    : 'w-2 bg-white/30 hover:bg-white/50'
+                  index === current ? 'w-8 bg-brand-primary-teal' : 'w-2 bg-white/30 hover:bg-white/50'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
           </div>
-
           <button
             onClick={next}
             className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:bg-white/10 hover:text-white transition-all"

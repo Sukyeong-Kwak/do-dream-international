@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { HiCheck } from 'react-icons/hi2';
+import { fadeInUp } from '../../../lib/motion';
+import SectionHeader from '../../common/SectionHeader';
 
 export default function ApplyInfo() {
   const { t } = useTranslation('apply');
@@ -9,33 +11,11 @@ export default function ApplyInfo() {
   return (
     <section className="py-16 md:py-24 bg-brand-bg/40">
       <div className="container-custom">
-        <div className="text-center mb-14">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4"
-          >
-            {t('info.label')}
-          </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-brand-primary-blue"
-          >
-            {t('info.title')}
-          </motion.h2>
-        </div>
+        <SectionHeader label={t('info.label')} title={t('info.title')} />
 
         <div className="max-w-4xl mx-auto space-y-10">
           {/* Cost */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
-          >
+          <motion.div {...fadeInUp} className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="flex-1 w-full">
               <div className="bg-brand-primary-teal/5 rounded-2xl p-8 text-center">
                 <p className="text-4xl md:text-5xl font-bold text-brand-primary-teal tracking-tighter">
@@ -52,12 +32,7 @@ export default function ApplyInfo() {
           </motion.div>
 
           {/* Duration */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12"
-          >
+          <motion.div {...fadeInUp} className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
             <div className="flex-1 w-full">
               <div className="bg-brand-primary-blue/5 rounded-2xl p-8 flex items-center justify-center gap-4">
                 {['3', '6', '12'].map((m) => (
@@ -75,12 +50,7 @@ export default function ApplyInfo() {
           </motion.div>
 
           {/* Documents */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
-          >
+          <motion.div {...fadeInUp} className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="flex-1 w-full">
               <div className="bg-brand-accent-pink/5 rounded-2xl p-8">
                 <ul className="space-y-4">

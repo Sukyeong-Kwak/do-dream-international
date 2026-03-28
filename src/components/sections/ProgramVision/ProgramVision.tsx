@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { fadeIn, fadeInUpSlow } from '../../../lib/motion';
 
 interface VisionItem {
   title: string;
@@ -13,22 +14,11 @@ export default function ProgramVision() {
   return (
     <section className="py-16 md:py-24 bg-brand-bg/60">
       <div className="container-custom">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4"
-        >
+        <motion.p {...fadeIn} className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4">
           {t('vision.label')}
         </motion.p>
 
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-brand-primary-blue leading-tight mb-12 max-w-2xl"
-        >
+        <motion.h2 {...fadeInUpSlow} className="text-3xl md:text-4xl font-bold text-brand-primary-blue leading-tight mb-12 max-w-2xl">
           {t('vision.title')}
         </motion.h2>
 

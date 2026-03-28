@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiOutlineBuildingLibrary, HiOutlineSparkles, HiOutlineSun, HiOutlineHandRaised, HiChevronDown } from 'react-icons/hi2';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
+import { fadeIn, staggerItem } from '../../../lib/motion';
+import SectionHeader from '../../common/SectionHeader';
 
 interface Trip {
   week: string;
@@ -50,43 +52,15 @@ export default function KLifeProgram() {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container-custom">
-        {/* Section Header */}
-        <div className="text-center mb-14">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4"
-          >
-            {t('klife.label')}
-          </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-brand-primary-blue mb-4"
-          >
-            {t('klife.title')}
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-brand-text/70 max-w-2xl mx-auto leading-relaxed"
-          >
-            {t('klife.subtitle')}
-          </motion.p>
-        </div>
+        <SectionHeader
+          label={t('klife.label')}
+          title={t('klife.title')}
+          subtitle={t('klife.subtitle')}
+        />
 
         {/* Monthly Schedule */}
         <div className="max-w-4xl mx-auto mb-16">
-          <motion.h3
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-xl font-bold text-brand-primary-blue mb-6 text-center"
-          >
+          <motion.h3 {...fadeIn} className="text-xl font-bold text-brand-primary-blue mb-6 text-center">
             {t('klife.scheduleTitle')}
           </motion.h3>
 
@@ -94,18 +68,12 @@ export default function KLifeProgram() {
             {Array.isArray(months) && months.map((month, mIdx) => (
               <motion.div
                 key={mIdx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: mIdx * 0.1 }}
+                {...staggerItem(mIdx)}
                 className="rounded-2xl border border-gray-100 bg-white shadow-sm overflow-hidden"
               >
-                {/* Month header */}
                 <div className="bg-brand-primary-blue px-6 py-3">
                   <h4 className="text-white font-bold text-lg">{month.month}</h4>
                 </div>
-
-                {/* Trips */}
                 <div className="divide-y divide-gray-100">
                   {month.trips.map((trip, tIdx) => (
                     <div key={tIdx} className="px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-3">
@@ -133,12 +101,7 @@ export default function KLifeProgram() {
 
         {/* Category Details */}
         <div className="max-w-4xl mx-auto">
-          <motion.h3
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-xl font-bold text-brand-primary-blue mb-6 text-center"
-          >
+          <motion.h3 {...fadeIn} className="text-xl font-bold text-brand-primary-blue mb-6 text-center">
             {t('klife.detailsTitle')}
           </motion.h3>
 
@@ -150,10 +113,7 @@ export default function KLifeProgram() {
               return (
                 <motion.div
                   key={cIdx}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: cIdx * 0.08 }}
+                  {...staggerItem(cIdx, 0.08)}
                   className={`rounded-2xl border transition-all duration-300 ${
                     openCategory === cIdx
                       ? `${color.border} shadow-md bg-white`
