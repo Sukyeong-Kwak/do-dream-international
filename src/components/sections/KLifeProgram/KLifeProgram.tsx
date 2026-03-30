@@ -1,10 +1,10 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion, AnimatePresence } from 'framer-motion';
-import { HiOutlineBuildingLibrary, HiOutlineSparkles, HiOutlineSun, HiOutlineHandRaised, HiChevronDown } from 'react-icons/hi2';
+import { motion } from 'framer-motion';
+import { HiOutlineBuildingLibrary, HiOutlineSparkles, HiOutlineSun, HiOutlineHandRaised } from 'react-icons/hi2';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { fadeIn, staggerItem } from '../../../lib/motion';
 import SectionHeader from '../../common/SectionHeader';
+import Accordion from '../../common/Accordion';
 
 interface Trip {
   week: string;
@@ -44,10 +44,47 @@ const categoryColors = [
 
 export default function KLifeProgram() {
   const { t } = useTranslation('program');
-  const [openCategory, setOpenCategory] = useState<number | null>(0);
-
   const months = t('klife.months', { returnObjects: true }) as MonthSchedule[];
   const categories = t('klife.categories', { returnObjects: true }) as Category[];
+
+  const accordionItems = Array.isArray(categories)
+    ? categories.map((category, cIdx) => {
+        const color = categoryColors[cIdx % categoryColors.length];
+        const Icon = categoryIcons[category.icon] || HiOutlineSparkles;
+
+        return {
+          trigger: (
+            <>
+              <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${color.icon}`}>
+                <Icon className="w-5 h-5" />
+              </div>
+              <h4 className="text-lg font-bold text-brand-primary-blue/80">{category.title}</h4>
+            </>
+          ),
+          activeTrigger: (
+            <>
+              <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${color.icon}`}>
+                <Icon className="w-5 h-5" />
+              </div>
+              <h4 className="text-lg font-bold text-brand-primary-blue">{category.title}</h4>
+            </>
+          ),
+          content: (
+            <div className="grid gap-2">
+              {category.spots.map((spot, sIdx) => (
+                <div key={sIdx} className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 px-4 py-3 rounded-xl ${color.bg}`}>
+                  <span className="font-medium text-brand-text text-sm">{spot.name}</span>
+                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-lg whitespace-nowrap ${color.badge}`}>
+                    {spot.price}
+                  </span>
+                </div>
+              ))}
+            </div>
+          ),
+          activeClass: `${color.border} shadow-md bg-white`,
+        };
+      })
+    : [];
 
   return (
     <section className="py-16 md:py-24 bg-white">
@@ -66,11 +103,7 @@ export default function KLifeProgram() {
 
           <div className="grid gap-4 md:gap-6">
             {Array.isArray(months) && months.map((month, mIdx) => (
-              <motion.div
-                key={mIdx}
-                {...staggerItem(mIdx)}
-                className="rounded-2xl border border-gray-100 bg-white shadow-sm overflow-hidden"
-              >
+              <motion.div key={mIdx} {...staggerItem(mIdx)} className="rounded-2xl border border-gray-100 bg-white shadow-sm overflow-hidden">
                 <div className="bg-brand-primary-blue px-6 py-3">
                   <h4 className="text-white font-bold text-lg">{month.month}</h4>
                 </div>
@@ -105,70 +138,7 @@ export default function KLifeProgram() {
             {t('klife.detailsTitle')}
           </motion.h3>
 
-          <div className="space-y-3">
-            {Array.isArray(categories) && categories.map((category, cIdx) => {
-              const color = categoryColors[cIdx % categoryColors.length];
-              const Icon = categoryIcons[category.icon] || HiOutlineSparkles;
-
-              return (
-                <motion.div
-                  key={cIdx}
-                  {...staggerItem(cIdx, 0.08)}
-                  className={`rounded-2xl border transition-all duration-300 ${
-                    openCategory === cIdx
-                      ? `${color.border} shadow-md bg-white`
-                      : 'border-gray-100 bg-white hover:border-gray-200'
-                  }`}
-                >
-                  <button
-                    onClick={() => setOpenCategory(openCategory === cIdx ? null : cIdx)}
-                    className="w-full p-5 md:p-6 flex items-center justify-between text-left"
-                  >
-                    <div className="flex items-center gap-4">
-                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${color.icon}`}>
-                        <Icon className="w-5 h-5" />
-                      </div>
-                      <h4 className={`text-lg font-bold ${
-                        openCategory === cIdx ? 'text-brand-primary-blue' : 'text-brand-primary-blue/80'
-                      }`}>
-                        {category.title}
-                      </h4>
-                    </div>
-                    <HiChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${
-                      openCategory === cIdx ? 'rotate-180 text-brand-primary-teal' : ''
-                    }`} />
-                  </button>
-
-                  <AnimatePresence>
-                    {openCategory === cIdx && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="overflow-hidden"
-                      >
-                        <div className="px-5 md:px-6 pb-5 md:pb-6 border-t border-gray-100 pt-4">
-                          <div className="grid gap-2">
-                            {category.spots.map((spot, sIdx) => (
-                              <div
-                                key={sIdx}
-                                className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 px-4 py-3 rounded-xl ${color.bg}`}
-                              >
-                                <span className="font-medium text-brand-text text-sm">{spot.name}</span>
-                                <span className={`text-xs font-semibold px-2.5 py-1 rounded-lg whitespace-nowrap ${color.badge}`}>
-                                  {spot.price}
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
-              );
-            })}
-          </div>
+          <Accordion items={accordionItems} />
         </div>
       </div>
     </section>
