@@ -74,6 +74,31 @@
     letter-spacing: -0.01em;
   }
 
+  /* Prevent orphan endings (e.g., '다.', '어요.') and improve Korean line-breaks */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li {
+    text-wrap: pretty;
+  }
+
+  /* Korean: break at word boundaries (어절 단위) for natural reading */
+  :root[lang="ko"] p,
+  :root[lang="ko"] h1,
+  :root[lang="ko"] h2,
+  :root[lang="ko"] h3,
+  :root[lang="ko"] h4,
+  :root[lang="ko"] h5,
+  :root[lang="ko"] h6,
+  :root[lang="ko"] li {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
   @media (min-width: 768px) {
     body {
       font-size: 1.0625rem;

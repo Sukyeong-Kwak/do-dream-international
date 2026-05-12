@@ -34,11 +34,12 @@ export default function ValueProposition() {
                 </h2>
 
                 <div className="space-y-5 text-brand-text/80 leading-relaxed mb-8">
-                  <p className="text-base md:text-lg first-letter:text-3xl first-letter:font-bold first-letter:text-brand-primary-blue first-letter:float-left first-letter:mr-2 first-letter:leading-none">
-                    {t('value.p1')}
-                  </p>
-                  <p className="text-base md:text-lg">{t('value.p2')}</p>
-                  <p className="text-base md:text-lg">{t('value.p3')}</p>
+                  <p
+                    className="text-base md:text-lg first-letter:text-3xl first-letter:font-bold first-letter:text-brand-primary-blue first-letter:float-left first-letter:mr-2 first-letter:leading-none"
+                    dangerouslySetInnerHTML={{ __html: t('value.p1') }}
+                  />
+                  <p className="text-base md:text-lg" dangerouslySetInnerHTML={{ __html: t('value.p2') }} />
+                  <p className="text-base md:text-lg" dangerouslySetInnerHTML={{ __html: t('value.p3') }} />
                 </div>
 
                 <div className="border-t border-gray-100 pt-6">

@@ -1,12 +1,12 @@
 {
     "hero": {
         "title": "Trained and Sent as Spiritual Leaders",
-        "subtitle": "Discover the vision and heart behind Do Dream Together International."
+        "subtitle": "Discover the vision and heart behind Do Dream Twogether International."
     },
     "overview": {
         "title": "Program Overview",
-        "name": "Project Name: Do Dream Together International",
-        "organizer": "Organizer: Podonamu Church",
+        "name": "Project Name: Do Dream Twogether International",
+        "organizer": "Organizer: Vine Church",
         "type": "Type: Overseas Christian Youth Invitation Spiritual Training Program",
         "location": "Location: 11-17, Sinjeong-ro 151beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do",
         "target": "Target: Overseas foreign Christian youth (20-30s)",
@@ -56,11 +56,12 @@
         ]
     },
     "partners": {
-        "title": "Our Partners"
+        "title": "Our Partners",
+        "items": ["KWMF", "Y Mission", "Vine Church"]
     },
     "organization": {
         "title": "Organization",
-        "director": "General Director: Rev. Junhyung Kim (Young Adult Pastor, Podonamu Church)",
-        "dept": "Department: Do Dream International Team"
+        "director": "General Director: Rev. Junhyung Kim (Young Adult Pastor, Vine Church)",
+        "dept": "Department: Do Dream Twogether International Team"
     }
 }

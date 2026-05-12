@@ -51,9 +51,8 @@ export default function SectionHeader({
           className={`mt-4 max-w-2xl leading-relaxed ${
             dark ? 'text-white/70' : 'text-brand-text/70'
           } ${align === 'center' ? 'mx-auto' : ''}`}
-        >
-          {subtitle}
-        </motion.p>
+          dangerouslySetInnerHTML={{ __html: subtitle }}
+        />
       )}
     </div>
   );

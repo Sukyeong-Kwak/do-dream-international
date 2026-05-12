@@ -64,9 +64,8 @@ export default function CTASection({
           className={`text-lg max-w-2xl mx-auto leading-relaxed mb-12 ${
             isDark ? 'text-white/70' : 'text-brand-text/60'
           }`}
-        >
-          {subtitle}
-        </motion.p>
+          dangerouslySetInnerHTML={{ __html: subtitle }}
+        />
 
         {children}
 

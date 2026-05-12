@@ -56,11 +56,12 @@
         ]
     },
     "partners": {
-        "title": "협력 기관"
+        "title": "협력 기관",
+        "items": ["KWMF", "Y Mission", "포도나무교회"]
     },
     "organization": {
         "title": "운영 조직",
         "director": "총괄 책임자: 김준형 목사 (포도나무교회 청년교구장)",
-        "dept": "담당 부서: 두드림 인터내셔널팀"
+        "dept": "담당 부서: 두드림 투게더 인터내셔널팀"
     }
 }

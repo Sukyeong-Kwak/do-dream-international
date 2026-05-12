@@ -1,27 +1,27 @@
 {
   "coreValues": {
     "label": "Core Values",
-    "title": "Returning to the Essence of Faith,<br />A Journey to Encounter God",
+    "title": "Returning to the Essence of Faith,<br />A Journey to encounter God",
     "v1_title": "Intimate Encounter with God",
-    "v1_desc": "Experience a deep, personal fellowship with our Creator through prayer and the Word. Train to hear and respond to God's voice in every moment of your daily life.",
+    "v1_desc": "Experience a deep, personal fellowship with our Creator through prayer and the Word. Train to hear and respond to God's voice in your daily life.",
     "v2_title": "Learning the Essence of Faith",
-    "v2_desc": "Standing on the foundation of the Gospel of the Cross, build your assurance of salvation and the fundamentals of belief, one step at a time. Understand the Gospel not just in mind, but through life.",
+    "v2_desc": "Standing on the foundation of the Gospel of the Cross, build your assurance of salvation and the fundamentals of belief, one step at a time. Understand the Gospel not just in mind, but also in learning.",
     "v3_title": "Living What You Learn",
     "v3_desc": "Training doesn't end in the classroom. Within our community, what you learn becomes the way you live — through worship, service, and relationships, the Gospel becomes your life."
   },
   "hero": {
     "title": "Am I on the Right Path?<br />A Journey to Truly Know God",
-    "subtitle": "Assurance of salvation, hearing God's voice, deep prayer, and meditative living—we invite you to a concrete training program rooted in Revine's Bible study content, where every area of life is reinterpreted through God's perspective.",
+    "subtitle": "Assurance of salvation, hearing God's voice, deep prayer, and meditative life—we invite you to a concrete training program rooted in REVINE's Bible study content.",
     "cta": "Explore the Program"
   },
   "value": {
     "label": "From Our Director",
-    "title": "A Letter from Our Director",
-    "p1": "Welcome to Do Dream International. It is our greatest joy to invite young adults from all over the world to join us in seeking a deeper relationship with our Creator.",
+    "title": "Message from Our Director",
+    "p1": "Welcome to Do Dream Twogether International. It is our greatest joy to invite young adults from all over the world to join us in seeking a deeper relationship with God, our Creator.",
     "p2": "Our community is built upon one absolute foundation: the Gospel of the Cross. We are here to train together from the very basics of our faith, passionately pursuing a genuine, intimate fellowship with God.",
     "p3": "As you learn, grow, and follow Him with all your heart, you will also have the wonderful, motivating opportunity to experience the beautiful culture and vibrant life of Korea. We invite you to embark on this unforgettable journey of faith with us.",
     "name": "Rev. Daniel Yeojubong",
-    "role": "Senior Pastor, Podonamu Church & Director of Do Dream International",
+    "role": "Senior Pastor, Vine Church & Director of Do Dream Twogether International",
     "bio": [
       "Graduated from California Baptist University, USA",
       "Graduated from Southwestern Baptist Theological Seminary, USA",
@@ -29,7 +29,7 @@
       "Honorary Doctorate in Theology from Westminster Graduate School of Theology",
       "Former Lecturer at Korea Baptist Theological University/Seminary",
       "Recipient of the 2nd Korea Christian Award in Missions (2025)",
-      "Current Senior Pastor of Podonamu Church",
+      "Current Senior Pastor of Vine Church",
       "Current President of New Wave Mission",
       "Current Chairman of Youth Mission",
       "Current Director of GOODTV Christian Gospel Broadcasting",
@@ -50,27 +50,27 @@
     "showLess": "Show less"
   },
   "program": {
-    "title": "The Gospel Foundation,<br className=\"md:hidden\" /> Experiencing Grace",
+    "title": "The Foundation of the Gospel,<br className=\"md:hidden\" /> Experiencing Grace",
     "desc": "A comprehensive journey designed for young adults seeking true spiritual awakening through the Gospel of the Cross and intimacy with God.",
     "f1_title": "Spiritual Training",
-    "f1_desc": "Lay a robust foundation in the Gospel of the Cross. Grow through deep, intimate fellowship with God and dedicated mentorship.",
+    "f1_desc": "Lay a robust foundation in the Gospel of the Cross. Grow through focused Bible training, prayer, and intimate relationship with God and dedicated mentorship.",
     "f1_highlight": "Gospel of the Cross",
-    "f2_title": "Korean Immersion",
-    "f2_desc": "As a joyful addition to your spiritual growth, experience the vibrant culture, food, and history of modern Korea with your new community.",
+    "f2_title": "Experiencing Korean Culture",
+    "f2_desc": "On the journey of your spiritual growth, experience the vibrant culture, food, and history of Korea with new community.",
     "f2_highlight": "Life in Korea",
     "f3_title": "Global Community",
-    "f3_desc": "Build lifelong friendships with young adults from all around the world, sharing together in faith and purpose.",
+    "f3_desc": "Build lifelong partners and friends in faith with young adults from all around the world, sharing faith and vision.",
     "f3_highlight": "Global Family"
   },
   "process": {
     "title": "The Gospel Cycle",
-    "subtitle": "Discover the profound flow of training and sending in our program.",
+    "subtitle": "We introduce the three key steps of this journey — gathering, training, and commissioning.",
     "s1_title": "World → Korea",
     "s1_desc": "Young adults from all over the world, hungry for a God-centered life, gather in Korea.",
     "s2_title": "Training in Korea",
-    "s2_desc": "Intensive training in prayer, worship, gospel-centered living, spiritual identity in Christ, servant leadership, and cross-cultural experiences.",
+    "s2_desc": "Intensive training in prayer, worship, gospel-centered living, spiritual identity in Christ, and servant leadership.",
     "s3_title": "Korea → World",
-    "s3_desc": "Sent back as spiritual leaders to serve local churches, impact global communities, and raise the next generation."
+    "s3_desc": "Sent back as spiritual leaders to serve local churches and exert a good influence to both domestic and international communities."
   },
   "stories": {
     "title": "Stories of Grace",
@@ -78,7 +78,7 @@
     "classOf": "Cohort",
     "items": [
       {
-        "quote": "What a blessing it is to go out to the nations in my youth and spend each day with God. I invite you to join us on that very field.",
+        "quote": "What a blessing it is to go out to the nations in our youth and spend each day with God. I invite you to join us on that very field.",
         "name": "Intern Missionary Gaeul Kim",
         "region": "Germany",
         "cohort": "7th"
@@ -108,7 +108,7 @@
         "cohort": "3rd"
       },
       {
-        "quote": "I experienced God's grace covering me, even in my fear of relationships. I realized that relationships are always an area where I must depend on God anew.",
+        "quote": "I experienced God's grace covering me in my fear of relationships. I realized that relationships are always an area where I must depend on God anew.",
         "name": "Intern Missionary Nari Choi",
         "region": "Middle East Asia",
         "cohort": "7th"
@@ -116,14 +116,14 @@
     ]
   },
   "cta": {
-    "title": "Ready to Begin?",
+    "title": "Ready to Begin this Journey?",
     "subtitle": "The journey of faith requires a bold step. Follow these simple steps to apply for the upcoming training program.",
     "s1_title": "Review the Schedule",
     "s1_desc": "Check the upcoming dates and ensure you are available for the full duration.",
     "s2_title": "Prepare Your Documents",
-    "s2_desc": "Gather your passport, recommendation letter from your pastor, and personal testimony.",
+    "s2_desc": "Gather your passport, recommendation letter from your senior pastor, and personal testimony.",
     "s3_title": "Submit Your Application",
-    "s3_desc": "Fill out our online form and our admissions team will contact you shortly.",
+    "s3_desc": "Fill out our online form. Our admissions team will contact you shortly.",
     "button": "Apply Now"
   }
 }

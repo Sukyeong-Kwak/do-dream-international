@@ -73,9 +73,8 @@ export default function PageHero({
         <motion.p
           {...heroEntry(0.6)}
           className="text-lg md:text-xl text-white/75 max-w-2xl mx-auto leading-relaxed mb-12"
-        >
-          {subtitle}
-        </motion.p>
+          dangerouslySetInnerHTML={{ __html: subtitle }}
+        />
 
         <motion.div {...heroEntry(0.8)}>
           {ctaExternal ? (

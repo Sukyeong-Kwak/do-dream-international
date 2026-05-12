@@ -40,7 +40,7 @@ export default function StepsProcess({ steps, className = '' }: StepsProcessProp
               </div>
               <div className="flex-1">
                 <h3 className={`text-xl font-bold ${step.textColor ?? 'text-brand-primary-blue'} mb-2`}>{step.title}</h3>
-                <p className="text-brand-text/70 leading-relaxed text-sm">{step.desc}</p>
+                <p className="text-brand-text/70 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: step.desc }} />
               </div>
             </motion.div>
           ))}
@@ -69,7 +69,7 @@ export default function StepsProcess({ steps, className = '' }: StepsProcessProp
                 {step.icon ?? <span className={`font-bold text-sm ${step.iconColor ? '' : 'text-brand-primary-blue'}`}>{step.num}</span>}
               </div>
               <h3 className={`text-lg md:text-xl font-bold ${step.textColor ?? 'text-brand-primary-blue'} mb-2 md:mb-3`}>{step.title}</h3>
-              <p className="text-brand-text/70 leading-relaxed text-sm max-w-xs">{step.desc}</p>
+              <p className="text-brand-text/70 leading-relaxed text-sm max-w-xs" dangerouslySetInnerHTML={{ __html: step.desc }} />
             </motion.div>
           ))}
         </motion.div>

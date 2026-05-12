@@ -12,6 +12,8 @@ interface Testimonial {
   cohort: string;
 }
 
+// removed name-stripping (인턴 선교사/Intern Missionary) — display full name as-is.
+
 export default function TestimonialCarousel() {
   const { t } = useTranslation('home');
   const testimonials = t('stories.items', { returnObjects: true }) as Testimonial[];
@@ -23,10 +25,6 @@ export default function TestimonialCarousel() {
   const next = () => setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1));
 
   const item = testimonials[current];
-  const cleanName = item.name
-    .replace(/인턴선교사/g, '')
-    .replace(/Intern Missionary/g, '')
-    .trim();
 
   return (
     <section className="py-16 md:py-24 bg-brand-primary-blue relative overflow-hidden">
@@ -56,11 +54,12 @@ export default function TestimonialCarousel() {
               transition={{ duration: 0.4 }}
               className="w-full"
             >
-              <p className="text-xl md:text-2xl lg:text-3xl text-white font-medium leading-relaxed md:leading-relaxed mb-10 italic">
-                "{item.quote}"
-              </p>
+              <p
+                className="text-xl md:text-2xl lg:text-3xl text-white font-medium leading-relaxed md:leading-relaxed mb-10 italic"
+                dangerouslySetInnerHTML={{ __html: `"${item.quote}"` }}
+              />
               <div className="flex flex-col items-center gap-2">
-                <p className="text-white font-bold text-lg">{cleanName}</p>
+                <p className="text-white font-bold text-lg">{item.name}</p>
                 <div className="flex items-center gap-3 text-sm">
                   <span className="text-brand-primary-teal font-medium">{item.region}</span>
                   <span className="text-white/30">|</span>

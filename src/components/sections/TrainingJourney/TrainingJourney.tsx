@@ -43,9 +43,11 @@ export default function TrainingJourney() {
             <motion.div key={index} {...phaseAnimation(index, true)} className="relative flex items-start gap-8 mb-12 last:mb-0">
               <PhaseNode phase={phase} />
               <div className="flex-1">
-                <span className="text-brand-primary-teal text-xs font-semibold tracking-wider">{phase.timeframe}</span>
+                {phase.timeframe && (
+                  <span className="text-brand-primary-teal text-xs font-semibold tracking-wider">{phase.timeframe}</span>
+                )}
                 <h3 className="text-lg font-bold text-white mb-1">{phase.title}</h3>
-                <p className="text-white/60 leading-relaxed text-sm">{phase.desc}</p>
+                <p className="text-white/60 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: phase.desc }} />
               </div>
             </motion.div>
           ))}
@@ -57,12 +59,14 @@ export default function TrainingJourney() {
             <div className="absolute top-[calc(1.25rem+0.75rem+1.5rem)] left-[16.67%] right-[16.67%] h-0.5 -translate-y-1/2 bg-gradient-to-r from-brand-primary-teal via-white/30 to-brand-accent-pink" />
             {phases.map((phase, index) => (
               <motion.div key={index} {...phaseAnimation(index, false)} className="relative text-center flex flex-col items-center">
-                <span className="text-brand-primary-teal text-sm font-semibold tracking-wider mb-3">{phase.timeframe}</span>
+                {phase.timeframe && (
+                  <span className="text-brand-primary-teal text-sm font-semibold tracking-wider mb-3">{phase.timeframe}</span>
+                )}
                 <div className="mb-5">
                   <PhaseNode phase={phase} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{phase.title}</h3>
-                <p className="text-white/60 leading-relaxed text-sm max-w-xs">{phase.desc}</p>
+                <p className="text-white/60 leading-relaxed text-sm max-w-xs" dangerouslySetInnerHTML={{ __html: phase.desc }} />
               </motion.div>
             ))}
           </div>

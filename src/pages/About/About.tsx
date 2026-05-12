@@ -208,15 +208,11 @@ export default function About() {
             {t('partners.title')}
           </h2>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-70 hover:opacity-100 transition-opacity">
-            <div className="text-2xl font-extrabold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer tracking-tight">
-              KWMF
-            </div>
-            <div className="text-2xl font-extrabold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer tracking-tight">
-              Y Mission
-            </div>
-            <div className="text-2xl font-extrabold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer tracking-tight">
-              Podonamu Church
-            </div>
+            {(t('partners.items', { returnObjects: true }) as string[]).map((name) => (
+              <div key={name} className="text-2xl font-extrabold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer tracking-tight">
+                {name}
+              </div>
+            ))}
           </div>
         </div>
       </section>

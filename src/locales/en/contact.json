@@ -10,7 +10,7 @@
         "website": "Website",
         "website_value": "https://www.nwwib.com/youth",
         "location": "Location",
-        "location_value": "11-17, Sinjeong-ro 151beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do, South Korea"
+        "location_value": "11-17, Sinjeong-ro 151beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea"
     },
     "message": {
         "label": "GET IN TOUCH",
@@ -18,7 +18,7 @@
         "name": "Your Name",
         "email": "Email Address",
         "subject": "Subject",
-        "message": "Message",
+        "message": "Context",
         "button": "Send Message",
         "error": "An error occurred while sending your message.",
         "error_hint": "Please try again later.",

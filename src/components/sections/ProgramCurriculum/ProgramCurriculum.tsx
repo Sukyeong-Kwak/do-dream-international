@@ -42,7 +42,7 @@ export default function ProgramCurriculum() {
             <span className="font-semibold text-brand-primary-blue">{item.lectures}</span> {t('curriculum.lecture')}
           </span>
           <span className="bg-gray-50 px-3 py-1.5 rounded-lg text-brand-muted">
-            <span className="font-semibold text-brand-primary-blue">{item.time_per_lecture}</span> min
+            <span className="font-semibold text-brand-primary-blue">{item.time_per_lecture}</span> {t('curriculum.minute')}
           </span>
           <span className="bg-gray-50 px-3 py-1.5 rounded-lg text-brand-muted">
             <span className="font-semibold text-brand-primary-blue">{item.total_hours}</span> {t('curriculum.hour')}

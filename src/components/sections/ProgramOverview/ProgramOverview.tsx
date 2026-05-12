@@ -39,9 +39,8 @@ export default function ProgramOverview() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg text-brand-text/70 max-w-2xl mx-auto leading-relaxed"
-          >
-            {t('program.desc')}
-          </motion.p>
+            dangerouslySetInnerHTML={{ __html: t('program.desc') }}
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">

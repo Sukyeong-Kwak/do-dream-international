@@ -16,7 +16,7 @@ export default function ProgramCTA() {
             {t('partners.subtitle')}
           </p>
           <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
-            {['KWMF', 'Y Mission', 'Podonamu Church'].map((name) => (
+            {(t('partners.items', { returnObjects: true }) as string[]).map((name) => (
               <span key={name} className="text-lg font-bold text-gray-400 hover:text-brand-primary-blue transition-colors">
                 {name}
               </span>
