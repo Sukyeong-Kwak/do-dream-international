@@ -87,16 +87,6 @@
             { "num": "03", "title": "Leadership", "timeframe": "", "desc": "Study Missional Church and Spiritual Leadership. Discover your gifts and prepare to be sent out." }
         ]
     },
-    "cta": {
-        "label": "JOIN US",
-        "title": "Ready to Apply?",
-        "subtitle": "Join us for an unforgettable journey of growth, learning, and transformation.",
-        "button": "Apply Now"
-    },
-    "partners": {
-        "subtitle": "In Partnership With",
-        "items": ["KWMF", "Y Mission", "Vine Church"]
-    },
     "klife": {
         "label": "K-LIFE CULTURAL PROGRAM",
         "title": "Experience Korean Culture Firsthand",

@@ -4,7 +4,7 @@ import { fadeInUp } from '../../../lib/motion';
 import CTASection from '../../common/CTASection';
 
 export default function CallToAction() {
-  const { t } = useTranslation('home');
+  const { t } = useTranslation('common');
 
   const steps = [
     { num: '01', title: t('cta.s1_title'), desc: t('cta.s1_desc') },
@@ -12,11 +12,31 @@ export default function CallToAction() {
     { num: '03', title: t('cta.s3_title'), desc: t('cta.s3_desc') },
   ];
 
+  const partnerItems = t('cta.partners.items', { returnObjects: true }) as string[];
+
   return (
     <CTASection
       title={t('cta.title')}
       subtitle={t('cta.subtitle')}
       buttonText={t('cta.button')}
+      footer={
+        <div className="mt-16 pt-8 border-t border-gray-100">
+          <p className="text-brand-muted text-xs tracking-widest uppercase font-semibold mb-6">
+            {t('cta.partners.subtitle')}
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+            {Array.isArray(partnerItems) &&
+              partnerItems.map((name) => (
+                <span
+                  key={name}
+                  className="text-lg font-bold text-gray-400 hover:text-brand-primary-blue transition-colors"
+                >
+                  {name}
+                </span>
+              ))}
+          </div>
+        </div>
+      }
     >
       <motion.div
         {...fadeInUp}

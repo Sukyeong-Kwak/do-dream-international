@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import PageHero from '../../components/common/PageHero';
 import ApplyProcess from '../../components/sections/ApplyProcess/ApplyProcess';
 import ApplyInfo from '../../components/sections/ApplyInfo/ApplyInfo';
-import ApplyCTA from '../../components/sections/ApplyCTA/ApplyCTA';
+import CallToAction from '../../components/sections/CallToAction/CallToAction';
 import ContactForm from '../../components/sections/ContactForm/ContactForm';
 import ContactInfo from '../../components/sections/ContactInfo/ContactInfo';
 import { APPLY_FORM_URL } from '../../lib/constants';
@@ -26,7 +26,7 @@ export default function Apply() {
       />
       <ApplyProcess />
       <ApplyInfo />
-      <ApplyCTA />
+      <CallToAction />
       <ContactForm />
       <ContactInfo />
     </>

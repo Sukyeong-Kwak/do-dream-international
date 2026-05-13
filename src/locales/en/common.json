@@ -27,5 +27,20 @@
     "cancel": "Cancel",
     "back": "Back",
     "next": "Next"
+  },
+  "cta": {
+    "title": "Ready to Begin this Journey?",
+    "subtitle": "The journey of faith requires a bold step. Follow these simple steps to apply for the upcoming training program.",
+    "s1_title": "Review the Schedule",
+    "s1_desc": "Check the upcoming dates and ensure you are available for the full duration.",
+    "s2_title": "Prepare Your Documents",
+    "s2_desc": "Gather your passport, recommendation letter from your senior pastor, and personal testimony.",
+    "s3_title": "Submit Your Application",
+    "s3_desc": "Fill out our online form. Our admissions team will contact you shortly.",
+    "button": "Apply Now",
+    "partners": {
+      "subtitle": "In Partnership With",
+      "items": ["KWMF", "Y Mission", "Vine Church"]
+    }
   }
 }

@@ -6,7 +6,7 @@ import ProgramCurriculum from '../../components/sections/ProgramCurriculum/Progr
 import DayInProgram from '../../components/sections/DayInProgram/DayInProgram';
 import KLifeProgram from '../../components/sections/KLifeProgram/KLifeProgram';
 import TrainingJourney from '../../components/sections/TrainingJourney/TrainingJourney';
-import ProgramCTA from '../../components/sections/ProgramCTA/ProgramCTA';
+import CallToAction from '../../components/sections/CallToAction/CallToAction';
 
 export default function Program() {
   const { t } = useTranslation('program');
@@ -29,7 +29,7 @@ export default function Program() {
       <DayInProgram />
       <KLifeProgram />
       <TrainingJourney />
-      <ProgramCTA />
+      <CallToAction />
     </>
   );
 }
