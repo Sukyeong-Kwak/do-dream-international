@@ -66,7 +66,7 @@ export default function TrainingJourney() {
                   <PhaseNode phase={phase} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{phase.title}</h3>
-                <p className="text-white/60 leading-relaxed text-sm max-w-xs" dangerouslySetInnerHTML={{ __html: phase.desc }} />
+                <p className="text-white/60 leading-relaxed text-sm max-w-sm" dangerouslySetInnerHTML={{ __html: phase.desc }} />
               </motion.div>
             ))}
           </div>

@@ -37,7 +37,7 @@ export default function NumberedList({
             <h3 className={`${titleSize} font-bold text-brand-primary-blue leading-snug md:flex-1 group-hover:text-brand-primary-teal transition-colors duration-300`}>
               {item.title}
             </h3>
-            <p className="text-brand-text/70 text-base md:text-lg leading-relaxed md:flex-1 max-w-lg">
+            <p className="text-brand-text/70 text-base md:text-lg leading-relaxed md:flex-1 max-w-xl">
               {item.desc}
             </p>
           </div>

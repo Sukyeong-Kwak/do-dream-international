@@ -1,7 +1,7 @@
 {
     "hero": {
         "label": "TRAINING PROGRAM",
-        "title": "Do Dream Twogether International Program",
+        "title": "Do Dream Two-gether International Program",
         "subtitle": "Mid-to-Long-term Residential Spiritual Training Program for Global Young Adults",
         "cta": "View Curriculum"
     },
@@ -14,7 +14,7 @@
             { "value": "24/7", "label": "Community Living" }
         ],
         "director": "General Director: Rev. Junhyung Kim",
-        "dept": "Department: Do Dream Twogether International Team",
+        "dept": "Department: Do Dream Two-gether International Team",
         "org": "Organized by Vine Church"
     },
     "vision": {
@@ -180,7 +180,7 @@
     "schedule": {
         "title": "Daily Schedule",
         "monday": "Monday - Friday",
-        "weekend_note": "* Weekends include church services, cultural activities, and free time for rest and exploration.",
+        "weekend_note": "* Weekends include Sunday services, cultural activities, and free time for rest.",
         "items": [
             { "time": "07:30-08:00", "title": "Morning QT", "description": "English Bible & Personal Quiet Time" },
             { "time": "08:00-09:30", "title": "Breakfast", "description": "Breakfast & Personal Preparation" },

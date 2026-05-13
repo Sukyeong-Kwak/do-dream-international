@@ -29,7 +29,7 @@ export default function PageHero({
   ctaExternal = false,
   minHeight = 'min-h-[70vh]',
   imageOpacity = 'opacity-20',
-  titleClassName = 'text-4xl md:text-5xl lg:text-6xl max-w-4xl',
+  titleClassName = 'text-4xl md:text-5xl lg:text-6xl max-w-5xl',
 }: PageHeroProps) {
   const ctaClassName =
     'inline-block bg-white text-brand-primary-blue hover:bg-white/90 transition-all duration-300 rounded-full px-12 py-4 text-base font-bold tracking-wide shadow-xl';
@@ -72,7 +72,7 @@ export default function PageHero({
 
         <motion.p
           {...heroEntry(0.6)}
-          className="text-lg md:text-xl text-white/75 max-w-2xl mx-auto leading-relaxed mb-12"
+          className="text-lg md:text-xl text-white/75 max-w-5xl mx-auto leading-relaxed mb-12"
           dangerouslySetInnerHTML={{ __html: subtitle }}
         />
 

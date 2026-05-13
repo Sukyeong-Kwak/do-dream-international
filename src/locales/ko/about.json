@@ -14,7 +14,7 @@
     },
     "purpose": {
         "title": "사업 목적",
-        "description": "해외 기독 청년을 초청하여 기독교 신앙의 본질에 대한 집중교육과 체계적인 영성 훈련을 실시하여 차세대 교회 리더를 양성합니다."
+        "description": "해외 기독 청년을 초청하여 기독교 신앙의 본질에 대한 집중교육과 체계적인 영성 훈련을 실시하여 다음 세대 교회 리더를 양성합니다."
     },
     "activities": {
         "title": "운영 내용",
@@ -37,7 +37,7 @@
         "title": "비전 및 핵심가치",
         "v_title": "Vision",
         "v_items": [
-            "차세대 부흥 (Revival of the Younger Generation)",
+            "다음 세대 부흥 (Revival of the Younger Generation)",
             "열방을 향한 영적 리더십 (Spiritual Leadership for the Nations)"
         ],
         "c_title": "Core Values",

@@ -33,7 +33,7 @@ export default function CallToAction() {
                 <span className="text-brand-primary-blue font-bold text-sm">{step.num}</span>
               </div>
               <h3 className="text-lg font-bold text-brand-primary-blue mb-2">{step.title}</h3>
-              <p className="text-sm text-brand-text/60 leading-relaxed max-w-xs" dangerouslySetInnerHTML={{ __html: step.desc }} />
+              <p className="text-sm text-brand-text/60 leading-relaxed max-w-sm" dangerouslySetInnerHTML={{ __html: step.desc }} />
             </div>
           </div>
         ))}

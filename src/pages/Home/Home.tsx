@@ -15,14 +15,14 @@ export default function Home() {
       <PageHero
         image="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&q=80&w=1974"
         imageAlt="Worship Scene"
-        label="Do Dream International"
+        label="Do Dream Two-gether International"
         titleHtml={t('hero.title')}
         subtitle={t('hero.subtitle')}
         ctaText={t('hero.cta')}
         ctaHref="/program"
         minHeight="min-h-[92vh]"
         imageOpacity="opacity-25"
-        titleClassName="text-4xl md:text-5xl lg:text-7xl max-w-4xl"
+        titleClassName="text-4xl md:text-5xl lg:text-7xl max-w-5xl"
       />
       <CoreValues />
       <ProcessFlow />

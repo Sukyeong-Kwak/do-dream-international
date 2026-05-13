@@ -35,7 +35,7 @@ export default function TestimonialCarousel() {
           <motion.p {...fadeIn} className="text-brand-primary-teal font-semibold text-sm tracking-widest uppercase mb-4">
             {t('stories.title')}
           </motion.p>
-          <motion.p {...fadeInUp} className="text-white/60 text-sm md:text-base max-w-xl mx-auto">
+          <motion.p {...fadeInUp} className="text-white/60 text-sm md:text-base max-w-3xl mx-auto">
             {t('stories.subtitle')}
           </motion.p>
         </div>

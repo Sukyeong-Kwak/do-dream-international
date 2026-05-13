@@ -61,7 +61,7 @@ export default function CTASection({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className={`text-lg max-w-2xl mx-auto leading-relaxed mb-12 ${
+          className={`text-lg max-w-3xl mx-auto leading-relaxed mb-12 ${
             isDark ? 'text-white/70' : 'text-brand-text/60'
           }`}
           dangerouslySetInnerHTML={{ __html: subtitle }}
