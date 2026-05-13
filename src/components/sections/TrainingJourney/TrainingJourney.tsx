@@ -56,7 +56,7 @@ export default function TrainingJourney() {
         {/* Desktop */}
         <div className="hidden md:block max-w-5xl mx-auto">
           <div className="grid grid-cols-3 gap-8 relative">
-            <div className="absolute top-[calc(1.25rem+0.75rem+1.5rem)] left-[16.67%] right-[16.67%] h-0.5 -translate-y-1/2 bg-gradient-to-r from-brand-primary-teal via-white/30 to-brand-accent-pink" />
+            <div className="absolute top-6 left-[16.67%] right-[16.67%] h-0.5 -translate-y-1/2 bg-gradient-to-r from-brand-primary-teal via-white/30 to-brand-accent-pink" />
             {phases.map((phase, index) => (
               <motion.div key={index} {...phaseAnimation(index, false)} className="relative text-center flex flex-col items-center">
                 {phase.timeframe && (
