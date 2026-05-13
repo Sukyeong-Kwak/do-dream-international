@@ -16,7 +16,7 @@
   },
   "value": {
     "label": "From Our Director",
-    "title": "A Message of Welcome",
+    "title": "Director Message",
     "p1": "By the faithful guidance of God, it is our sincere joy and gratitude to open the doors of Do Dream Two-gether International.",
     "p2": "Do Dream Two-gether International is a training program that invites Christian young adults from abroad to receive focused teaching on the essence of faith. Together with the Vine Church community — those who embody the Gospel in their daily lives — participants live alongside them and experience that reality firsthand.",
     "p3": "Through 'Do Dream Two-gether,' we have sent Korean young adults to the nations for a year, where they learn missional living, leadership, language, and culture. In the same way, this ministry was born from a holy expectation: what wonderful work might God do among the nations if we invited faithful young adults from abroad here, trained them well, and sent them back out?",
@@ -31,22 +31,22 @@
       "Honorary Doctorate in Theology from Westminster Graduate School of Theology",
       "Former Lecturer at Korea Baptist Theological University/Seminary",
       "Recipient of the 2nd Korea Christian Award in Missions (2025)",
-      "Current Senior Pastor of Vine Church",
-      "Current President of New Wave Mission",
-      "Current Chairman of Youth Mission",
-      "Current Director of GOODTV Christian Gospel Broadcasting",
-      "Current Chairman of the Korea Christian Academic Society",
-      "Current Chairman of the Steering Committee, Korea World Missions Association (KWMA)",
-      "Current Director of the Foreign Mission Board, Korea Baptist Convention",
-      "Current Central Committee Member of the Korea Evangelical Fellowship",
-      "Current Standing Co-president of the Yongin Christian Association",
-      "Current Standing Director of Shalom Butterfly",
-      "Current Chairman of the Korea Cultural Exchange Foundation (under KWMA)",
-      "Current Chairman of Culture & Art Mission Executive Committee, KWMA",
-      "Current Chairman of Next Generation Mission Executive Committee, KWMA",
-      "Current Representative of Africa Project (NGO)",
-      "Current Principal of New Wave Christian School",
-      "Current Chairman of the Vision 2030 Military Mission Committee, Korea Baptist Convention"
+      "(Current) Senior Pastor of Vine Church",
+      "(Current) President of New Wave Mission",
+      "(Current) Chairman of Youth Mission",
+      "(Current) Director of GOODTV Christian Gospel Broadcasting",
+      "(Current) Chairman of the Korea Christian Academic Society",
+      "(Current) Chairman of the Steering Committee, Korea World Missions Association (KWMA)",
+      "(Current) Director of the Foreign Mission Board, Korea Baptist Convention",
+      "(Current) Central Committee Member of the Korea Evangelical Fellowship",
+      "(Current) Standing Co-president of the Yongin Christian Association",
+      "(Current) Standing Director of Shalom Butterfly",
+      "(Current) Chairman of the Korea Cultural Exchange Foundation (under KWMA)",
+      "(Current) Chairman of Culture & Art Mission Executive Committee, KWMA",
+      "(Current) Chairman of Next Generation Mission Executive Committee, KWMA",
+      "(Current) Representative of Africa Project (NGO)",
+      "(Current) Principal of New Wave Christian School",
+      "(Current) Chairman of the Vision 2030 Military Mission Committee, Korea Baptist Convention"
     ],
     "showMore": "View full credentials",
     "showLess": "Show less"
@@ -72,7 +72,7 @@
     "s2_title": "Training in Korea",
     "s2_desc": "Intensive training in prayer, worship, gospel-centered living, spiritual identity in Christ, and servant leadership.",
     "s3_title": "Korea → World",
-    "s3_desc": "Sending back as spiritual leaders to serve local churches and exert a good influence to both domestic and international communities."
+    "s3_desc": "Sending back as spiritual leaders to serve local churches and exerting a good influence to both domestic and international communities."
   },
   "stories": {
     "title": "Stories of Grace",
@@ -98,7 +98,7 @@
         "cohort": "5th"
       },
       {
-        "quote": "In the end, when God — not myself — becomes the true owner of my life, the one thing I can do is 'mission.'",
+        "quote": "In the end, when God — not myself — becomes the true owner of my life, the one thing I can do is 'mission'",
         "name": "Intern Missionary Yeolmae Ha",
         "region": "Central Asia",
         "cohort": "2nd"
