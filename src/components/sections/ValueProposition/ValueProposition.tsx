@@ -20,49 +20,47 @@ export default function ValueProposition() {
           </motion.p>
 
           <motion.div {...fadeInUpSlow} className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="flex flex-col md:flex-row">
-              <div className="md:w-2/5 relative">
-                <div className="aspect-[3/4] md:aspect-auto md:h-full">
+            <div className="grid grid-cols-1 md:grid-cols-3">
+              <div className="relative md:col-start-1 md:row-start-1">
+                <div className="aspect-[3/4]">
                   <img src="/pastor_photo.jpg" alt="Rev. Yeojubong" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-black/5" />
                 </div>
               </div>
 
-              <div className="md:w-3/5 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+              <div className="md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-2 p-8 md:p-12 lg:p-16">
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-primary-blue mb-8 leading-tight">
                   {t('value.title')}
                 </h2>
-
-                <div className="space-y-5 text-brand-text/80 leading-relaxed mb-8">
-                  <p
-                    className="text-base md:text-lg first-letter:text-3xl first-letter:font-bold first-letter:text-brand-primary-blue first-letter:float-left first-letter:mr-2 first-letter:leading-none"
-                    dangerouslySetInnerHTML={{ __html: t('value.p1') }}
-                  />
+                <div className="space-y-4 text-brand-text/80 leading-relaxed">
+                  <p className="text-base md:text-lg font-medium text-brand-text" dangerouslySetInnerHTML={{ __html: t('value.p1') }} />
                   <p className="text-base md:text-lg" dangerouslySetInnerHTML={{ __html: t('value.p2') }} />
                   <p className="text-base md:text-lg" dangerouslySetInnerHTML={{ __html: t('value.p3') }} />
+                  <p className="text-base md:text-lg" dangerouslySetInnerHTML={{ __html: t('value.p4') }} />
+                  <p className="text-base md:text-lg" dangerouslySetInnerHTML={{ __html: t('value.p5') }} />
                 </div>
+              </div>
 
-                <div className="border-t border-gray-100 pt-6">
-                  <img src="/pastor_signature.png" alt="Signature" className="h-12 md:h-14 object-contain mb-3" />
-                  <p className="font-bold text-xl text-brand-primary-blue">{t('value.name')}</p>
-                  <p className="text-brand-muted text-sm mt-1 font-medium">{t('value.role')}</p>
+              <div className="md:col-start-1 md:row-start-2 border-t border-gray-100 p-8 md:p-10 lg:p-12">
+                <img src="/pastor_signature.png" alt="Signature" className="h-12 md:h-14 object-contain mb-3" />
+                <p className="font-bold text-xl text-brand-primary-blue">{t('value.name')}</p>
+                <p className="text-brand-muted text-sm mt-1 font-medium">{t('value.role')}</p>
 
-                  <div className="mt-6">
-                    <div className="space-y-1">
-                      {visibleBio.map((item, index) => (
-                        <p key={index} className="text-xs text-brand-muted/70 leading-relaxed">{item}</p>
-                      ))}
-                    </div>
-                    {bioItems.length > 6 && (
-                      <button
-                        onClick={() => setBioExpanded(!bioExpanded)}
-                        className="mt-3 flex items-center gap-1 text-xs text-brand-primary-teal hover:text-brand-primary-blue transition-colors font-medium"
-                      >
-                        {bioExpanded ? t('value.showLess') : t('value.showMore')}
-                        <HiChevronDown className={`w-3 h-3 transition-transform duration-300 ${bioExpanded ? 'rotate-180' : ''}`} />
-                      </button>
-                    )}
+                <div className="mt-6">
+                  <div className="space-y-1">
+                    {visibleBio.map((item, index) => (
+                      <p key={index} className="text-xs text-brand-muted/70 leading-relaxed">{item}</p>
+                    ))}
                   </div>
+                  {bioItems.length > 6 && (
+                    <button
+                      onClick={() => setBioExpanded(!bioExpanded)}
+                      className="mt-3 flex items-center gap-1 text-xs text-brand-primary-teal hover:text-brand-primary-blue transition-colors font-medium"
+                    >
+                      {bioExpanded ? t('value.showLess') : t('value.showMore')}
+                      <HiChevronDown className={`w-3 h-3 transition-transform duration-300 ${bioExpanded ? 'rotate-180' : ''}`} />
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
