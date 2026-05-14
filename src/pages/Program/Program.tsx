@@ -26,8 +26,10 @@ export default function Program() {
       <ProgramIdentity />
       <ProgramVision />
       <ProgramCurriculum />
-      <DayInProgram />
-      <KLifeProgram />
+      {/* 임시 숨김 (추후 복구): 하루 일정표 */}
+      {false && <DayInProgram />}
+      {/* 임시 숨김 (추후 복구): 월별 문화체험 일정 + 카테고리별 프로그램 상세 */}
+      {false && <KLifeProgram />}
       <TrainingJourney />
       <CallToAction />
     </>

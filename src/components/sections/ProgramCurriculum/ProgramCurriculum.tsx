@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { fadeIn, fadeInUp } from '../../../lib/motion';
+import { fadeIn } from '../../../lib/motion';
 import Accordion from '../../common/Accordion';
 
 interface CurriculumSubject {
@@ -13,9 +13,14 @@ interface CurriculumSubject {
 
 export default function ProgramCurriculum() {
   const { t } = useTranslation('program');
-  const subjects = t('curriculum.subjects', { returnObjects: true }) as CurriculumSubject[];
+  const allSubjects = t('curriculum.subjects', { returnObjects: true }) as CurriculumSubject[];
 
-  if (!Array.isArray(subjects)) return null;
+  if (!Array.isArray(allSubjects)) return null;
+
+  // 임시 숨김: "십자가의 복음" / "The Gospel of the Cross"만 노출 (나머지는 추후 복구)
+  const subjects = allSubjects.filter(
+    (s) => s.title === '십자가의 복음' || s.title === 'The Gospel of the Cross'
+  );
 
   const items = subjects.map((item, index) => ({
     trigger: (
@@ -60,7 +65,8 @@ export default function ProgramCurriculum() {
             {t('curriculum.label')}
           </motion.p>
 
-          <motion.div {...fadeInUp} className="flex items-center justify-center gap-12 mb-6">
+          {/* 임시 숨김: 총 강의 수/시간 통계 (추후 복구) */}
+          {/* <motion.div {...fadeInUp} className="flex items-center justify-center gap-12 mb-6">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-brand-primary-blue">120</div>
               <div className="text-sm text-brand-muted uppercase tracking-wider font-semibold mt-1">{t('curriculum.lecture')}</div>
@@ -70,7 +76,7 @@ export default function ProgramCurriculum() {
               <div className="text-4xl md:text-5xl font-bold text-brand-primary-teal">206.3</div>
               <div className="text-sm text-brand-muted uppercase tracking-wider font-semibold mt-1">{t('curriculum.hour')}</div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         <Accordion
