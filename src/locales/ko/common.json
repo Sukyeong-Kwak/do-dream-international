@@ -40,7 +40,12 @@
         "button": "지금 지원하기",
         "partners": {
             "subtitle": "파트너십",
-            "items": ["KWMF", "Y Mission", "포도나무교회"]
+            "items": [
+                { "name": "포도나무교회", "logo": "/partners/vinechurch.png", "url": "https://www.vinechurch.com/" },
+                { "name": "새물결선교회", "logo": "/partners/newwave.png", "url": "https://www.newwave.or.kr/" },
+                { "name": "Y Mission", "logo": "/partners/ymission.png", "url": "https://www.ymission.org/" },
+                { "name": "두드림투게더", "logo": "/partners/dodream.png", "url": "https://www.do-dream.us/" }
+            ]
         }
     }
 }

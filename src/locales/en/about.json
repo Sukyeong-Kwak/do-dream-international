@@ -57,7 +57,12 @@
     },
     "partners": {
         "title": "Our Partners",
-        "items": ["KWMF", "Y Mission", "Vine Church"]
+        "items": [
+            { "name": "Vine Church", "logo": "/partners/vinechurch.png", "url": "https://www.vinechurch.com/" },
+            { "name": "New Wave Mission", "logo": "/partners/newwave.png", "url": "https://www.newwave.or.kr/" },
+            { "name": "Y Mission", "logo": "/partners/ymission.png", "url": "https://www.ymission.org/" },
+            { "name": "Do-Dream International", "logo": "/partners/dodream.png", "url": "https://www.do-dream.us/" }
+        ]
     },
     "organization": {
         "title": "Organization",

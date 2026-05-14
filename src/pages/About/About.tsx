@@ -207,11 +207,26 @@ export default function About() {
           <h2 className="text-2xl font-bold text-brand-primary-blue mb-10 uppercase tracking-widest text-sm">
             {t('partners.title')}
           </h2>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-70 hover:opacity-100 transition-opacity">
-            {(t('partners.items', { returnObjects: true }) as string[]).map((name) => (
-              <div key={name} className="text-2xl font-extrabold text-gray-500 hover:text-brand-primary-blue transition-colors cursor-pointer tracking-tight">
-                {name}
-              </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-5xl mx-auto">
+            {(t('partners.items', { returnObjects: true }) as { name: string; logo: string; url: string }[]).map((partner) => (
+              <a
+                key={partner.name}
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center justify-center gap-3 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md hover:border-brand-primary-blue/30 transition-all"
+              >
+                <div className="h-24 md:h-28 flex items-center justify-center">
+                  <img
+                    src={partner.logo}
+                    alt={`${partner.name} logo`}
+                    className="max-h-24 md:max-h-28 w-auto object-contain group-hover:scale-105 transition-transform"
+                  />
+                </div>
+                <span className="text-base font-semibold text-brand-text group-hover:text-brand-primary-blue transition-colors tracking-tight">
+                  {partner.name}
+                </span>
+              </a>
             ))}
           </div>
         </div>

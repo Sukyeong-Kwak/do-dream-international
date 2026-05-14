@@ -12,7 +12,7 @@ export default function CallToAction() {
     { num: '03', title: t('cta.s3_title'), desc: t('cta.s3_desc') },
   ];
 
-  const partnerItems = t('cta.partners.items', { returnObjects: true }) as string[];
+  const partnerItems = t('cta.partners.items', { returnObjects: true }) as { name: string; logo: string; url: string }[];
 
   return (
     <CTASection
@@ -21,18 +21,30 @@ export default function CallToAction() {
       buttonText={t('cta.button')}
       footer={
         <div className="mt-16 pt-8 border-t border-gray-100">
-          <p className="text-brand-muted text-xs tracking-widest uppercase font-semibold mb-6">
+          <p className="text-brand-muted text-xs tracking-widest uppercase font-semibold mb-6 text-center">
             {t('cta.partners.subtitle')}
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 max-w-4xl mx-auto">
             {Array.isArray(partnerItems) &&
-              partnerItems.map((name) => (
-                <span
-                  key={name}
-                  className="text-lg font-bold text-gray-400 hover:text-brand-primary-blue transition-colors"
+              partnerItems.map((partner) => (
+                <a
+                  key={partner.name}
+                  href={partner.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col items-center justify-center gap-2"
                 >
-                  {name}
-                </span>
+                  <div className="h-20 md:h-24 flex items-center justify-center">
+                    <img
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      className="max-h-20 md:max-h-24 w-auto object-contain group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <span className="text-base font-semibold text-brand-text group-hover:text-brand-primary-blue transition-colors">
+                    {partner.name}
+                  </span>
+                </a>
               ))}
           </div>
         </div>
