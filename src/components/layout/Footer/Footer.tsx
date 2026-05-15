@@ -13,7 +13,7 @@ export default function Footer() {
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
-              <img src="/logo-white.png" alt="Do Dream International" className="h-16 w-auto" />
+              <img src="/logo-white.png" alt="DO-DREAM Two-GETHER" className="h-16 w-auto" />
             </div>
             <p className="text-sm text-gray-200 text-center md:text-left max-w-md leading-relaxed">
               {t('footer.description')}

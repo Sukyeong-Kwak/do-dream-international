@@ -6,7 +6,7 @@
     "overview": {
         "title": "Program Overview",
         "name": "Project Name: Do Dream Two-gether International",
-        "organizer": "Organizer: Vine Church",
+        "organizer": "Organizer: VINE BAPTIST CHURCH",
         "type": "Type: Overseas Christian Youth Invitation Spiritual Training Program",
         "location": "Location: 11-17, Sinjeong-ro 151beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do",
         "target": "Target: Overseas foreign Christian youth (20-30s)",
@@ -58,15 +58,15 @@
     "partners": {
         "title": "Our Partners",
         "items": [
-            { "name": "Vine Church", "logo": "/partners/vinechurch.png", "url": "https://www.vinechurch.com/" },
-            { "name": "New Wave Mission", "logo": "/partners/newwave.png", "url": "https://www.newwave.or.kr/" },
+            { "name": "VINE BAPTIST CHURCH", "logo": "/partners/vinechurch.png", "url": "https://www.vinechurch.com/" },
+            { "name": "New Wave Ministries", "logo": "/partners/newwave.png", "url": "https://www.newwave.or.kr/" },
             { "name": "Y Mission", "logo": "/partners/ymission.png", "url": "https://www.ymission.org/" },
             { "name": "Do-Dream International", "logo": "/partners/dodream.png", "url": "https://www.do-dream.us/" }
         ]
     },
     "organization": {
         "title": "Organization",
-        "director": "General Director: Rev. Junhyung Kim (Young Adult Pastor, Vine Church)",
+        "director": "General Director: Rev. Junhyung Kim (Young Adult Pastor, Vine Baptist Church)",
         "dept": "Department: Do Dream Two-gether International Team"
     }
 }
