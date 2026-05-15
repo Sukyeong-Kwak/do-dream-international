@@ -41,7 +41,7 @@ export default function CallToAction() {
                       className="max-h-20 md:max-h-24 w-auto object-contain group-hover:scale-105 transition-transform"
                     />
                   </div>
-                  <span className="text-base font-semibold text-brand-text group-hover:text-brand-primary-blue transition-colors">
+                  <span className="text-base font-semibold text-brand-text group-hover:text-brand-primary-blue transition-colors whitespace-pre-line text-center">
                     {partner.name}
                   </span>
                 </a>

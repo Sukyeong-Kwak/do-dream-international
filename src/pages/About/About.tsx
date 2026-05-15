@@ -223,7 +223,7 @@ export default function About() {
                     className="max-h-24 md:max-h-28 w-auto object-contain group-hover:scale-105 transition-transform"
                   />
                 </div>
-                <span className="text-base font-semibold text-brand-text group-hover:text-brand-primary-blue transition-colors tracking-tight">
+                <span className="text-base font-semibold text-brand-text group-hover:text-brand-primary-blue transition-colors tracking-tight whitespace-pre-line text-center">
                   {partner.name}
                 </span>
               </a>
