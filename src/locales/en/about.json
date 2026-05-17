@@ -1,20 +1,20 @@
 {
     "hero": {
         "title": "Trained and Sent as Spiritual Leaders",
-        "subtitle": "Discover the vision and heart behind Do Dream Two-gether International."
+        "subtitle": "Discover the vision and heart behind DO DREAM TWO-GETHER International."
     },
     "overview": {
         "title": "Program Overview",
-        "name": "Project Name: Do Dream Two-gether International",
+        "name": "Project Name: DO DREAM TWO-GETHER International",
         "organizer": "Organizer: VINE BAPTIST CHURCH",
-        "type": "Type: Overseas Christian Youth Invitation Spiritual Training Program",
+        "type": "Type: Mid-to-Long-term Spiritual Training Program for Christian Youth Worldwide",
         "location": "Location: 11-17, Sinjeong-ro 151beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do",
-        "target": "Target: Overseas foreign Christian youth (20-30s)",
-        "duration": "Duration: 3-month, 6-month, 1-year options"
+        "target": "Target: Christian youth of churches worldwide (20-30s, foreign nationals)",
+        "duration": "Duration: 3 months (85 days, within 90-day visa limit)"
     },
     "purpose": {
         "title": "Our Purpose",
-        "description": "To invite overseas Christian youth for intensive education and systematic spiritual training on the essence of the Christian faith, nurturing the next generation of church leaders."
+        "description": "To invite Christian youth worldwide for intensive education and systematic spiritual training on the essence of the Christian faith, nurturing the next generation of church leaders."
     },
     "activities": {
         "title": "Program Activities",
@@ -50,7 +50,7 @@
     "effects": {
         "title": "Expected Effects",
         "items": [
-            "Spiritual maturity and leadership capacity building for overseas Christian youth",
+            "Spiritual maturity and leadership capacity building for Christian youth worldwide",
             "Formation of an international faith network",
             "Expansion of global communication capabilities"
         ]
@@ -61,12 +61,12 @@
             { "name": "VINE BAPTIST CHURCH", "logo": "/partners/vinechurch.png", "url": "https://www.vinechurch.com/" },
             { "name": "New Wave Ministries", "logo": "/partners/newwave.png", "url": "https://www.newwave.or.kr/" },
             { "name": "Y Mission", "logo": "/partners/ymission.png", "url": "https://www.ymission.org/" },
-            { "name": "DO-DREAM\nTwo-GETHER", "logo": "/partners/dodream.png", "url": "https://www.do-dream.us/" }
+            { "name": "DO DREAM\nTWO-GETHER", "logo": "/partners/dodream.png", "url": "https://www.do-dream.us/" }
         ]
     },
     "organization": {
         "title": "Organization",
         "director": "General Director: Rev. Junhyung Kim (Young Adult Pastor, Vine Baptist Church)",
-        "dept": "Department: Do Dream Two-gether International Team"
+        "dept": "Department: DO DREAM TWO-GETHER International Team"
     }
 }

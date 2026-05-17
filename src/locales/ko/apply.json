@@ -21,9 +21,9 @@
         "cost_label": "예상 경비 (최소)",
         "cost_value": "월 120만원",
         "cost_desc": "숙소, 식사, 강의, 활동비가 포함된 금액입니다.",
-        "duration_label": "운영 기간 옵션",
-        "duration_value": "3개월, 6개월, 12개월",
-        "duration_desc": "본인의 상황에 맞는 기간을 선택할 수 있습니다.",
+        "duration_label": "운영 기간",
+        "duration_value": "3개월 (85일)",
+        "duration_desc": "비자 90일 체류 기준을 고려한 85일 운영 과정입니다.",
         "docs_label": "필요 서류",
         "docs_items": [
             "본인 여권 사본",

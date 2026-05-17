@@ -18,7 +18,7 @@
     "newsletter": "Newsletter",
     "newsletterPlaceholder": "Enter your email",
     "subscribe": "Subscribe",
-    "copyright": "© 2026 Do Dream Two-gether International. All rights reserved."
+    "copyright": "© 2026 DO DREAM TWO-GETHER International. All rights reserved."
   },
   "buttons": {
     "learnMore": "Learn More",
@@ -44,7 +44,7 @@
         { "name": "VINE BAPTIST CHURCH", "logo": "/partners/vinechurch.png", "url": "https://www.vinechurch.com/" },
         { "name": "New Wave Ministries", "logo": "/partners/newwave.png", "url": "https://www.newwave.or.kr/" },
         { "name": "Y Mission", "logo": "/partners/ymission.png", "url": "https://www.ymission.org/" },
-        { "name": "DO-DREAM\nTwo-GETHER", "logo": "/partners/dodream.png", "url": "https://www.do-dream.us/" }
+        { "name": "DO DREAM\nTWO-GETHER", "logo": "/partners/dodream.png", "url": "https://www.do-dream.us/" }
       ]
     }
   }

@@ -22,7 +22,7 @@ export default function About() {
             className="mb-8 flex justify-center"
           >
             <div className="bg-white/10 p-6 md:p-8 rounded-full backdrop-blur-sm border border-white/20">
-              <img src="/logo-white.png" alt="Do Dream International Logo" className="h-20 md:h-24 w-auto" />
+              <img src="/logo-white.png" alt="DO DREAM TWO-GETHER International Logo" className="h-20 md:h-24 w-auto" />
             </div>
           </motion.div>
           <motion.h1

@@ -21,9 +21,9 @@
         "cost_label": "Estimated Cost",
         "cost_value": "₩1,200,000 / mo",
         "cost_desc": "Includes accommodation, meals, lectures, and activities.",
-        "duration_label": "Duration Options",
-        "duration_value": "3, 6, or 12 months",
-        "duration_desc": "Choose the duration that fits your situation.",
+        "duration_label": "Duration",
+        "duration_value": "3 months (85 days)",
+        "duration_desc": "An 85-day program designed within the 90-day visa limit.",
         "docs_label": "Required Documents",
         "docs_items": [
             "Valid Passport Copy",

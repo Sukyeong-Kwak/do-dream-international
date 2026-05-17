@@ -26,7 +26,7 @@ export default function Header() {
       <nav className="container-custom py-1">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <img src="/logo-horizontal.png" alt="Do Dream International" className="h-16 md:h-[5rem] w-auto" />
+            <img src="/logo-horizontal.png" alt="DO DREAM TWO-GETHER International" className="h-16 md:h-[5rem] w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

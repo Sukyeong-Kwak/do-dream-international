@@ -1,20 +1,20 @@
 {
     "hero": {
         "label": "TRAINING PROGRAM",
-        "title": "Do Dream Two-gether International Program",
-        "subtitle": "Mid-to-Long-term Residential Spiritual Training Program for Global Young Adults",
+        "title": "DO DREAM TWO-GETHER International Program",
+        "subtitle": "Mid-to-Long-term Residential Spiritual Training Program for Christian Youth Worldwide",
         "cta": "View Curriculum"
     },
     "identity": {
         "label": "ABOUT THE PROGRAM",
-        "purpose": "An intensive training program designed to nurture next-generation church leaders by inviting overseas Christian youth for a deep, systematic spiritual training on the essence of the Christian faith.",
+        "purpose": "An intensive training program designed to nurture next-generation church leaders by inviting Christian youth worldwide for a deep, systematic spiritual training on the essence of the Christian faith.",
         "stats": [
-            { "value": "3 / 6 / 12 mo", "label": "Duration" },
+            { "value": "3 mo (85 days)", "label": "Duration" },
             { "value": "Ages 20-30s", "label": "Target" },
             { "value": "24/7", "label": "Community Living" }
         ],
         "director": "General Director: Rev. Junhyung Kim",
-        "dept": "Department: Do Dream Two-gether International Team",
+        "dept": "Department: DO DREAM TWO-GETHER International Team",
         "org": "Organized by Vine Baptist Church"
     },
     "vision": {
