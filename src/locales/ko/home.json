@@ -14,6 +14,14 @@
         "subtitle": "십자가 복음을 통해 신앙의 본질을 깨닫고 신앙이 실제가 되는 구체적인 훈련 프로그램에 여러분을 초대합니다.",
         "cta": "프로그램 살펴보기"
     },
+    "intro": {
+        "button": "소개 영상",
+        "ariaLabel": "소개 영상",
+        "closeHint": "ESC · Enter 또는 바깥을 클릭하면 닫힙니다",
+        "closeAriaLabel": "닫기 (ESC 또는 Enter)",
+        "unmuteAriaLabel": "소리 켜기",
+        "muteAriaLabel": "소리 끄기"
+    },
     "value": {
         "label": "대표 인사",
         "title": "인사말",

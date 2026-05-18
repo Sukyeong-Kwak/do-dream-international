@@ -14,6 +14,14 @@
     "subtitle": "We invite you to a concrete training program that brings the essence of faith into lived reality.",
     "cta": "Explore the Program"
   },
+  "intro": {
+    "button": "Watch Intro",
+    "ariaLabel": "Intro video",
+    "closeHint": "Press ESC · Enter or click outside to close",
+    "closeAriaLabel": "Close (ESC or Enter)",
+    "unmuteAriaLabel": "Unmute",
+    "muteAriaLabel": "Mute"
+  },
   "value": {
     "label": "From Our Director",
     "title": "Director Message",
