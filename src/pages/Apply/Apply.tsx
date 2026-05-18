@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import PageHero from '../../components/common/PageHero';
-import ApplyProcess from '../../components/sections/ApplyProcess/ApplyProcess';
 import ApplyInfo from '../../components/sections/ApplyInfo/ApplyInfo';
 import CallToAction from '../../components/sections/CallToAction/CallToAction';
 import ContactForm from '../../components/sections/ContactForm/ContactForm';
@@ -24,7 +23,6 @@ export default function Apply() {
         minHeight="min-h-[60vh]"
         titleClassName="text-4xl md:text-5xl lg:text-6xl max-w-3xl"
       />
-      <ApplyProcess />
       <ApplyInfo />
       <CallToAction />
       <ContactForm />
