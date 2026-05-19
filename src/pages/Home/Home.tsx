@@ -67,7 +67,7 @@ export default function Home() {
           type="button"
           onClick={openIntro}
           aria-label={t('intro.button')}
-          className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-brand-primary-blue text-white px-5 py-3 shadow-xl hover:bg-brand-primary-blue/90 transition-colors"
+          className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-brand-primary-blue text-white px-5 py-3 shadow-2xl ring-2 ring-white hover:bg-brand-primary-blue/90 hover:ring-white/90 transition-colors cursor-pointer"
         >
           <HiPlay className="w-5 h-5" />
           <span className="text-sm font-semibold">{t('intro.button')}</span>
