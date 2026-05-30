@@ -20,7 +20,13 @@
         "closeHint": "ESC · Enter 또는 바깥을 클릭하면 닫힙니다",
         "closeAriaLabel": "닫기 (ESC 또는 Enter)",
         "unmuteAriaLabel": "소리 켜기",
-        "muteAriaLabel": "소리 끄기"
+        "muteAriaLabel": "소리 끄기",
+        "section": {
+            "label": "Introduction",
+            "title": "어떻게 시작되었는가,<br />어떻게 살아가는가",
+            "subtitle": "DO DREAM TWO-GETHER의 시작 이야기와<br />이곳에서 이루어지는 훈련과 공부, 공동체의 삶을 짧은 영상에 담았습니다.",
+            "iframeTitle": "DO DREAM TWO-GETHER International 소개 영상"
+        }
     },
     "value": {
         "label": "대표 인사",

@@ -20,7 +20,13 @@
     "closeHint": "Press ESC · Enter or click outside to close",
     "closeAriaLabel": "Close (ESC or Enter)",
     "unmuteAriaLabel": "Unmute",
-    "muteAriaLabel": "Mute"
+    "muteAriaLabel": "Mute",
+    "section": {
+      "label": "Introduction",
+      "title": "How It Began,<br />How We Live",
+      "subtitle": "A short film on how DO DREAM TWO-GETHER began<br />and the training, study, and community life that unfold here.",
+      "iframeTitle": "DO DREAM TWO-GETHER International intro video"
+    }
   },
   "value": {
     "label": "From Our Director",
