@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="mb-6">
               <img src="/logo-white.png" alt="DO DREAM TWO-GETHER" className="h-16 w-auto" />
             </div>
-            <p className="text-sm text-gray-200 text-center md:text-left max-w-md leading-relaxed">
+            <p className="text-sm text-gray-200 text-center md:text-left max-w-md leading-relaxed whitespace-pre-line">
               {t('footer.description')}
             </p>
             <div className="flex justify-center md:justify-start space-x-4 mt-8">
