@@ -6,6 +6,7 @@ import Layout from '../components/layout/Layout';
 const Home = lazy(() => import('../pages/Home/Home'));
 const Program = lazy(() => import('../pages/Program/Program'));
 const Apply = lazy(() => import('../pages/Apply/Apply'));
+const Inquiries = lazy(() => import('../pages/Inquiries/Inquiries'));
 
 
 // Loading component
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/program', element: <Program /> },
       { path: '/apply', element: <Apply /> },
+      { path: '/inquiries', element: <Inquiries /> },
     ],
   },
 ]);

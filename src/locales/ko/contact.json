@@ -12,6 +12,11 @@
         "location": "오시는 길",
         "location_value": "경기도 용인시 기흥구 신정로 151번길 11-17"
     },
+    "inquiry": {
+        "intro_title": "무엇이든 편하게 문의하세요",
+        "intro_subtitle": "아래 양식을 작성해 주시면 확인 후 빠르게 답변드리겠습니다.",
+        "home_button": "홈페이지로 이동"
+    },
     "message": {
         "label": "문의하기",
         "title": "메시지 보내기",

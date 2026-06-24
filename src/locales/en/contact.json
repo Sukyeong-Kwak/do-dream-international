@@ -12,6 +12,11 @@
         "location": "Location",
         "location_value": "11-17, Sinjeong-ro 151beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea"
     },
+    "inquiry": {
+        "intro_title": "Reach Out Anytime",
+        "intro_subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+        "home_button": "Visit Our Website"
+    },
     "message": {
         "label": "GET IN TOUCH",
         "title": "Send a Message",
