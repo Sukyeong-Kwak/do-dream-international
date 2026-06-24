@@ -103,7 +103,7 @@ export default function Inquiries() {
             {/* Mobile-only home button (left brand panel is hidden on phones) */}
             <Link
               to="/"
-              className="lg:hidden inline-flex items-center gap-2 mb-6 text-brand-primary-blue font-bold text-sm hover:underline"
+              className="lg:hidden flex items-center justify-center gap-2 w-full mb-6 bg-brand-primary-blue text-white py-3.5 rounded-xl font-bold text-sm shadow-md transition-all active:scale-[0.98] hover:bg-brand-primary-blue/90"
             >
               <FaHome className="w-4 h-4" />
               {t('inquiry.home_button')}
