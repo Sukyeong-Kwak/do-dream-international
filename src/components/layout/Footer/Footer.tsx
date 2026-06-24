@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { SOCIAL_LINKS } from '../../../lib/constants';
+// 소셜 링크 재활성화 시 주석 해제: import { SOCIAL_LINKS } from '../../../lib/constants';
 
 export default function Footer() {
   const { t } = useTranslation('common');
@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-brand-primary-blue text-white">
       <div className="container-custom py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
@@ -18,6 +18,8 @@ export default function Footer() {
             <p className="text-sm text-gray-200 text-center md:text-left max-w-md leading-relaxed whitespace-pre-line">
               {t('footer.description')}
             </p>
+            {/* 소셜 링크: 실제 계정 주소가 준비되면 SOCIAL_LINKS 업데이트 후 아래 블록 주석 해제 */}
+            {/*
             <div className="flex justify-center md:justify-start space-x-4 mt-8">
               {SOCIAL_LINKS.map(({ href, label, Icon }) => (
                 <a
@@ -32,6 +34,7 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+            */}
           </div>
 
           {/* Quick Links */}
@@ -49,24 +52,6 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-white font-semibold mb-4 text-lg">{t('footer.newsletter')}</h3>
-            <form className="space-y-3">
-              <input
-                type="email"
-                placeholder={t('footer.newsletterPlaceholder')}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all"
-              />
-              <button
-                type="submit"
-                className="w-full bg-brand-primary-teal text-white px-4 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors shadow-md text-sm"
-              >
-                {t('footer.subscribe')}
-              </button>
-            </form>
           </div>
         </div>
 
