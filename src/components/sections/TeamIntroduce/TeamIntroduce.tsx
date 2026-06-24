@@ -4,7 +4,7 @@ import SectionHeader from '../../common/SectionHeader';
 import { staggerItem } from '../../../lib/motion';
 
 const TEAM_PHOTOS = [
-  { src: '/team_introduce_1.PNG', alt: 'DO DREAM TWO-GETHER International team portrait' },
+  { src: '/team_introduce_3.PNG', alt: 'DO DREAM TWO-GETHER International team portrait' },
   { src: '/team_introduce_2.PNG', alt: 'DO DREAM TWO-GETHER International team at work' },
 ];
 
