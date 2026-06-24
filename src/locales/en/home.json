@@ -65,6 +65,11 @@
     "showMore": "View full credentials",
     "showLess": "Show less"
   },
+  "team": {
+    "label": "Our Team",
+    "title": "Dreaming Together, Walking Together",
+    "subtitle": "Meet the team behind DO DREAM TWO-GETHER International."
+  },
   "program": {
     "title": "The Foundation of the Gospel,<br className=\"md:hidden\" /> Experiencing Grace",
     "desc": "A comprehensive journey designed for young adults seeking true spiritual awakening through the Gospel of the Cross and intimacy with God.",
