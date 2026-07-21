@@ -3,12 +3,11 @@ import PageHero from '../../components/common/PageHero';
 import IntroVideo from '../../components/sections/IntroVideo/IntroVideo';
 import CoreValues from '../../components/sections/CoreValues/CoreValues';
 import ProgramOverview from '../../components/sections/ProgramOverview/ProgramOverview';
+import Facility from '../../components/sections/Facility/Facility';
 import ValueProposition from '../../components/sections/ValueProposition/ValueProposition';
 import TeamIntroduce from '../../components/sections/TeamIntroduce/TeamIntroduce';
 import TestimonialCarousel from '../../components/sections/TestimonialCarousel/TestimonialCarousel';
 import CallToAction from '../../components/sections/CallToAction/CallToAction';
-
-const INTRO_VIDEO_ID = 'YcFAdGuCb4M';
 
 export default function Home() {
   const { t } = useTranslation('home');
@@ -27,9 +26,10 @@ export default function Home() {
         imageOpacity="opacity-25"
         titleClassName="text-4xl md:text-5xl lg:text-7xl max-w-5xl"
       />
-      <IntroVideo youtubeId={INTRO_VIDEO_ID} />
+      <IntroVideo youtubeId={t('intro.section.videoId')} />
       <CoreValues />
       <ProgramOverview />
+      <Facility />
       <ValueProposition />
       <TeamIntroduce />
       <TestimonialCarousel />

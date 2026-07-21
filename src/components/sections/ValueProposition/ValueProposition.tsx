@@ -2,11 +2,14 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { HiChevronDown } from 'react-icons/hi2';
+import { HiOutlineZoomIn } from 'react-icons/hi';
+import Lightbox from '../../common/Lightbox';
 import { fadeIn, fadeInUpSlow } from '../../../lib/motion';
 
 export default function ValueProposition() {
   const { t } = useTranslation('home');
   const [bioExpanded, setBioExpanded] = useState(false);
+  const [photoOpen, setPhotoOpen] = useState(false);
 
   const bioItems = t('value.bio', { returnObjects: true }) as string[];
   const visibleBio = bioExpanded ? bioItems : bioItems.slice(0, 6);
@@ -22,10 +25,22 @@ export default function ValueProposition() {
           <motion.div {...fadeInUpSlow} className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="relative md:col-start-1 md:row-start-1">
-                <div className="aspect-[3/4]">
-                  <img src="/pastor_photo.jpg" alt="Rev. Yeojubong" className="w-full h-full object-cover" />
+                <button
+                  type="button"
+                  onClick={() => setPhotoOpen(true)}
+                  aria-label={t('value.name')}
+                  className="group block w-full aspect-[3/4] overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-primary-teal"
+                >
+                  <img
+                    src="/pastor_photo.jpg"
+                    alt={t('value.name')}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-black/5" />
-                </div>
+                  <span className="absolute top-4 right-4 p-2 rounded-full bg-black/30 text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
+                    <HiOutlineZoomIn className="w-5 h-5" />
+                  </span>
+                </button>
               </div>
 
               <div className="md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-2 p-8 md:p-12 lg:p-16">
@@ -67,6 +82,13 @@ export default function ValueProposition() {
           </motion.div>
         </div>
       </div>
+
+      <Lightbox
+        images={[{ src: '/pastor_photo.jpg', alt: t('value.name'), caption: t('value.name') }]}
+        index={photoOpen ? 0 : null}
+        onIndexChange={() => {}}
+        onClose={() => setPhotoOpen(false)}
+      />
     </section>
   );
 }

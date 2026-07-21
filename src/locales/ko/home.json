@@ -25,7 +25,28 @@
             "label": "Introduction",
             "title": "어떻게 시작되었는가,<br />어떻게 살아가는가",
             "subtitle": "DO DREAM TWO-GETHER의 시작 이야기와<br />이곳에서 이루어지는 훈련과 공부, 공동체의 삶을 짧은 영상에 담았습니다.",
-            "iframeTitle": "DO DREAM TWO-GETHER International 소개 영상"
+            "iframeTitle": "DO DREAM TWO-GETHER International 소개 영상",
+            "videoId": "YcFAdGuCb4M"
+        }
+    },
+    "facility": {
+        "label": "Facilities",
+        "title": "훈련이 이루어지는 공간",
+        "subtitle": "강의실부터 기숙사, 생활 공간까지<br />훈련 기간 동안 여러분이 머무르게 될 시설을 소개합니다.",
+        "zoomHint": "사진을 클릭하면 크게 볼 수 있습니다",
+        "items": {
+            "hallway1": "1층 복도 (아치형 입구)",
+            "classroom1": "강의실 (강의용 좌석)",
+            "classroom2": "강의실 (책상형 배치)",
+            "classroom3": "강의실 (창가 좌석)",
+            "hallway2": "2층 복도 (강의실 앞)",
+            "dormitory1": "기숙사 (책상 공간)",
+            "dormitory3": "기숙사 (2인 2층 침대)",
+            "dormitory2": "기숙사 (개인 수납장)",
+            "shower": "샤워실 (샤워 공간)",
+            "restroom": "화장실 (세면대 및 개별 칸)",
+            "office": "사무실 (서재 및 라운지)",
+            "aerial": "건물 전경 (주차장)"
         }
     },
     "value": {
