@@ -38,6 +38,7 @@
         "viewToc": "View Full Table of Contents",
         "hideToc": "Hide Table of Contents",
         "totalLectures": "{{count}} Lectures",
+        "materialsCaption": "Core textbooks — The Gospel of the Cross, Vol. 1 & 2",
         "subjects": [
             {
                 "title": "Our Great Salvation",
@@ -264,6 +265,76 @@
             { "time": "18:30-20:00", "title": "Dinner", "description": "Dinner & Rest" },
             { "time": "20:00-22:00", "title": "Isaiah 62", "description": "Isaiah 62 Worship Service" },
             { "time": "22:00-23:00", "title": "Personal Time", "description": "Preparation for Sleep & Wrap-up" }
+        ]
+    },
+    "byNumbers": {
+        "label": "TRACK RECORD",
+        "title": "The Ministry Behind the Program",
+        "subtitle": "DO DREAM TWO-GETHER International is run by Vine Baptist Church and its mission network — a ministry with a proven track record of raising and sending the next generation.",
+        "stats": [
+            { "value": "62", "label": "DO DREAM Intern Missionaries", "note": "Young adults sent to the nations" },
+            { "value": "2018~", "label": "Y Mission Founded", "note": "Base of youth · campus · military mission" },
+            { "value": "97", "label": "YMC Campus Staff", "note": "94 universities · as of Aug 2025" },
+            { "value": "2015~", "label": "New Wave Christian School", "note": "Christian alternative school (K–12)" },
+            { "value": "90+", "label": "ROTC Mission Staff", "note": "as of Oct 2024" },
+            { "value": "80+", "label": "Campuses Visited Weekly", "note": "approx. 80 universities (ROTC)" }
+        ]
+    },
+    "campusLife": {
+        "label": "CAMPUS & LIFE",
+        "title": "Meet Your Space Before You Arrive",
+        "subtitle": "Where you will learn, rest, and live together for three months — see it for yourself.",
+        "facilities": {
+            "title": "Training Facilities",
+            "desc": "Bright hallways, dedicated classrooms, and a shared office where lectures, study, and community life take place.",
+            "captions": ["Hallway, 1F", "Hallway, 2F", "Classroom 1", "Classroom 2", "Office"]
+        },
+        "accommodation": {
+            "title": "Accommodation",
+            "desc": "You will live in a safe, collaborative environment within walking distance of the church and campus facilities.",
+            "cards": [
+                { "title": "Living Environment", "desc": "Shared rooms that encourage fellowship and mutual support, with common spaces for study, prayer, and community gatherings." },
+                { "title": "Campus Facilities", "desc": "Access to church buildings, classrooms, prayer rooms, kitchen facilities, laundry, and outdoor spaces." },
+                { "title": "Daily Life & Amenities", "desc": "Nearby convenience stores, cafes, supermarkets, and parks — a vibrant neighborhood that makes daily life easy and enjoyable." }
+            ],
+            "captions": ["Dormitory", "Dormitory", "Shower Room", "Restroom"]
+        },
+        "campus": {
+            "title": "Campus Facilities",
+            "vineHouse": {
+                "name": "Vine House",
+                "tag": "Book Café",
+                "desc": "Inspired by a European house concert hall, Vine House is a warm space where culture, fellowship, and nature meet. The hall seats up to 150, with an outdoor terrace, a library, a children's playground, and free monthly live concerts.",
+                "hoursTitle": "Operating Hours",
+                "hours": ["Weekdays: 10:00 AM – 6:00 PM (Last order 5:30 PM)", "Weekends: 11:00 AM – 5:00 PM (Last order 4:30 PM)"],
+                "note": "All proceeds from Vine House support ministries serving the nations."
+            },
+            "library": {
+                "name": "Da'at Library",
+                "tag": "Library",
+                "desc": "Da'at — the Hebrew word for \"knowledge\" — is a quiet space for study and reflection, filled with Christian resources, theology, spiritual-growth books, and general literature.",
+                "hoursTitle": "Opening Hours",
+                "hours": ["Mon – Fri: 9:00 AM – 6:00 PM", "Sunday: 8:30 AM – 5:00 PM", "Wednesday: Closed 9:00 AM – 2:30 PM"],
+                "borrowingTitle": "Borrowing",
+                "borrowing": "Up to 5 books · 2-week loan · one 1-week renewal"
+            }
+        }
+    },
+    "gettingStarted": {
+        "label": "GETTING STARTED",
+        "title": "Your First Week",
+        "subtitle": "From the moment you land, we've made the transition as smooth as possible.",
+        "timeline": [
+            { "step": "Arrive", "desc": "Airport pickup and check-in" },
+            { "step": "Connect", "desc": "Meet mentors and your cohort" },
+            { "step": "Orient", "desc": "Campus tour and registration" },
+            { "step": "Launch", "desc": "Begin your 3-month journey" }
+        ],
+        "cards": [
+            { "title": "Arrival Day", "desc": "Airport pickup, check-in, welcome dinner, and rest. Your program coordinator will meet you at Incheon Airport." },
+            { "title": "Orientation Week", "desc": "Campus tour, safety briefing, SIM card setup, transportation card registration, and community introductions." },
+            { "title": "First Week Checklist", "desc": "Complete registration documents, attend the language placement test, meet your mentor, and join your first worship service." },
+            { "title": "Community Login", "desc": "Join the program WhatsApp group, download essential apps (Naver Map, KakaoTalk, Papago), and connect with your cohort." }
         ]
     }
 }

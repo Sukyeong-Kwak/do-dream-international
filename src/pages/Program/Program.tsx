@@ -6,6 +6,8 @@ import ProgramCurriculum from '../../components/sections/ProgramCurriculum/Progr
 import DayInProgram from '../../components/sections/DayInProgram/DayInProgram';
 import KLifeProgram from '../../components/sections/KLifeProgram/KLifeProgram';
 import TrainingJourney from '../../components/sections/TrainingJourney/TrainingJourney';
+import CampusLife from '../../components/sections/CampusLife/CampusLife';
+import GettingStarted from '../../components/sections/GettingStarted/GettingStarted';
 import CallToAction from '../../components/sections/CallToAction/CallToAction';
 
 export default function Program() {
@@ -31,6 +33,8 @@ export default function Program() {
       {/* 임시 숨김 (추후 복구): 월별 문화체험 일정 + 카테고리별 프로그램 상세 */}
       {false && <KLifeProgram />}
       <TrainingJourney />
+      <CampusLife />
+      <GettingStarted />
       <CallToAction />
     </>
   );

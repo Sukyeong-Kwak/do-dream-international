@@ -36,6 +36,19 @@ function CurriculumContent({ item }: { item: CurriculumSubject }) {
 
   return (
     <>
+      {hasVolumes && (
+        <figure className="mb-6 rounded-xl overflow-hidden bg-brand-bg/40 border border-gray-100">
+          <img
+            src="/curriculum/gospel-of-the-cross-books.jpg"
+            alt={t('curriculum.materialsCaption')}
+            loading="lazy"
+            className="w-full object-cover"
+          />
+          <figcaption className="px-4 py-3 text-xs text-brand-muted text-center">
+            {t('curriculum.materialsCaption')}
+          </figcaption>
+        </figure>
+      )}
       <div className="space-y-4 mb-6">
         {paragraphs.map((para, i) => (
           <p key={i} className="text-brand-text/80 leading-relaxed">
