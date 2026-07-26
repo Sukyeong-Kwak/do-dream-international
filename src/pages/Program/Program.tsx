@@ -10,6 +10,9 @@ import CampusLife from '../../components/sections/CampusLife/CampusLife';
 import GettingStarted from '../../components/sections/GettingStarted/GettingStarted';
 import CallToAction from '../../components/sections/CallToAction/CallToAction';
 
+/** 임시 숨김 (추후 복구): 하루 일정표 · 월별 문화체험 일정 + 카테고리별 프로그램 상세 */
+const SHOW_SCHEDULE_SECTIONS = false;
+
 export default function Program() {
   const { t } = useTranslation('program');
 
@@ -28,10 +31,8 @@ export default function Program() {
       <ProgramIdentity />
       <ProgramVision />
       <ProgramCurriculum />
-      {/* 임시 숨김 (추후 복구): 하루 일정표 */}
-      {false && <DayInProgram />}
-      {/* 임시 숨김 (추후 복구): 월별 문화체험 일정 + 카테고리별 프로그램 상세 */}
-      {false && <KLifeProgram />}
+      {SHOW_SCHEDULE_SECTIONS && <DayInProgram />}
+      {SHOW_SCHEDULE_SECTIONS && <KLifeProgram />}
       <TrainingJourney />
       <CampusLife />
       <GettingStarted />

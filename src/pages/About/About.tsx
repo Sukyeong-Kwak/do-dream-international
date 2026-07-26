@@ -168,7 +168,7 @@ export default function About() {
                 {t('activities.title')}
               </h2>
               <div className="space-y-6">
-                {(t('activities.items', { returnObjects: true }) as any[]).map((item, idx) => (
+                {(t('activities.items', { returnObjects: true }) as { title: string; desc: string }[]).map((item, idx) => (
                   <div key={idx} className="bg-gray-50 border border-gray-100 p-6 rounded-2xl hover:border-brand-primary-teal/30 transition-colors">
                     <h3 className="text-xl font-bold text-brand-primary-blue mb-3">{item.title}</h3>
                     <p className="text-brand-text leading-relaxed">{item.desc}</p>

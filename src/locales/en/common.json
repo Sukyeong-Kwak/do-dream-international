@@ -28,6 +28,11 @@
     "back": "Back",
     "next": "Next"
   },
+  "lightbox": {
+    "close": "Close (ESC)",
+    "prev": "Previous photo",
+    "next": "Next photo"
+  },
   "cta": {
     "title": "Ready to Begin this Journey?",
     "subtitle": "The journey of faith requires a bold step. Follow these simple steps to apply for the upcoming training program.",

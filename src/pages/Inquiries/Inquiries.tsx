@@ -29,7 +29,7 @@ export default function Inquiries() {
       setIsSuccessModalOpen(true);
       form.current.reset();
       setTimeout(() => setStatus('idle'), 5000);
-    } catch (error: any) {
+    } catch (error) {
       console.error('EmailJS Error:', error);
       setStatus('error');
       setTimeout(() => setStatus('idle'), 5000);
