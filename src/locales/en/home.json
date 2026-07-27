@@ -29,26 +29,6 @@
       "videoId": "qGmgKPgRm8Y"
     }
   },
-  "facility": {
-    "label": "Facilities",
-    "title": "Where the Training Takes Place",
-    "subtitle": "From classrooms to dormitories and everyday living spaces —<br />here is where you will stay throughout the training.",
-    "zoomHint": "Click any photo to view it larger",
-    "items": {
-      "hallway1": "Hallway, 1F (arched entrance)",
-      "classroom1": "Classroom (lecture seating)",
-      "classroom2": "Classroom (desk layout)",
-      "classroom3": "Classroom (window-side seating)",
-      "hallway2": "Hallway, 2F (classroom wing)",
-      "dormitory1": "Dormitory (study desk)",
-      "dormitory3": "Dormitory (bunk beds for two)",
-      "dormitory2": "Dormitory (personal storage)",
-      "shower": "Shower room (shower stations)",
-      "restroom": "Restroom (sinks and stalls)",
-      "office": "Office (library and lounge)",
-      "aerial": "Building exterior (parking area)"
-    }
-  },
   "value": {
     "label": "From Our Director",
     "title": "Director Message",

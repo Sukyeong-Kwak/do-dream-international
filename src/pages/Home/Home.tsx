@@ -3,7 +3,6 @@ import PageHero from '../../components/common/PageHero';
 import IntroVideo from '../../components/sections/IntroVideo/IntroVideo';
 import CoreValues from '../../components/sections/CoreValues/CoreValues';
 import ProgramOverview from '../../components/sections/ProgramOverview/ProgramOverview';
-import Facility from '../../components/sections/Facility/Facility';
 import ValueProposition from '../../components/sections/ValueProposition/ValueProposition';
 import TeamIntroduce from '../../components/sections/TeamIntroduce/TeamIntroduce';
 import TestimonialCarousel from '../../components/sections/TestimonialCarousel/TestimonialCarousel';
@@ -29,7 +28,6 @@ export default function Home() {
       <IntroVideo youtubeId={t('intro.section.videoId')} />
       <CoreValues />
       <ProgramOverview />
-      <Facility />
       <ValueProposition />
       <TeamIntroduce />
       <TestimonialCarousel />
