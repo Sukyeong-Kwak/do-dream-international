@@ -2,7 +2,9 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { HiOutlineMapPin } from 'react-icons/hi2';
 import SectionHeader from '../../common/SectionHeader';
+import LocationCard from '../../common/LocationCard';
 import { fadeInUp, staggerItem } from '../../../lib/motion';
+import { CHURCH_PLACE } from '../../../lib/mapLinks';
 
 interface LocationGroup {
   title: string;
@@ -57,9 +59,13 @@ export default function ChurchIntro() {
             </div>
           </div>
 
-          <motion.blockquote {...fadeInUp} className="mb-10 border-l-4 border-brand-primary-teal pl-6">
-            <p className="text-xl md:text-2xl font-bold text-brand-primary-blue leading-snug">{t('intro.verse')}</p>
-          </motion.blockquote>
+          <LocationCard
+            label={t('intro.location.label')}
+            address={t('intro.location.address')}
+            note={t('intro.location.note')}
+            place={CHURCH_PLACE}
+            className="mb-12"
+          />
 
           <div className="space-y-4 mb-12 max-w-3xl">
             <p className="text-brand-text/80 leading-relaxed">{t('intro.p1')}</p>

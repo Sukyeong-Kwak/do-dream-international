@@ -38,7 +38,6 @@ export default function ExperienceKorea() {
 
         {/* Summary table */}
         <div className="max-w-4xl mx-auto mb-12 md:mb-16">
-          <h3 className="text-lg font-bold text-brand-primary-blue mb-4 text-center">{t('korea.tableTitle')}</h3>
           <div className="overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white">
             <table className="w-full text-left">
               <thead>

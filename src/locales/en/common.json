@@ -35,6 +35,15 @@
         "prev": "Previous photo",
         "next": "Next photo"
     },
+    "map": {
+        "copy": "Copy address",
+        "copied": "Copied",
+        "cta": "Open in a map app",
+        "apps": {
+            "naver": "Naver Map",
+            "google": "Google Maps"
+        }
+    },
     "cta": {
         "title": "Ready to Begin this Journey?",
         "subtitle": "The journey of faith requires a bold step. Follow these simple steps to apply for the upcoming training program.",

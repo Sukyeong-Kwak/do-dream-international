@@ -1,23 +1,45 @@
 {
     "hero": {
-        "label": "OUR CHURCH",
+        "label": "THE VINE BAPTIST CHURCH",
         "title": "About The Vine Baptist Church",
-        "subtitle": "The community you will live and grow alongside throughout the program.",
-        "cta": "Explore the Ministries"
+        "subtitle": "The Vine Baptist Church is affiliated with the Korea Baptist Convention (KBC).",
+        "cta": "The Piece"
     },
     "intro": {
         "label": "THE VINE BAPTIST CHURCH",
-        "title": "Abiding in Christ,<br />Bearing Lasting Fruit",
+        "title": "Jesus said, \"I am the vine.\" (John 15:5)",
         "imageAlt": "Vine Baptist Church main campus building",
         "affiliation": "The Vine Baptist Church is affiliated with the Korea Baptist Convention (KBC).",
-        "verse": "Jesus said, \"I am the vine.\" (John 15:5)",
         "p1": "At Vine Baptist Church, we believe that lasting spiritual fruit comes only through abiding in Christ. As we remain in Him, He lives and works through us, accomplishing His purposes for His Church and His Kingdom.",
         "p2": "This biblical truth is the inspiration behind the name Vine Baptist Church and shapes everything we do.",
         "locations": [
-            { "title": "Main Campus", "items": ["Yongin, South Korea"] },
-            { "title": "Regional Churches", "items": ["Suncheon, South Korea", "Vancouver, Canada", "Northern California, USA"] },
-            { "title": "Regional Prayer Houses", "items": ["Incheon, South Korea", "Icheon, South Korea"] }
+            {
+                "title": "Main Campus",
+                "items": [
+                    "Yongin, South Korea"
+                ]
+            },
+            {
+                "title": "Regional Churches",
+                "items": [
+                    "Suncheon, South Korea",
+                    "Vancouver, Canada",
+                    "Northern California, USA"
+                ]
+            },
+            {
+                "title": "Regional Prayer Houses",
+                "items": [
+                    "Incheon, South Korea",
+                    "Icheon, South Korea"
+                ]
+            }
         ],
+        "location": {
+            "label": "Main Campus",
+            "address": "123-1 Sinjeong-ro, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea",
+            "note": "Naver Map has a full English interface and is the most reliable option for directions inside Korea, where Google Maps offers only limited routing."
+        },
         "purposeTitle": "Purpose",
         "purpose": "At Vine Baptist Church, we uphold the Bible as the final authority for our faith and practice. We are committed to knowing God, living in intimate fellowship with Him, and participating wholeheartedly in His work through worship, prayer, discipleship, missions, service, and fellowship.",
         "visionTitle": "Vision",
@@ -29,55 +51,170 @@
     "ministries": {
         "label": "MINISTRY OF VINE BAPTIST CHURCH",
         "title": "The Piece",
-        "subtitle": "Where is your piece in this great work of God?<br />Five ministries joined together for Christ's lordship over every nation, generation, and sphere.",
+        "subtitle": "Where is your piece in this great work of God?<br />Christ’s lordship and life to every nation, every generation, and every sphere!",
         "pieceAlt": "The Piece — the five connected ministries of Vine Baptist Church",
         "items": [
-            { "title": "New Wave Ministries", "desc": "New Wave Mission is a voluntary network of churches united by the vision of seeing the Church restored to God's original design and preparing the way for His revival. Together, we work to advance God's Kingdom while recognizing the many networks God is raising up around the world." },
-            { "title": "Y Mission", "desc": "Y Mission is a movement that connects local churches, military ministry, and campus ministry, extending these partnerships into workplace ministry and global missions. Our vision is to see the younger generation of Korea return to God and be sent to the nations to fulfill His mission." },
-            { "title": "Africa Project", "desc": "Africa Project is a non-governmental organization (NGO) dedicated to supporting the development of communities across Africa through humanitarian initiatives. Our vision is to see Africa become a land of healing and hope by connecting people, organizations, and expertise to create lasting impact." },
-            { "title": "School", "desc": "New Wave Christian School is dedicated to nurturing the next generation to grow in the essence of the Christian faith. We develop creative and integrative leaders with a balanced foundation of spiritual maturity, godly character, and intellectual excellence." }
-        ],
-        "galleryTitle": "Ministry in Action",
-        "galleryHint": "Click any photo to view it larger"
+            {
+                "title": "New Wave Ministries",
+                "desc": "New Wave Mission is a voluntary network of churches united by the vision of seeing the Church restored to God's original design and preparing the way for His revival. Together, we work to advance God's Kingdom while recognizing the many networks God is raising up around the world."
+            },
+            {
+                "title": "Y Mission",
+                "desc": "Y Mission is a movement that connects local churches, military ministry, and campus ministry, extending these partnerships into workplace ministry and global missions. Our vision is to see the younger generation of Korea return to God and be sent to the nations to fulfill His mission."
+            },
+            {
+                "title": "Africa Project",
+                "desc": "Africa Project is a non-governmental organization (NGO) dedicated to supporting the development of communities across Africa through humanitarian initiatives. Our vision is to see Africa become a land of healing and hope by connecting people, organizations, and expertise to create lasting impact."
+            },
+            {
+                "title": "School",
+                "desc": "New Wave Christian School is dedicated to nurturing the next generation to grow in the essence of the Christian faith. We develop creative and integrative leaders with a balanced foundation of spiritual maturity, godly character, and intellectual excellence."
+            }
+        ]
     },
     "worship": {
-        "label": "WORSHIP SERVICES & MEETING SCHEDULE",
-        "title": "Gathering Together",
-        "subtitle": "Worship services and meetings you are welcome to join throughout the week.",
-        "cols": { "day": "Day", "service": "Service / Meeting", "time": "Time", "location": "Location" },
-        "weeklyTitle": "Weekly Worship Services",
-        "dailyTitle": "Daily Meetings & Prayer",
+        "label": "THE VINE BAPTIST CHURCH",
+        "title": "Worship Services & Meeting Schedule",
+        "subtitle": "",
+        "cols": {
+            "day": "Day",
+            "service": "Service / Meeting",
+            "time": "Time",
+            "location": "Location"
+        },
+        "weeklyTitle": "",
+        "dailyTitle": "",
         "rows": [
-            { "day": "Sunday", "service": "1st Worship Service", "time": "8:30 AM", "location": "Main Sanctuary" },
-            { "day": "", "service": "2nd Worship Service", "time": "11:00 AM", "location": "Main Sanctuary" },
-            { "day": "", "service": "Nursery Worship", "time": "11:00 AM", "location": "Nursery Worship Room (B1)" },
-            { "day": "", "service": "Kindergarten Worship", "time": "11:00 AM", "location": "Education Building (B1)" },
-            { "day": "", "service": "Middle & High School Worship", "time": "11:00 AM", "location": "Mirae Building, 5F Main Hall" },
-            { "day": "", "service": "New Life Worship", "time": "11:00 AM", "location": "Mirae Building, 2F Lecture Room" },
-            { "day": "", "service": "Young Adults Worship", "time": "3:00 PM", "location": "Main Sanctuary" },
-            { "day": "", "service": "Evening Worship", "time": "7:00 PM", "location": "Main Sanctuary" },
-            { "day": "Tuesday", "service": "Tuesday Bible Study", "time": "11:00 AM", "location": "Various Locations" },
-            { "day": "", "service": "Tuesday Prayer Meeting", "time": "2:00 PM", "location": "Main Sanctuary" },
-            { "day": "Wednesday", "service": "Wednesday Evangelism Team", "time": "10:30 AM", "location": "Mirae Building, 2F Lecture Room" },
-            { "day": "", "service": "Children's Wednesday School", "time": "3:40 PM", "location": "Education Building" },
-            { "day": "Friday", "service": "R.G.W. (Revival Generation Worship)", "time": "8:00 PM", "location": "Main Sanctuary" }
+            {
+                "day": "Sunday",
+                "service": "1st Worship Service",
+                "time": "8:30 AM",
+                "location": "Main Sanctuary"
+            },
+            {
+                "day": "",
+                "service": "2nd Worship Service",
+                "time": "11:00 AM",
+                "location": "Main Sanctuary"
+            },
+            {
+                "day": "",
+                "service": "Nursery Worship",
+                "time": "11:00 AM",
+                "location": "Nursery Worship Room (B1)"
+            },
+            {
+                "day": "",
+                "service": "Kindergarten Worship",
+                "time": "11:00 AM",
+                "location": "Education Building (B1)"
+            },
+            {
+                "day": "",
+                "service": "Middle & High School Worship",
+                "time": "11:00 AM",
+                "location": "Mirae Building, 5F Main Hall"
+            },
+            {
+                "day": "",
+                "service": "New Life Worship",
+                "time": "11:00 AM",
+                "location": "Mirae Building, 2F Lecture Room"
+            },
+            {
+                "day": "",
+                "service": "Young Adults Worship",
+                "time": "3:00 PM",
+                "location": "Main Sanctuary"
+            },
+            {
+                "day": "",
+                "service": "Evening Worship",
+                "time": "7:00 PM",
+                "location": "Main Sanctuary"
+            },
+            {
+                "day": "Tuesday",
+                "service": "Tuesday Bible Study",
+                "time": "11:00 AM",
+                "location": "Various Locations"
+            },
+            {
+                "day": "",
+                "service": "Tuesday Prayer Meeting",
+                "time": "2:00 PM",
+                "location": "Main Sanctuary"
+            },
+            {
+                "day": "Wednesday",
+                "service": "Wednesday Evangelism Team",
+                "time": "10:30 AM",
+                "location": "Mirae Building, 2F Lecture Room"
+            },
+            {
+                "day": "",
+                "service": "Children's Wednesday School",
+                "time": "3:40 PM",
+                "location": "Education Building"
+            },
+            {
+                "day": "Friday",
+                "service": "R.G.W. (Revival Generation Worship)",
+                "time": "8:00 PM",
+                "location": "Main Sanctuary"
+            }
         ],
         "dailyRows": [
-            { "day": "Mon–Sat", "service": "Oikos Ministry", "time": "Varies by Oikos group", "location": "By Oikos group" },
-            { "day": "", "service": "Early Morning Worship", "time": "Varies by district", "location": "By district" },
-            { "day": "", "service": "Isaiah 62 Prayer", "time": "8:00 AM – 12:00 AM", "location": "Main Sanctuary (1st & 5th Floors)" },
-            { "day": "", "service": "Isaiah 62 Prayer with the Worship Team", "time": "8:00 PM – 10:00 PM", "location": "Main Sanctuary" }
+            {
+                "day": "Mon–Sat",
+                "service": "Oikos Ministry",
+                "time": "Varies by Oikos group",
+                "location": "By Oikos group"
+            },
+            {
+                "day": "",
+                "service": "Early Morning Worship",
+                "time": "Varies by district",
+                "location": "By district"
+            },
+            {
+                "day": "",
+                "service": "Isaiah 62 Prayer",
+                "time": "8:00 AM – 12:00 AM",
+                "location": "Main Sanctuary (1st & 5th Floors)"
+            },
+            {
+                "day": "",
+                "service": "Isaiah 62 Prayer with the Worship Team",
+                "time": "8:00 PM – 10:00 PM",
+                "location": "Main Sanctuary"
+            }
         ],
         "oikos": {
             "title": "Oikos Ministry",
             "desc": "Oikos is the name of the small groups at Vine Baptist Church. As one of our church's core values, every member belongs to an Oikos and is encouraged to participate actively in its life and ministry.",
             "rolesTitle": "The Oikos serves as a:",
             "roles": [
-                { "name": "Church", "desc": "a place of worship, fellowship, and spiritual growth" },
-                { "name": "Family", "desc": "a community of love, care, and encouragement" },
-                { "name": "Training Center", "desc": "a place for discipleship and leadership development" },
-                { "name": "Hospital", "desc": "a place of holistic healing" },
-                { "name": "Maternity Home", "desc": "a place where new believers are nurtured and grow in faith" }
+                {
+                    "name": "Church",
+                    "desc": "a place of worship, fellowship, and spiritual growth"
+                },
+                {
+                    "name": "Family",
+                    "desc": "a community of love, care, and encouragement"
+                },
+                {
+                    "name": "Training Center",
+                    "desc": "a place for discipleship and leadership development"
+                },
+                {
+                    "name": "Hospital",
+                    "desc": "a place of holistic healing"
+                },
+                {
+                    "name": "Maternity Home",
+                    "desc": "a place where new believers are nurtured and grow in faith"
+                }
             ],
             "imageAlt": "Vine Baptist Church congregation worshipping together"
         }

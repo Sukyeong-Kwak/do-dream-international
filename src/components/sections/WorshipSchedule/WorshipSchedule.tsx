@@ -20,7 +20,7 @@ function ServiceTable({ title, rows, cols }: { title: string; rows: ServiceRow[]
 
   return (
     <div className="mb-10">
-      <h3 className="text-lg font-bold text-brand-primary-blue mb-4">{title}</h3>
+      {title && <h3 className="text-lg font-bold text-brand-primary-blue mb-4">{title}</h3>}
 
       {/* Desktop table */}
       <div className="hidden md:block overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white">

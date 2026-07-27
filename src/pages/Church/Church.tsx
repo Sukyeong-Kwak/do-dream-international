@@ -12,7 +12,7 @@ export default function Church() {
   return (
     <>
       <PageHero
-        image="/church/worship-night.jpg"
+        image="/church/oikos-worship.jpg"
         imageAlt={t('hero.title')}
         label={t('hero.label')}
         title={t('hero.title')}

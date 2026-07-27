@@ -335,7 +335,7 @@
     },
     "materials": {
         "label": "COURSE MATERIALS",
-        "title": "The Gospel of the Cross, Volumes 1 & 2",
+        "title": "Course Materials",
         "subtitle": "Part of the Core Bible Study Series — two volumes and 57 lectures covering the essence of faith step by step.",
         "zoomHint": "Click a cover to view it larger",
         "books": [
@@ -365,7 +365,6 @@
             "desc": "Description",
             "duration": "Duration"
         },
-        "note": "* Weekends include Sunday services, cultural activities, and free time for rest.",
         "rows": [
             {
                 "time": "07:30 – 08:00",
@@ -450,13 +449,12 @@
         "label": "EXPERIENCE KOREA",
         "title": "Experience Korea Beyond the Classroom",
         "subtitle": "Learning extends beyond the classroom. Throughout the program, participants will discover Korea's rich history, vibrant culture, and beautiful landscapes while building lasting friendships and unforgettable memories.",
-        "tableTitle": "Destinations at a Glance",
         "cols": {
             "no": "No.",
             "destination": "Destination",
             "duration": "Duration"
         },
-        "aiNote": "* Destination images are AI-generated illustrations.",
+        "aiNote": "These images are AI-generated images.",
         "items": [
             {
                 "no": 1,
@@ -516,11 +514,16 @@
     },
     "map": {
         "label": "MAPS",
-        "title": "Find Your Way Around Campus",
-        "subtitle": "Key buildings you will use throughout the program, all within walking distance of one another.",
+        "title": "Maps",
+        "subtitle": "",
         "zoomHint": "Click the map to view it larger",
         "image": "/campus/map-aerial-en.jpg",
         "imageAlt": "Aerial map of the Vine Baptist Church campus with building labels",
+        "venue": {
+            "label": "Training Venue",
+            "address": "11-17, Sinjeong-ro 151beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea",
+            "note": "Training and accommodation take place at the prayer house, a separate building from the church main campus."
+        },
         "buildings": [
             {
                 "ko": "본당",
@@ -550,7 +553,7 @@
             {
                 "ko": "바인하우스",
                 "en": "Vine House",
-                "desc": "The campus book café — a warm space for culture, fellowship, and rest, with an outdoor terrace and monthly live concerts."
+                "desc": "Inspired by the atmosphere of a European house concert hall, Vine House offers a warm and welcoming space where culture, fellowship, and nature come together."
             }
         ]
     },

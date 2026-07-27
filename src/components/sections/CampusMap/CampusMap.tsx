@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import { HiOutlineZoomIn } from 'react-icons/hi';
 import SectionHeader from '../../common/SectionHeader';
 import Lightbox from '../../common/Lightbox';
+import LocationCard from '../../common/LocationCard';
 import { staggerItem } from '../../../lib/motion';
+import { PRAYER_HOUSE_PLACE } from '../../../lib/mapLinks';
 
 interface Building {
   ko: string;
@@ -49,6 +51,14 @@ export default function CampusMap() {
             </span>
           </button>
           <p className="mt-3 text-center text-xs text-brand-muted">{t('map.zoomHint')}</p>
+
+          <LocationCard
+            label={t('map.venue.label')}
+            address={t('map.venue.address')}
+            note={t('map.venue.note')}
+            place={PRAYER_HOUSE_PLACE}
+            className="mt-8"
+          />
 
           {Array.isArray(buildings) && (
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -95,7 +95,6 @@ export default function WeeklySchedule() {
             ))}
           </div>
 
-          <p className="mt-6 text-center text-sm text-brand-muted">{t('weekly.note')}</p>
         </div>
       </div>
     </section>

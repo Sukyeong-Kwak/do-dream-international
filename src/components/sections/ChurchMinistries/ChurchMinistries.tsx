@@ -26,7 +26,7 @@ export default function ChurchMinistries() {
 
   const galleryImages = MINISTRY_PHOTOS.map((src, index) => ({
     src,
-    alt: `${t('ministries.galleryTitle')} ${index + 1}`,
+    alt: `${t('ministries.title')} ${index + 1}`,
   }));
 
   return (
@@ -69,11 +69,7 @@ export default function ChurchMinistries() {
             })}
           </div>
 
-          <h3 className="text-xl font-bold text-brand-primary-blue mb-5 text-center">
-            {t('ministries.galleryTitle')}
-          </h3>
           <PhotoGallery images={galleryImages} columns="grid-cols-2 md:grid-cols-3" aspect="aspect-[4/3]" />
-          <p className="mt-4 text-center text-xs text-brand-muted">{t('ministries.galleryHint')}</p>
         </div>
       </div>
     </section>
