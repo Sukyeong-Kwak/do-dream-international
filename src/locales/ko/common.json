@@ -2,6 +2,7 @@
     "nav": {
         "home": "홈",
         "program": "프로그램 소개",
+        "church": "교회 소개",
         "apply": "지원하기 및 문의",
         "about": "소개",
         "contact": "문의",
@@ -12,6 +13,7 @@
         "description": "십자가 복음의 단단한 터 위에 서서 하나님과의 깊고 친밀한 교제를 누리십시오.\n전 세계 청년들과 함께하는 믿음의 여정에 여러분을 초대합니다.",
         "quickLinks": "빠른 메뉴",
         "program": "프로그램 소개",
+        "church": "교회 소개",
         "apply": "지원하기 및 문의",
         "contact": "문의하기",
         "followUs": "팔로우하기",
@@ -46,10 +48,26 @@
         "partners": {
             "subtitle": "파트너십",
             "items": [
-                { "name": "포도나무교회", "logo": "/partners/vinechurch.png", "url": "https://www.vinechurch.com/" },
-                { "name": "새물결선교회", "logo": "/partners/newwave.png", "url": "https://www.newwave.or.kr/" },
-                { "name": "Y Mission", "logo": "/partners/ymission.png", "url": "https://www.ymission.org/" },
-                { "name": "두드림투게더", "logo": "/partners/dodream.png", "url": "https://www.do-dream.us/" }
+                {
+                    "name": "포도나무교회",
+                    "logo": "/partners/vinechurch.png",
+                    "url": "https://www.vinechurch.com/"
+                },
+                {
+                    "name": "새물결선교회",
+                    "logo": "/partners/newwave.png",
+                    "url": "https://www.newwave.or.kr/"
+                },
+                {
+                    "name": "Y Mission",
+                    "logo": "/partners/ymission.png",
+                    "url": "https://www.ymission.org/"
+                },
+                {
+                    "name": "두드림투게더",
+                    "logo": "/partners/dodream.png",
+                    "url": "https://www.do-dream.us/"
+                }
             ]
         }
     }

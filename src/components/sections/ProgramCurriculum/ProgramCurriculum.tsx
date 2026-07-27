@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { HiChevronDown } from 'react-icons/hi2';
 import { fadeIn } from '../../../lib/motion';
 import Accordion from '../../common/Accordion';
+import CourseMaterials from '../CourseMaterials/CourseMaterials';
 
 interface CurriculumLesson {
   no: number;
@@ -25,7 +26,7 @@ interface CurriculumSubject {
   volumes?: CurriculumVolume[];
 }
 
-function CurriculumContent({ item }: { item: CurriculumSubject }) {
+function CurriculumContent({ item, showMaterials = false }: { item: CurriculumSubject; showMaterials?: boolean }) {
   const { t } = useTranslation('program');
   const [open, setOpen] = useState(false);
   const volumes = Array.isArray(item.volumes) ? item.volumes : [];
@@ -36,19 +37,7 @@ function CurriculumContent({ item }: { item: CurriculumSubject }) {
 
   return (
     <>
-      {hasVolumes && (
-        <figure className="mb-6 rounded-xl overflow-hidden bg-brand-bg/40 border border-gray-100">
-          <img
-            src="/curriculum/gospel-of-the-cross-books.jpg"
-            alt={t('curriculum.materialsCaption')}
-            loading="lazy"
-            className="w-full object-cover"
-          />
-          <figcaption className="px-4 py-3 text-xs text-brand-muted text-center">
-            {t('curriculum.materialsCaption')}
-          </figcaption>
-        </figure>
-      )}
+      {hasVolumes && showMaterials && <CourseMaterials />}
       <div className="space-y-4 mb-6">
         {paragraphs.map((para, i) => (
           <p key={i} className="text-brand-text/80 leading-relaxed">
@@ -127,6 +116,9 @@ export default function ProgramCurriculum() {
     (s) => s.title === '십자가의 복음' || s.title === 'The Gospel of the Cross'
   );
 
+  // Course materials are shared across volumes, so render them only once (first subject with volumes)
+  const materialsIndex = subjects.findIndex((s) => Array.isArray(s.volumes) && s.volumes.length > 0);
+
   const items = subjects.map((item, index) => ({
     trigger: (
       <>
@@ -144,7 +136,7 @@ export default function ProgramCurriculum() {
         <h3 className="text-lg font-bold text-brand-primary-teal">{item.title}</h3>
       </>
     ),
-    content: <CurriculumContent item={item} />,
+    content: <CurriculumContent item={item} showMaterials={index === materialsIndex} />,
   }));
 
   return (

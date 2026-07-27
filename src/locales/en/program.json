@@ -9,9 +9,18 @@
         "label": "ABOUT THE PROGRAM",
         "purpose": "An intensive training program designed to nurture next-generation church leaders by inviting Christian youth worldwide for a deep, systematic spiritual training on the essence of the Christian faith.",
         "stats": [
-            { "value": "3 mo (85 days)", "label": "Duration" },
-            { "value": "Ages 20-30s", "label": "Target" },
-            { "value": "24/7", "label": "Community Living" }
+            {
+                "value": "3 mo (85 days)",
+                "label": "Duration"
+            },
+            {
+                "value": "Ages 20-30s",
+                "label": "Target"
+            },
+            {
+                "value": "24/7",
+                "label": "Community Living"
+            }
         ],
         "director": "General Director: Rev. Junhyung Kim",
         "dept": "Department: DO DREAM TWO-GETHER International Team",
@@ -21,10 +30,22 @@
         "label": "VISION & VALUES",
         "title": "What We Stand For",
         "items": [
-            { "title": "Revival of the Next Generation", "desc": "Leading the spiritual awakening and faith restoration of the younger generation." },
-            { "title": "Spiritual Leadership for the Nations", "desc": "Cultivating a vision that embraces the world and servant leadership." },
-            { "title": "Living the Essence of Faith", "desc": "Living out a life built on the Gospel of the Cross — not in theory, but in practice." },
-            { "title": "Life in Community", "desc": "Eating, praying, and learning together — experiencing unity in Christ." }
+            {
+                "title": "Revival of the Next Generation",
+                "desc": "Leading the spiritual awakening and faith restoration of the younger generation."
+            },
+            {
+                "title": "Spiritual Leadership for the Nations",
+                "desc": "Cultivating a vision that embraces the world and servant leadership."
+            },
+            {
+                "title": "Living the Essence of Faith",
+                "desc": "Living out a life built on the Gospel of the Cross — not in theory, but in practice."
+            },
+            {
+                "title": "Life in Community",
+                "desc": "Eating, praying, and learning together — experiencing unity in Christ."
+            }
         ]
     },
     "curriculum": {
@@ -58,69 +79,240 @@
                         "title": "The Gospel of the Cross 1",
                         "subtitle": "Lectures 1 – 38",
                         "lessons": [
-                            { "no": 1, "title": "Intimate Fellowship with God" },
-                            { "no": 2, "title": "God's Co-worker" },
-                            { "no": 3, "title": "The Life of the Vine" },
-                            { "no": 4, "title": "A God-Centered Life" },
-                            { "no": 5, "title": "A Self-Centered Life" },
-                            { "no": 6, "title": "The Reality of False Belief Systems" },
-                            { "no": 7, "title": "Essence and Ritual" },
-                            { "no": 8, "title": "Law and Legalism" },
-                            { "no": 9, "title": "The Nature of Legalism 1" },
-                            { "no": 10, "title": "The Nature of Legalism 2" },
-                            { "no": 11, "title": "Self-Righteousness" },
-                            { "no": 12, "title": "Fruits of Legalism 1" },
-                            { "no": 13, "title": "Fruits of Legalism 2" },
-                            { "no": 14, "title": "Blessing in the Scriptures" },
-                            { "no": 15, "title": "Prosperity Faith and Falsehood" },
-                            { "no": 16, "title": "Humanism" },
-                            { "no": 17, "title": "God's Plumb Line" },
-                            { "no": 18, "title": "Revival and Spiritual Discernment" },
-                            { "no": 19, "title": "The Law of Seeing" },
-                            { "no": 20, "title": "Posture for Spiritual Discernment 1" },
-                            { "no": 21, "title": "Posture for Spiritual Discernment 2" },
-                            { "no": 22, "title": "Defining What It Is to Know God" },
-                            { "no": 23, "title": "Knowing God" },
-                            { "no": 24, "title": "The Importance of Knowing God 1" },
-                            { "no": 25, "title": "The Importance of Knowing God 2" },
-                            { "no": 26, "title": "Knowing God and Sanctification" },
-                            { "no": 27, "title": "The Benefits of Knowing God" },
-                            { "no": 28, "title": "The Meaning of Loving God 1" },
-                            { "no": 29, "title": "The Meaning of Loving God 2" },
-                            { "no": 30, "title": "Loving God and Obedience" },
-                            { "no": 31, "title": "The Process of Drifting from God" },
-                            { "no": 32, "title": "God's Discipline" },
-                            { "no": 33, "title": "Restoration to the Essence of Faith" },
-                            { "no": 34, "title": "Seeking God's Hand 1" },
-                            { "no": 35, "title": "Seeking God's Hand 2" },
-                            { "no": 36, "title": "Seeking God's Hand 3" },
-                            { "no": 37, "title": "Seeking God's Face" },
-                            { "no": 38, "title": "The PLO Life" }
+                            {
+                                "no": 1,
+                                "title": "Intimate Fellowship with God"
+                            },
+                            {
+                                "no": 2,
+                                "title": "God's Co-worker"
+                            },
+                            {
+                                "no": 3,
+                                "title": "The Life of the Vine"
+                            },
+                            {
+                                "no": 4,
+                                "title": "A God-Centered Life"
+                            },
+                            {
+                                "no": 5,
+                                "title": "A Self-Centered Life"
+                            },
+                            {
+                                "no": 6,
+                                "title": "The Reality of False Belief Systems"
+                            },
+                            {
+                                "no": 7,
+                                "title": "Essence and Ritual"
+                            },
+                            {
+                                "no": 8,
+                                "title": "Law and Legalism"
+                            },
+                            {
+                                "no": 9,
+                                "title": "The Nature of Legalism 1"
+                            },
+                            {
+                                "no": 10,
+                                "title": "The Nature of Legalism 2"
+                            },
+                            {
+                                "no": 11,
+                                "title": "Self-Righteousness"
+                            },
+                            {
+                                "no": 12,
+                                "title": "Fruits of Legalism 1"
+                            },
+                            {
+                                "no": 13,
+                                "title": "Fruits of Legalism 2"
+                            },
+                            {
+                                "no": 14,
+                                "title": "Blessing in the Scriptures"
+                            },
+                            {
+                                "no": 15,
+                                "title": "Prosperity Faith and Falsehood"
+                            },
+                            {
+                                "no": 16,
+                                "title": "Humanism"
+                            },
+                            {
+                                "no": 17,
+                                "title": "God's Plumb Line"
+                            },
+                            {
+                                "no": 18,
+                                "title": "Revival and Spiritual Discernment"
+                            },
+                            {
+                                "no": 19,
+                                "title": "The Law of Seeing"
+                            },
+                            {
+                                "no": 20,
+                                "title": "Posture for Spiritual Discernment 1"
+                            },
+                            {
+                                "no": 21,
+                                "title": "Posture for Spiritual Discernment 2"
+                            },
+                            {
+                                "no": 22,
+                                "title": "Defining What It Is to Know God"
+                            },
+                            {
+                                "no": 23,
+                                "title": "Knowing God"
+                            },
+                            {
+                                "no": 24,
+                                "title": "The Importance of Knowing God 1"
+                            },
+                            {
+                                "no": 25,
+                                "title": "The Importance of Knowing God 2"
+                            },
+                            {
+                                "no": 26,
+                                "title": "Knowing God and Sanctification"
+                            },
+                            {
+                                "no": 27,
+                                "title": "The Benefits of Knowing God"
+                            },
+                            {
+                                "no": 28,
+                                "title": "The Meaning of Loving God 1"
+                            },
+                            {
+                                "no": 29,
+                                "title": "The Meaning of Loving God 2"
+                            },
+                            {
+                                "no": 30,
+                                "title": "Loving God and Obedience"
+                            },
+                            {
+                                "no": 31,
+                                "title": "The Process of Drifting from God"
+                            },
+                            {
+                                "no": 32,
+                                "title": "God's Discipline"
+                            },
+                            {
+                                "no": 33,
+                                "title": "Restoration to the Essence of Faith"
+                            },
+                            {
+                                "no": 34,
+                                "title": "Seeking God's Hand 1"
+                            },
+                            {
+                                "no": 35,
+                                "title": "Seeking God's Hand 2"
+                            },
+                            {
+                                "no": 36,
+                                "title": "Seeking God's Hand 3"
+                            },
+                            {
+                                "no": 37,
+                                "title": "Seeking God's Face"
+                            },
+                            {
+                                "no": 38,
+                                "title": "The PLO Life"
+                            }
                         ]
                     },
                     {
                         "title": "The Gospel of the Cross 2",
                         "subtitle": "Lectures 39 – 57",
                         "lessons": [
-                            { "no": 39, "title": "True Faith and False Faith" },
-                            { "no": 40, "title": "By Grace Alone" },
-                            { "no": 41, "title": "When God's Grace Is with Us" },
-                            { "no": 42, "title": "A Life Lived by the Word" },
-                            { "no": 43, "title": "Scripture and Tradition" },
-                            { "no": 44, "title": "Scripture and Reason" },
-                            { "no": 45, "title": "The Word and Experience" },
-                            { "no": 46, "title": "The New Testament Life" },
-                            { "no": 47, "title": "The Harmony of the Word and the Spirit" },
-                            { "no": 48, "title": "A Life Lived by the Spirit" },
-                            { "no": 49, "title": "Anointing of the Spirit and Stigma" },
-                            { "no": 50, "title": "The Gospel of the Cross" },
-                            { "no": 51, "title": "Righteousness by the Cross" },
-                            { "no": 52, "title": "The Power of the Cross" },
-                            { "no": 53, "title": "The Love of the Cross" },
-                            { "no": 54, "title": "The Necessity of Faith" },
-                            { "no": 55, "title": "The Nature of Faith" },
-                            { "no": 56, "title": "The Principles of Faith" },
-                            { "no": 57, "title": "Key Elements for a Life of Faith" }
+                            {
+                                "no": 39,
+                                "title": "True Faith and False Faith"
+                            },
+                            {
+                                "no": 40,
+                                "title": "By Grace Alone"
+                            },
+                            {
+                                "no": 41,
+                                "title": "When God's Grace Is with Us"
+                            },
+                            {
+                                "no": 42,
+                                "title": "A Life Lived by the Word"
+                            },
+                            {
+                                "no": 43,
+                                "title": "Scripture and Tradition"
+                            },
+                            {
+                                "no": 44,
+                                "title": "Scripture and Reason"
+                            },
+                            {
+                                "no": 45,
+                                "title": "The Word and Experience"
+                            },
+                            {
+                                "no": 46,
+                                "title": "The New Testament Life"
+                            },
+                            {
+                                "no": 47,
+                                "title": "The Harmony of the Word and the Spirit"
+                            },
+                            {
+                                "no": 48,
+                                "title": "A Life Lived by the Spirit"
+                            },
+                            {
+                                "no": 49,
+                                "title": "Anointing of the Spirit and Stigma"
+                            },
+                            {
+                                "no": 50,
+                                "title": "The Gospel of the Cross"
+                            },
+                            {
+                                "no": 51,
+                                "title": "Righteousness by the Cross"
+                            },
+                            {
+                                "no": 52,
+                                "title": "The Power of the Cross"
+                            },
+                            {
+                                "no": 53,
+                                "title": "The Love of the Cross"
+                            },
+                            {
+                                "no": 54,
+                                "title": "The Necessity of Faith"
+                            },
+                            {
+                                "no": 55,
+                                "title": "The Nature of Faith"
+                            },
+                            {
+                                "no": 56,
+                                "title": "The Principles of Faith"
+                            },
+                            {
+                                "no": 57,
+                                "title": "Key Elements for a Life of Faith"
+                            }
                         ]
                     }
                 ]
@@ -141,14 +333,279 @@
             }
         ]
     },
+    "materials": {
+        "label": "COURSE MATERIALS",
+        "title": "The Gospel of the Cross, Volumes 1 & 2",
+        "subtitle": "Part of the Core Bible Study Series — two volumes and 57 lectures covering the essence of faith step by step.",
+        "zoomHint": "Click a cover to view it larger",
+        "books": [
+            {
+                "cover": "/materials/gospel-of-the-cross-1.png",
+                "korean": "십자가의 복음 1",
+                "title": "The Gospel of the Cross 1",
+                "lectures": "Lectures 1 – 38",
+                "desc": "Looks at intimate fellowship with God and a God-centered life, and at the legalism, prosperity faith, and humanism that obscure true faith. It also covers spiritual discernment and what it means to know and love God."
+            },
+            {
+                "cover": "/materials/gospel-of-the-cross-2.png",
+                "korean": "십자가의 복음 2",
+                "title": "The Gospel of the Cross 2",
+                "lectures": "Lectures 39 – 57",
+                "desc": "Starts with distinguishing true faith from false, moves through life lived by grace, the Word, and the Spirit, and reaches the righteousness, power, and love of the Cross — bringing you back to the Gospel of the Cross and into a life rooted in it."
+            }
+        ]
+    },
+    "weekly": {
+        "label": "SCHEDULE",
+        "title": "Weekly Schedule",
+        "subtitle": "Monday – Friday",
+        "cols": {
+            "time": "Time",
+            "session": "Session",
+            "desc": "Description",
+            "duration": "Duration"
+        },
+        "note": "* Weekends include Sunday services, cultural activities, and free time for rest.",
+        "rows": [
+            {
+                "time": "07:30 – 08:00",
+                "session": "Morning QT",
+                "desc": "Quiet Time with God (Personal Devotion & Prayer)",
+                "duration": "30 min"
+            },
+            {
+                "time": "08:00 – 09:30",
+                "session": "Breakfast",
+                "desc": "Breakfast & Personal Preparation",
+                "duration": "90 min"
+            },
+            {
+                "time": "09:30 – 10:30",
+                "session": "Lecture",
+                "desc": "Main Lecture (Biblical Teaching)",
+                "duration": "60 min",
+                "accent": true
+            },
+            {
+                "time": "10:30 – 10:40",
+                "session": "Break",
+                "desc": "Short Break",
+                "duration": "10 min"
+            },
+            {
+                "time": "10:40 – 11:40",
+                "session": "Lecture",
+                "desc": "Main Lecture (Biblical Teaching)",
+                "duration": "60 min",
+                "accent": true
+            },
+            {
+                "time": "11:40 – 12:40",
+                "session": "Lunch",
+                "desc": "Lunch & Fellowship",
+                "duration": "60 min"
+            },
+            {
+                "time": "12:40 – 17:10",
+                "session": "Ministry & Serving Time",
+                "desc": "Various ministry activities and practical experience",
+                "duration": "~270 min",
+                "accent": true,
+                "tags": [
+                    "Outreach",
+                    "Library Ministry",
+                    "Evangelism",
+                    "Team Ministry",
+                    "Mission Training"
+                ]
+            },
+            {
+                "time": "17:10 – 18:10",
+                "session": "Fellowship",
+                "desc": "Community Time & Sharing",
+                "duration": "60 min"
+            },
+            {
+                "time": "18:10 – 20:00",
+                "session": "Dinner",
+                "desc": "Dinner & Fellowship",
+                "duration": "110 min"
+            },
+            {
+                "time": "20:00 – 22:00",
+                "session": "Worship & Prayer",
+                "desc": "Worship, Prayer, and the Word",
+                "duration": "120 min",
+                "accent": true
+            },
+            {
+                "time": "22:00 –",
+                "session": "Personal Reflection & Rest",
+                "desc": "Personal Reflection & Rest",
+                "duration": "–"
+            }
+        ]
+    },
+    "korea": {
+        "label": "EXPERIENCE KOREA",
+        "title": "Experience Korea Beyond the Classroom",
+        "subtitle": "Learning extends beyond the classroom. Throughout the program, participants will discover Korea's rich history, vibrant culture, and beautiful landscapes while building lasting friendships and unforgettable memories.",
+        "tableTitle": "Destinations at a Glance",
+        "cols": {
+            "no": "No.",
+            "destination": "Destination",
+            "duration": "Duration"
+        },
+        "aiNote": "* Destination images are AI-generated illustrations.",
+        "items": [
+            {
+                "no": 1,
+                "name": "Korean Folk Village",
+                "sub": "",
+                "duration": "Day Trip",
+                "overnight": false,
+                "image": "/korea/folk-village.jpg",
+                "desc": "Step back in time and experience Korea's traditional way of life. Explore authentic homes from the Joseon Dynasty, enjoy traditional performances, and discover Korean customs, crafts, and village culture."
+            },
+            {
+                "no": 2,
+                "name": "Seoul City Tour",
+                "sub": "Gyeongbokgung Palace & National Museum of Korea",
+                "duration": "Day Trip",
+                "overnight": false,
+                "image": "/korea/seoul-city-tour.jpg",
+                "desc": "Visit Gyeongbokgung Palace, the largest royal palace of the Joseon Dynasty, and explore Korea's rich history through priceless artifacts at the National Museum of Korea."
+            },
+            {
+                "no": 3,
+                "name": "Suwon Hwaseong & Haenggung",
+                "sub": "",
+                "duration": "Day Trip",
+                "overnight": false,
+                "image": "/korea/suwon-hwaseong.jpg",
+                "desc": "Explore Suwon Hwaseong Fortress, a UNESCO World Heritage Site renowned for its impressive architecture and military engineering. Visit Hwaseong and Haenggung Palace and learn about Korea's royal history and cultural heritage."
+            },
+            {
+                "no": 4,
+                "name": "Jeonju Hanok Village",
+                "sub": "",
+                "duration": "1 Night 2 Days",
+                "overnight": true,
+                "image": "/korea/jeonju-hanok.jpg",
+                "desc": "Experience the beauty of traditional Korea by staying in one of the country's best-preserved hanok villages. Enjoy authentic Korean cuisine, traditional crafts, and the unique atmosphere of historic streets."
+            },
+            {
+                "no": 5,
+                "name": "Everland",
+                "sub": "",
+                "duration": "Day Trip",
+                "overnight": false,
+                "image": "/korea/everland.jpg",
+                "desc": "Spend a fun-filled day at Korea's largest theme park, featuring thrilling rides, seasonal festivals, beautiful gardens, and opportunities to build lasting memories with fellow participants."
+            },
+            {
+                "no": 6,
+                "name": "Jebudo Island Retreat",
+                "sub": "",
+                "duration": "1 Night 2 Days",
+                "overnight": true,
+                "image": "/korea/jebudo.jpg",
+                "desc": "Enjoy a peaceful retreat on Jebudo Island, famous for its unique tidal road that appears when the sea parts. Experience breathtaking sunsets, fellowship, reflection, and rest surrounded by nature."
+            }
+        ]
+    },
+    "map": {
+        "label": "MAPS",
+        "title": "Find Your Way Around Campus",
+        "subtitle": "Key buildings you will use throughout the program, all within walking distance of one another.",
+        "zoomHint": "Click the map to view it larger",
+        "image": "/campus/map-aerial-en.jpg",
+        "imageAlt": "Aerial map of the Vine Baptist Church campus with building labels",
+        "buildings": [
+            {
+                "ko": "본당",
+                "en": "Main Sanctuary",
+                "desc": "The central gathering place for Sunday worship services, Young Adults Worship, the Isaiah 62 Prayer Meeting, and various church events."
+            },
+            {
+                "ko": "선교관",
+                "en": "Mission Center",
+                "desc": "Includes pastors' offices, administrative offices, a bookstore, a lounge, classrooms, and small group meeting rooms."
+            },
+            {
+                "ko": "교육관",
+                "en": "Education Building",
+                "desc": "Dedicated to children's worship services and gatherings, as well as the Vine Mission Preschool."
+            },
+            {
+                "ko": "미래관",
+                "en": "Future Building",
+                "desc": "Home to middle and high school worship services and gatherings, the Da'at Library, a studio, and classrooms."
+            },
+            {
+                "ko": "학교",
+                "en": "New Wave Christian School",
+                "desc": "During the week this building serves as New Wave Christian School. On Sundays it is used as a meeting place for Oikos groups."
+            },
+            {
+                "ko": "바인하우스",
+                "en": "Vine House",
+                "desc": "The campus book café — a warm space for culture, fellowship, and rest, with an outdoor terrace and monthly live concerts."
+            }
+        ]
+    },
+    "instructors": {
+        "label": "INSTRUCTORS",
+        "title": "Guiding You in Faith, Community, and Daily Life",
+        "subtitle": "Throughout the program, participants will be supported by dedicated pastors, instructors, and staff who are committed to helping them grow spiritually, build meaningful relationships, and experience life in Korea. Together, our team provides biblical teaching, personal mentoring, and practical support, fostering both spiritual growth and meaningful community.",
+        "leadershipTitle": "Program Leadership",
+        "people": [
+            {
+                "name": "Rev. Daniel Yeojubong",
+                "roles": [
+                    "Senior Pastor, Vine Baptist Church",
+                    "Director, DO DREAM TWO-GETHER International"
+                ],
+                "desc": "A visionary pastor dedicated to equipping the next generation through Gospel-centered discipleship, spiritual leadership, and global missions."
+            },
+            {
+                "name": "Rev. Junhyung Kim",
+                "roles": [
+                    "Pastor, Young Adult Ministry, Vine Baptist Church"
+                ],
+                "desc": "A dedicated pastor with a passion for helping young people build a solid biblical foundation, deepen their relationship with Christ, and become faithful disciples."
+            }
+        ],
+        "guestTitle": "Guest Instructors",
+        "guestDesc": "Throughout the program, participants will learn from experienced pastors, missionaries, theologians, and Christian leaders from Korea and around the world. Guest instructors bring a wealth of ministry experience and practical insight, enriching participants through diverse perspectives and real-life ministry.",
+        "coordinatorTitle": "Program Coordinator",
+        "coordinatorName": "Youra Choi",
+        "coordinatorDesc": "The Program Coordinator provides day-to-day support throughout the program, assisting with orientation, accommodation, schedules, communication, and daily life to ensure a smooth, comfortable, and meaningful experience in Korea."
+    },
     "dayInProgram": {
         "label": "A DAY IN THE PROGRAM",
         "title": "Experience the Daily Rhythm",
         "blocks": [
-            { "time": "07:30 – 09:30", "title": "Morning Devotion & Breakfast", "desc": "Start the day with English Bible QT and personal reflection, then prepare for lectures after breakfast." },
-            { "time": "09:30 – 14:50", "title": "Lectures (4 Sessions)", "desc": "Intensive study of the core curriculum: The Gospel of the Cross." },
-            { "time": "15:00 – 18:30", "title": "Korean Language & Culture", "desc": "Learn practical Korean conversation and grammar, then explore local areas and connect with mentors." },
-            { "time": "18:30 – 23:00", "title": "Evening & Worship", "desc": "After dinner, join the Isaiah 62 worship service and wind down with personal time." }
+            {
+                "time": "07:30 – 09:30",
+                "title": "Morning Devotion & Breakfast",
+                "desc": "Start the day with English Bible QT and personal reflection, then prepare for lectures after breakfast."
+            },
+            {
+                "time": "09:30 – 14:50",
+                "title": "Lectures (4 Sessions)",
+                "desc": "Intensive study of the core curriculum: The Gospel of the Cross."
+            },
+            {
+                "time": "15:00 – 18:30",
+                "title": "Korean Language & Culture",
+                "desc": "Learn practical Korean conversation and grammar, then explore local areas and connect with mentors."
+            },
+            {
+                "time": "18:30 – 23:00",
+                "title": "Evening & Worship",
+                "desc": "After dinner, join the Isaiah 62 worship service and wind down with personal time."
+            }
         ],
         "weekday": "Monday – Friday",
         "weekend_note": "* Weekends include Sunday services, cultural activities, and free time for rest."
@@ -157,9 +614,24 @@
         "label": "TRAINING JOURNEY",
         "title": "Path of Transformation",
         "phases": [
-            { "num": "01", "title": "Foundation", "timeframe": "", "desc": "Build assurance of salvation and the basics of prayer. Settle into community and begin fellowship with God." },
-            { "num": "02", "title": "Deepening", "timeframe": "", "desc": "Go deeper into the Gospel of the Cross. Begin living out the essence of faith within the community." },
-            { "num": "03", "title": "Leadership", "timeframe": "", "desc": "Study Missional Church and Spiritual Leadership. Discover your gifts and prepare to be sent out." }
+            {
+                "num": "01",
+                "title": "Foundation",
+                "timeframe": "",
+                "desc": "Build assurance of salvation and the basics of prayer. Settle into community and begin fellowship with God."
+            },
+            {
+                "num": "02",
+                "title": "Deepening",
+                "timeframe": "",
+                "desc": "Go deeper into the Gospel of the Cross. Begin living out the essence of faith within the community."
+            },
+            {
+                "num": "03",
+                "title": "Leadership",
+                "timeframe": "",
+                "desc": "Study Missional Church and Spiritual Leadership. Discover your gifts and prepare to be sent out."
+            }
         ]
     },
     "klife": {
@@ -176,22 +648,46 @@
             {
                 "month": "Month 1",
                 "trips": [
-                    { "week": "Week 2", "distance": "short", "location": "Korean Folk Village" },
-                    { "week": "Week 4", "distance": "long", "location": "Gyeongbokgung Palace → Bukchon Hanok Village → N Tower" }
+                    {
+                        "week": "Week 2",
+                        "distance": "short",
+                        "location": "Korean Folk Village"
+                    },
+                    {
+                        "week": "Week 4",
+                        "distance": "long",
+                        "location": "Gyeongbokgung Palace → Bukchon Hanok Village → N Tower"
+                    }
                 ]
             },
             {
                 "month": "Month 2",
                 "trips": [
-                    { "week": "Week 2", "distance": "short", "location": "Everland" },
-                    { "week": "Week 4", "distance": "long", "location": "National Museum of Korea → Nodeul Island (Han River)" }
+                    {
+                        "week": "Week 2",
+                        "distance": "short",
+                        "location": "Everland"
+                    },
+                    {
+                        "week": "Week 4",
+                        "distance": "long",
+                        "location": "National Museum of Korea → Nodeul Island (Han River)"
+                    }
                 ]
             },
             {
                 "month": "Month 3",
                 "trips": [
-                    { "week": "Week 2", "distance": "short", "location": "Local Volunteering → Visiting Local Market → Suwon Sports Game (Evening)" },
-                    { "week": "Week 4", "distance": "long", "location": "Visiting Korean Island - Jebudo Island" }
+                    {
+                        "week": "Week 2",
+                        "distance": "short",
+                        "location": "Local Volunteering → Visiting Local Market → Suwon Sports Game (Evening)"
+                    },
+                    {
+                        "week": "Week 4",
+                        "distance": "long",
+                        "location": "Visiting Korean Island - Jebudo Island"
+                    }
                 ]
             }
         ],
@@ -200,44 +696,104 @@
                 "title": "History & Main Spots",
                 "icon": "history",
                 "spots": [
-                    { "name": "Gyeongbokgung Palace", "price": "KRW 3,000 (Free for Hanbok wearers)" },
-                    { "name": "Korean Folk Village", "price": "KRW 16,000~" },
-                    { "name": "National Museum of Korea", "price": "FREE (Permanent) / Special varies" },
-                    { "name": "Korean War Memorial Museum", "price": "FREE (Permanent) / Special varies" },
-                    { "name": "National Museum of Korean Contemporary History", "price": "FREE (Permanent) / Special varies" },
-                    { "name": "Bukchon Hanok Village", "price": "FREE" },
-                    { "name": "Seoul N Tower", "price": "KRW 21,000" }
+                    {
+                        "name": "Gyeongbokgung Palace",
+                        "price": "KRW 3,000 (Free for Hanbok wearers)"
+                    },
+                    {
+                        "name": "Korean Folk Village",
+                        "price": "KRW 16,000~"
+                    },
+                    {
+                        "name": "National Museum of Korea",
+                        "price": "FREE (Permanent) / Special varies"
+                    },
+                    {
+                        "name": "Korean War Memorial Museum",
+                        "price": "FREE (Permanent) / Special varies"
+                    },
+                    {
+                        "name": "National Museum of Korean Contemporary History",
+                        "price": "FREE (Permanent) / Special varies"
+                    },
+                    {
+                        "name": "Bukchon Hanok Village",
+                        "price": "FREE"
+                    },
+                    {
+                        "name": "Seoul N Tower",
+                        "price": "KRW 21,000"
+                    }
                 ]
             },
             {
                 "title": "Entertainment",
                 "icon": "entertainment",
                 "spots": [
-                    { "name": "Everland", "price": "KRW 46,000~" },
-                    { "name": "Lotte World", "price": "KRW 64,000" }
+                    {
+                        "name": "Everland",
+                        "price": "KRW 46,000~"
+                    },
+                    {
+                        "name": "Lotte World",
+                        "price": "KRW 64,000"
+                    }
                 ]
             },
             {
                 "title": "Relaxation",
                 "icon": "relaxation",
                 "spots": [
-                    { "name": "Glamping (Near Yongin-si)", "price": "Pricing Varies" },
-                    { "name": "Haetgol Glamping", "price": "KRW 60,000 (Tent, 2 ppl, 16:00~20:00)" },
-                    { "name": "Forest Garden", "price": "KRW 5,000 (3 hours, 1 person)" },
-                    { "name": "Camp Cook", "price": "KRW 30,000~ (Tent, 4 ppl)" },
-                    { "name": "Hiking", "price": "FREE (Aerial Tramway avg. KRW 14,000)" },
-                    { "name": "Jebudo Island", "price": "Pricing Varies (Glamby Glamping KRW 78,000~)" }
+                    {
+                        "name": "Glamping (Near Yongin-si)",
+                        "price": "Pricing Varies"
+                    },
+                    {
+                        "name": "Haetgol Glamping",
+                        "price": "KRW 60,000 (Tent, 2 ppl, 16:00~20:00)"
+                    },
+                    {
+                        "name": "Forest Garden",
+                        "price": "KRW 5,000 (3 hours, 1 person)"
+                    },
+                    {
+                        "name": "Camp Cook",
+                        "price": "KRW 30,000~ (Tent, 4 ppl)"
+                    },
+                    {
+                        "name": "Hiking",
+                        "price": "FREE (Aerial Tramway avg. KRW 14,000)"
+                    },
+                    {
+                        "name": "Jebudo Island",
+                        "price": "Pricing Varies (Glamby Glamping KRW 78,000~)"
+                    }
                 ]
             },
             {
                 "title": "Experience",
                 "icon": "experience",
                 "spots": [
-                    { "name": "Korean Dish Cooking Class", "price": "Pricing Varies" },
-                    { "name": "Local Festival", "price": "Pricing Varies" },
-                    { "name": "Local Volunteering", "price": "FREE (Orphanage, Coal Briquettes, etc.)" },
-                    { "name": "Visiting Local Market", "price": "FREE (Meal prices vary)" },
-                    { "name": "Watching Sports Game", "price": "Pricing Varies (Baseball, Football)" }
+                    {
+                        "name": "Korean Dish Cooking Class",
+                        "price": "Pricing Varies"
+                    },
+                    {
+                        "name": "Local Festival",
+                        "price": "Pricing Varies"
+                    },
+                    {
+                        "name": "Local Volunteering",
+                        "price": "FREE (Orphanage, Coal Briquettes, etc.)"
+                    },
+                    {
+                        "name": "Visiting Local Market",
+                        "price": "FREE (Meal prices vary)"
+                    },
+                    {
+                        "name": "Watching Sports Game",
+                        "price": "Pricing Varies (Baseball, Football)"
+                    }
                 ]
             }
         ]
@@ -247,24 +803,96 @@
         "monday": "Monday - Friday",
         "weekend_note": "* Weekends include Sunday services, cultural activities, and free time for rest.",
         "items": [
-            { "time": "07:30-08:00", "title": "Morning QT", "description": "English Bible & Personal Quiet Time" },
-            { "time": "08:00-09:30", "title": "Breakfast", "description": "Breakfast & Personal Preparation" },
-            { "time": "09:30-10:20", "title": "Lecture 1", "description": "[Part 1] Main Curriculum" },
-            { "time": "10:20-10:30", "title": "Break 1", "description": "Short Rest" },
-            { "time": "10:30-11:20", "title": "Lecture 2", "description": "[Part 2] Main Curriculum" },
-            { "time": "11:20-11:40", "title": "Wrap-up", "description": "Morning Lecture Q&A & Small Group Sharing" },
-            { "time": "11:40-12:40", "title": "Lunch", "description": "Lunch & Recharge" },
-            { "time": "12:40-13:30", "title": "Lecture 3", "description": "[Part 3] Main Curriculum" },
-            { "time": "13:30-13:40", "title": "Break 2", "description": "Short Rest" },
-            { "time": "13:40-14:30", "title": "Lecture 4", "description": "[Part 4] Main Curriculum" },
-            { "time": "14:30-14:50", "title": "Daily Reflection", "description": "Daily Review & Journaling" },
-            { "time": "15:00-15:50", "title": "K-Language 1", "description": "Practical Conversation & Basic Grammar" },
-            { "time": "15:50-16:00", "title": "Break 3", "description": "Short Rest" },
-            { "time": "16:00-16:50", "title": "K-Language 2", "description": "Cultural Understanding & Application Practice" },
-            { "time": "16:50-18:30", "title": "K-Life", "description": "Local Area Tour, Mentor/Buddy Exchange" },
-            { "time": "18:30-20:00", "title": "Dinner", "description": "Dinner & Rest" },
-            { "time": "20:00-22:00", "title": "Isaiah 62", "description": "Isaiah 62 Worship Service" },
-            { "time": "22:00-23:00", "title": "Personal Time", "description": "Preparation for Sleep & Wrap-up" }
+            {
+                "time": "07:30-08:00",
+                "title": "Morning QT",
+                "description": "English Bible & Personal Quiet Time"
+            },
+            {
+                "time": "08:00-09:30",
+                "title": "Breakfast",
+                "description": "Breakfast & Personal Preparation"
+            },
+            {
+                "time": "09:30-10:20",
+                "title": "Lecture 1",
+                "description": "[Part 1] Main Curriculum"
+            },
+            {
+                "time": "10:20-10:30",
+                "title": "Break 1",
+                "description": "Short Rest"
+            },
+            {
+                "time": "10:30-11:20",
+                "title": "Lecture 2",
+                "description": "[Part 2] Main Curriculum"
+            },
+            {
+                "time": "11:20-11:40",
+                "title": "Wrap-up",
+                "description": "Morning Lecture Q&A & Small Group Sharing"
+            },
+            {
+                "time": "11:40-12:40",
+                "title": "Lunch",
+                "description": "Lunch & Recharge"
+            },
+            {
+                "time": "12:40-13:30",
+                "title": "Lecture 3",
+                "description": "[Part 3] Main Curriculum"
+            },
+            {
+                "time": "13:30-13:40",
+                "title": "Break 2",
+                "description": "Short Rest"
+            },
+            {
+                "time": "13:40-14:30",
+                "title": "Lecture 4",
+                "description": "[Part 4] Main Curriculum"
+            },
+            {
+                "time": "14:30-14:50",
+                "title": "Daily Reflection",
+                "description": "Daily Review & Journaling"
+            },
+            {
+                "time": "15:00-15:50",
+                "title": "K-Language 1",
+                "description": "Practical Conversation & Basic Grammar"
+            },
+            {
+                "time": "15:50-16:00",
+                "title": "Break 3",
+                "description": "Short Rest"
+            },
+            {
+                "time": "16:00-16:50",
+                "title": "K-Language 2",
+                "description": "Cultural Understanding & Application Practice"
+            },
+            {
+                "time": "16:50-18:30",
+                "title": "K-Life",
+                "description": "Local Area Tour, Mentor/Buddy Exchange"
+            },
+            {
+                "time": "18:30-20:00",
+                "title": "Dinner",
+                "description": "Dinner & Rest"
+            },
+            {
+                "time": "20:00-22:00",
+                "title": "Isaiah 62",
+                "description": "Isaiah 62 Worship Service"
+            },
+            {
+                "time": "22:00-23:00",
+                "title": "Personal Time",
+                "description": "Preparation for Sleep & Wrap-up"
+            }
         ]
     },
     "byNumbers": {
@@ -272,12 +900,36 @@
         "title": "The Ministry Behind the Program",
         "subtitle": "DO DREAM TWO-GETHER International is run by Vine Baptist Church and its mission network — a ministry with a proven track record of raising and sending the next generation.",
         "stats": [
-            { "value": "62", "label": "DO DREAM Intern Missionaries", "note": "Young adults sent to the nations" },
-            { "value": "2018~", "label": "Y Mission Founded", "note": "Base of youth · campus · military mission" },
-            { "value": "97", "label": "YMC Campus Staff", "note": "94 universities · as of Aug 2025" },
-            { "value": "2015~", "label": "New Wave Christian School", "note": "Christian alternative school (K–12)" },
-            { "value": "90+", "label": "ROTC Mission Staff", "note": "as of Oct 2024" },
-            { "value": "80+", "label": "Campuses Visited Weekly", "note": "approx. 80 universities (ROTC)" }
+            {
+                "value": "62",
+                "label": "DO DREAM Intern Missionaries",
+                "note": "Young adults sent to the nations"
+            },
+            {
+                "value": "2018~",
+                "label": "Y Mission Founded",
+                "note": "Base of youth · campus · military mission"
+            },
+            {
+                "value": "97",
+                "label": "YMC Campus Staff",
+                "note": "94 universities · as of Aug 2025"
+            },
+            {
+                "value": "2015~",
+                "label": "New Wave Christian School",
+                "note": "Christian alternative school (K–12)"
+            },
+            {
+                "value": "90+",
+                "label": "ROTC Mission Staff",
+                "note": "as of Oct 2024"
+            },
+            {
+                "value": "80+",
+                "label": "Campuses Visited Weekly",
+                "note": "approx. 80 universities (ROTC)"
+            }
         ]
     },
     "campusLife": {
@@ -287,17 +939,37 @@
         "facilities": {
             "title": "Training Facilities",
             "desc": "Bright hallways, dedicated classrooms, and a shared office where lectures, study, and community life take place.",
-            "captions": ["Hallway, 1F", "Hallway, 2F", "Classroom 1", "Classroom 2", "Office"]
+            "captions": [
+                "Hallway, 1F",
+                "Hallway, 2F",
+                "Classroom 1",
+                "Classroom 2",
+                "Office"
+            ]
         },
         "accommodation": {
             "title": "Accommodation",
             "desc": "You will live in a safe, collaborative environment within walking distance of the church and campus facilities.",
             "cards": [
-                { "title": "Living Environment", "desc": "Shared rooms that encourage fellowship and mutual support, with common spaces for study, prayer, and community gatherings." },
-                { "title": "Campus Facilities", "desc": "Access to church buildings, classrooms, prayer rooms, kitchen facilities, laundry, and outdoor spaces." },
-                { "title": "Daily Life & Amenities", "desc": "Nearby convenience stores, cafes, supermarkets, and parks — a vibrant neighborhood that makes daily life easy and enjoyable." }
+                {
+                    "title": "Living Environment",
+                    "desc": "Shared rooms that encourage fellowship and mutual support, with common spaces for study, prayer, and community gatherings."
+                },
+                {
+                    "title": "Campus Facilities",
+                    "desc": "Access to church buildings, classrooms, prayer rooms, kitchen facilities, laundry, and outdoor spaces."
+                },
+                {
+                    "title": "Daily Life & Amenities",
+                    "desc": "Nearby convenience stores, cafes, supermarkets, and parks — a vibrant neighborhood that makes daily life easy and enjoyable."
+                }
             ],
-            "captions": ["Dormitory", "Dormitory", "Shower Room", "Restroom"]
+            "captions": [
+                "Dormitory",
+                "Dormitory",
+                "Shower Room",
+                "Restroom"
+            ]
         },
         "campus": {
             "title": "Campus Facilities",
@@ -306,7 +978,10 @@
                 "tag": "Book Café",
                 "desc": "Inspired by a European house concert hall, Vine House is a warm space where culture, fellowship, and nature meet. The hall seats up to 150, with an outdoor terrace, a library, a children's playground, and free monthly live concerts.",
                 "hoursTitle": "Operating Hours",
-                "hours": ["Weekdays: 10:00 AM – 6:00 PM (Last order 5:30 PM)", "Weekends: 11:00 AM – 5:00 PM (Last order 4:30 PM)"],
+                "hours": [
+                    "Weekdays: 10:00 AM – 6:00 PM (Last order 5:30 PM)",
+                    "Weekends: 11:00 AM – 5:00 PM (Last order 4:30 PM)"
+                ],
                 "note": "All proceeds from Vine House support ministries serving the nations."
             },
             "library": {
@@ -314,7 +989,11 @@
                 "tag": "Library",
                 "desc": "Da'at — the Hebrew word for \"knowledge\" — is a quiet space for study and reflection, filled with Christian resources, theology, spiritual-growth books, and general literature.",
                 "hoursTitle": "Opening Hours",
-                "hours": ["Mon – Fri: 9:00 AM – 6:00 PM", "Sunday: 8:30 AM – 5:00 PM", "Wednesday: Closed 9:00 AM – 2:30 PM"],
+                "hours": [
+                    "Mon – Fri: 9:00 AM – 6:00 PM",
+                    "Sunday: 8:30 AM – 5:00 PM",
+                    "Wednesday: Closed 9:00 AM – 2:30 PM"
+                ],
                 "borrowingTitle": "Borrowing",
                 "borrowing": "Up to 5 books · 2-week loan · one 1-week renewal"
             }
@@ -325,16 +1004,41 @@
         "title": "Your First Week",
         "subtitle": "From the moment you land, we've made the transition as smooth as possible.",
         "timeline": [
-            { "step": "Arrive", "desc": "Airport pickup and check-in" },
-            { "step": "Connect", "desc": "Meet mentors and your cohort" },
-            { "step": "Orient", "desc": "Campus tour and registration" },
-            { "step": "Launch", "desc": "Begin your 3-month journey" }
+            {
+                "step": "Arrive",
+                "desc": "Airport pickup and check-in"
+            },
+            {
+                "step": "Orient",
+                "desc": "Campus tour and registration"
+            },
+            {
+                "step": "Connect",
+                "desc": "Meet mentors and your cohort"
+            },
+            {
+                "step": "Launch",
+                "desc": "Begin your 3-month journey"
+            }
         ],
         "cards": [
-            { "title": "Arrival Day", "desc": "Airport pickup, check-in, welcome dinner, and rest. Your program coordinator will meet you at Incheon Airport." },
-            { "title": "Orientation Week", "desc": "Campus tour, safety briefing, SIM card setup, transportation card registration, and community introductions." },
-            { "title": "First Week Checklist", "desc": "Complete registration documents, attend the language placement test, meet your mentor, and join your first worship service." },
-            { "title": "Community Login", "desc": "Join the program WhatsApp group, download essential apps (Naver Map, KakaoTalk, Papago), and connect with your cohort." }
-        ]
+            {
+                "title": "Arrival Day",
+                "desc": "Airport pickup, check-in, welcome dinner, and rest. Your program coordinator will meet you at Incheon Airport."
+            },
+            {
+                "title": "Orientation Week",
+                "desc": "Campus tour, safety briefing, SIM card setup, transportation card registration, and community introductions."
+            },
+            {
+                "title": "First Week Checklist",
+                "desc": "Complete registration documents, attend the language placement test, meet your mentor, and join your first worship service."
+            },
+            {
+                "title": "Community Login",
+                "desc": "Join the program WhatsApp group, download essential apps (Naver Map, KakaoTalk, Papago), and connect with your cohort."
+            }
+        ],
+        "note": "Your campus map and neighborhood guide will be provided at orientation. Key locations include the church building, accommodation, language classrooms, and nearby transit stations."
     }
 }

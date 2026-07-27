@@ -6,12 +6,14 @@ import programEn from './en/program.json';
 import aboutEn from './en/about.json';
 import applyEn from './en/apply.json';
 import contactEn from './en/contact.json';
+import churchEn from './en/church.json';
 import commonKo from './ko/common.json';
 import homeKo from './ko/home.json';
 import programKo from './ko/program.json';
 import aboutKo from './ko/about.json';
 import applyKo from './ko/apply.json';
 import contactKo from './ko/contact.json';
+import churchKo from './ko/church.json';
 
 i18n
   .use(initReactI18next)
@@ -24,6 +26,7 @@ i18n
         about: aboutEn,
         apply: applyEn,
         contact: contactEn,
+        church: churchEn,
       },
       ko: {
         common: commonKo,
@@ -32,6 +35,7 @@ i18n
         about: aboutKo,
         apply: applyKo,
         contact: contactKo,
+        church: churchKo,
       }
     },
     lng: 'en',

@@ -1,56 +1,74 @@
 {
-  "nav": {
-    "home": "Home",
-    "program": "Program Intro",
-    "apply": "Apply & Contact",
-    "about": "About",
-    "contact": "Contact",
-    "applyNow": "Apply Now"
-  },
-  "footer": {
-    "about": "About",
-    "description": "Build your firm foundation on the Gospel of the Cross and cultivate a deep, intimate fellowship with God.\nJoin our international community.",
-    "quickLinks": "Quick Links",
-    "program": "Program Intro",
-    "apply": "Apply & Contact",
-    "contact": "Contact",
-    "followUs": "Follow Us",
-    "newsletter": "Newsletter",
-    "newsletterPlaceholder": "Enter your email",
-    "subscribe": "Subscribe",
-    "copyright": "© 2026 DO DREAM TWO-GETHER International. All rights reserved."
-  },
-  "buttons": {
-    "learnMore": "Learn More",
-    "apply": "Apply Now",
-    "submit": "Submit",
-    "cancel": "Cancel",
-    "back": "Back",
-    "next": "Next"
-  },
-  "lightbox": {
-    "close": "Close (ESC)",
-    "prev": "Previous photo",
-    "next": "Next photo"
-  },
-  "cta": {
-    "title": "Ready to Begin this Journey?",
-    "subtitle": "The journey of faith requires a bold step. Follow these simple steps to apply for the upcoming training program.",
-    "s1_title": "Review the Schedule",
-    "s1_desc": "Check the upcoming dates and ensure you are available for the full duration.",
-    "s2_title": "Prepare Your Documents",
-    "s2_desc": "Gather your passport, recommendation letter from your senior pastor, and personal testimony.",
-    "s3_title": "Submit Your Application",
-    "s3_desc": "Fill out our online form. Our admissions team will contact you shortly.",
-    "button": "Apply Now",
-    "partners": {
-      "subtitle": "In Partnership With",
-      "items": [
-        { "name": "VINE BAPTIST CHURCH", "logo": "/partners/vinechurch.png", "url": "https://www.vinechurch.com/" },
-        { "name": "New Wave Ministries", "logo": "/partners/newwave.png", "url": "https://www.newwave.or.kr/" },
-        { "name": "Y Mission", "logo": "/partners/ymission.png", "url": "https://www.ymission.org/" },
-        { "name": "DO DREAM\nTWO-GETHER", "logo": "/partners/dodream.png", "url": "https://www.do-dream.us/" }
-      ]
+    "nav": {
+        "home": "Home",
+        "program": "Program Intro",
+        "church": "Our Church",
+        "apply": "Apply & Contact",
+        "about": "About",
+        "contact": "Contact",
+        "applyNow": "Apply Now"
+    },
+    "footer": {
+        "about": "About",
+        "description": "Build your firm foundation on the Gospel of the Cross and cultivate a deep, intimate fellowship with God.\nJoin our international community.",
+        "quickLinks": "Quick Links",
+        "program": "Program Intro",
+        "church": "Our Church",
+        "apply": "Apply & Contact",
+        "contact": "Contact",
+        "followUs": "Follow Us",
+        "newsletter": "Newsletter",
+        "newsletterPlaceholder": "Enter your email",
+        "subscribe": "Subscribe",
+        "copyright": "© 2026 DO DREAM TWO-GETHER International. All rights reserved."
+    },
+    "buttons": {
+        "learnMore": "Learn More",
+        "apply": "Apply Now",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "back": "Back",
+        "next": "Next"
+    },
+    "lightbox": {
+        "close": "Close (ESC)",
+        "prev": "Previous photo",
+        "next": "Next photo"
+    },
+    "cta": {
+        "title": "Ready to Begin this Journey?",
+        "subtitle": "The journey of faith requires a bold step. Follow these simple steps to apply for the upcoming training program.",
+        "s1_title": "Review the Schedule",
+        "s1_desc": "Check the upcoming dates and ensure you are available for the full duration.",
+        "s2_title": "Prepare Your Documents",
+        "s2_desc": "Gather your passport, recommendation letter from your senior pastor, and personal testimony.",
+        "s3_title": "Submit Your Application",
+        "s3_desc": "Fill out our online form. Our admissions team will contact you shortly.",
+        "button": "Apply Now",
+        "partners": {
+            "subtitle": "In Partnership With",
+            "items": [
+                {
+                    "name": "VINE BAPTIST CHURCH",
+                    "logo": "/partners/vinechurch.png",
+                    "url": "https://www.vinechurch.com/"
+                },
+                {
+                    "name": "New Wave Ministries",
+                    "logo": "/partners/newwave.png",
+                    "url": "https://www.newwave.or.kr/"
+                },
+                {
+                    "name": "Y Mission",
+                    "logo": "/partners/ymission.png",
+                    "url": "https://www.ymission.org/"
+                },
+                {
+                    "name": "DO DREAM\nTWO-GETHER",
+                    "logo": "/partners/dodream.png",
+                    "url": "https://www.do-dream.us/"
+                }
+            ]
+        }
     }
-  }
 }

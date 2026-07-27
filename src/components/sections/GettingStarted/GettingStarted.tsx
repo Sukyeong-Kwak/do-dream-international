@@ -14,7 +14,7 @@ interface Card {
   desc: string;
 }
 
-const STEP_ICONS = [HiPaperAirplane, HiUserGroup, HiMapPin, HiRocketLaunch];
+const STEP_ICONS = [HiPaperAirplane, HiMapPin, HiUserGroup, HiRocketLaunch];
 
 export default function GettingStarted() {
   const { t } = useTranslation('program');
@@ -73,6 +73,10 @@ export default function GettingStarted() {
             </motion.div>
           ))}
         </div>
+
+        <p className="mt-8 text-center text-sm text-brand-muted max-w-3xl mx-auto leading-relaxed">
+          {t('gettingStarted.note')}
+        </p>
       </div>
     </section>
   );

@@ -47,6 +47,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/church" className="hover:text-white transition-colors">
+                  {t('footer.church')}
+                </Link>
+              </li>
+              <li>
                 <Link to="/apply" className="hover:text-white transition-colors">
                   {t('footer.apply')}
                 </Link>
