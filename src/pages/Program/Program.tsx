@@ -7,6 +7,7 @@ import DayInProgram from '../../components/sections/DayInProgram/DayInProgram';
 import KLifeProgram from '../../components/sections/KLifeProgram/KLifeProgram';
 import WeeklySchedule from '../../components/sections/WeeklySchedule/WeeklySchedule';
 import ExperienceKorea from '../../components/sections/ExperienceKorea/ExperienceKorea';
+import ChurchFamily from '../../components/sections/ChurchFamily/ChurchFamily';
 import TrainingJourney from '../../components/sections/TrainingJourney/TrainingJourney';
 import CampusLife from '../../components/sections/CampusLife/CampusLife';
 import GettingStarted from '../../components/sections/GettingStarted/GettingStarted';
@@ -39,6 +40,7 @@ export default function Program() {
       {SHOW_SCHEDULE_SECTIONS && <KLifeProgram />}
       <WeeklySchedule />
       <ExperienceKorea />
+      <ChurchFamily />
       <TrainingJourney />
       <CampusLife />
       <CampusMap />

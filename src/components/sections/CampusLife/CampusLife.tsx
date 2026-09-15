@@ -5,11 +5,13 @@ import SectionHeader from '../../common/SectionHeader';
 import { fadeInUp, staggerItem } from '../../../lib/motion';
 
 const FACILITY_IMAGES = [
-  '/facilities/hallway-1f.jpg',
-  '/facilities/hallway-2f.jpg',
+  '/facilities/worship-room.jpg',
   '/facilities/classroom-1.jpg',
   '/facilities/classroom-2.jpg',
   '/facilities/office.jpg',
+  '/facilities/hallway-1f.jpg',
+  '/facilities/hallway-2f.jpg',
+  '/facilities/dining-hall.jpg',
 ];
 
 const ACCOM_IMAGES = [
@@ -73,13 +75,17 @@ export default function CampusLife() {
             desc={t('campusLife.facilities.desc')}
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {FACILITY_IMAGES.slice(0, 4).map((src, i) => (
+            {FACILITY_IMAGES.slice(0, -1).map((src, i) => (
               <motion.div key={src} {...staggerItem(i, 0.08)} className="aspect-[16/10]">
                 <PhotoTile src={src} caption={facilityCaptions?.[i] ?? ''} className="w-full h-full" />
               </motion.div>
             ))}
-            <motion.div {...staggerItem(4, 0.08)} className="sm:col-span-2 aspect-[2/1]">
-              <PhotoTile src={FACILITY_IMAGES[4]} caption={facilityCaptions?.[4] ?? ''} className="w-full h-full" />
+            <motion.div {...staggerItem(FACILITY_IMAGES.length - 1, 0.08)} className="sm:col-span-2 aspect-[2/1]">
+              <PhotoTile
+                src={FACILITY_IMAGES[FACILITY_IMAGES.length - 1]}
+                caption={facilityCaptions?.[FACILITY_IMAGES.length - 1] ?? ''}
+                className="w-full h-full"
+              />
             </motion.div>
           </div>
         </div>

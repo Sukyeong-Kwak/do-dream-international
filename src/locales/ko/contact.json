@@ -1,12 +1,16 @@
 {
     "hero": {
+        "label": "문의",
         "title": "문의하기",
-        "subtitle": "궁금한 점이 있으신가요? 여러분의 영적 여정을 돕기 위해 기다리고 있습니다."
+        "subtitle": "궁금한 점이 있으신가요? 여러분의 영적 여정을 돕기 위해 기다리고 있습니다.",
+        "cta": "메시지 보내기"
     },
     "info": {
         "title": "연락처 정보",
         "phone": "전화번호",
-        "phone_value": "031-282-1001",
+        "phone_value": "031-546-8438",
+        "email": "이메일",
+        "email_value": "dodreaminternational@gmail.com",
         "website": "웹사이트",
         "website_value": "https://www.vinechurch.com/",
         "location": "오시는 길",

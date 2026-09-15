@@ -34,13 +34,10 @@ export default function ApplyInfo() {
           {/* Duration */}
           <motion.div {...fadeInUp} className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
             <div className="flex-1 w-full">
-              <div className="bg-brand-primary-blue/5 rounded-2xl p-8 flex items-center justify-center gap-4">
-                {['3', '6', '12'].map((m) => (
-                  <span key={m} className="bg-brand-primary-blue/10 text-brand-primary-blue px-5 py-3 rounded-full font-bold text-lg">
-                    {m}
-                  </span>
-                ))}
-                <span className="text-brand-muted text-sm font-medium">months</span>
+              <div className="bg-brand-primary-blue/5 rounded-2xl p-8 text-center">
+                <p className="text-4xl md:text-5xl font-bold text-brand-primary-blue tracking-tighter">
+                  {t('info.duration_value')}
+                </p>
               </div>
             </div>
             <div className="flex-1">

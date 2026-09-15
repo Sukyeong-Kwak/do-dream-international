@@ -17,6 +17,7 @@ export default function Header() {
     { name: t('nav.home'), href: '/' },
     { name: t('nav.program'), href: '/program' },
     { name: t('nav.church'), href: '/church' },
+    { name: t('nav.about'), href: '/about' },
     { name: t('nav.apply'), href: '/apply' },
   ];
 

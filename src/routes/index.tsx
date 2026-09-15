@@ -8,6 +8,8 @@ const Program = lazy(() => import('../pages/Program/Program'));
 const Apply = lazy(() => import('../pages/Apply/Apply'));
 const Inquiries = lazy(() => import('../pages/Inquiries/Inquiries'));
 const Church = lazy(() => import('../pages/Church/Church'));
+const About = lazy(() => import('../pages/About/About'));
+const Contact = lazy(() => import('../pages/Contact/Contact'));
 
 
 // Loading component
@@ -31,6 +33,8 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/program', element: <Program /> },
       { path: '/church', element: <Church /> },
+      { path: '/about', element: <About /> },
+      { path: '/contact', element: <Contact /> },
       { path: '/apply', element: <Apply /> },
       { path: '/inquiries', element: <Inquiries /> },
     ],

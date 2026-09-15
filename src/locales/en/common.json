@@ -47,12 +47,33 @@
     "cta": {
         "title": "Ready to Begin this Journey?",
         "subtitle": "The journey of faith requires a bold step. Follow these simple steps to apply for the upcoming training program.",
-        "s1_title": "Review the Schedule",
-        "s1_desc": "Check the upcoming dates and ensure you are available for the full duration.",
-        "s2_title": "Prepare Your Documents",
-        "s2_desc": "Gather your passport, recommendation letter from your senior pastor, and personal testimony.",
-        "s3_title": "Submit Your Application",
-        "s3_desc": "Fill out our online form. Our admissions team will contact you shortly.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Submit Application Form",
+                "desc": "Complete and submit the online application form (Google Forms)."
+            },
+            {
+                "num": "02",
+                "title": "Submit Documents",
+                "desc": "Register your passport copy, personal testimony, and letter of recommendation."
+            },
+            {
+                "num": "03",
+                "title": "Document Review",
+                "desc": "We review the documents you submitted."
+            },
+            {
+                "num": "04",
+                "title": "Video Interview",
+                "desc": "An online video interview is conducted."
+            },
+            {
+                "num": "05",
+                "title": "Final Confirmation",
+                "desc": "We notify you of the final result."
+            }
+        ],
         "button": "Apply Now",
         "partners": {
             "subtitle": "In Partnership With",

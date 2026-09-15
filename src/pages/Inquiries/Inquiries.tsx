@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { FaPhone, FaMapMarkerAlt, FaGlobe, FaHome } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGlobe, FaHome } from 'react-icons/fa';
 import Input from '../../components/common/Input/Input';
 import Modal from '../../components/common/Modal/Modal';
 import { fadeInUp } from '../../lib/motion';
@@ -38,6 +38,7 @@ export default function Inquiries() {
 
   const contactItems = [
     { Icon: FaPhone, label: t('info.phone'), value: t('info.phone_value') },
+    { Icon: FaEnvelope, label: t('info.email'), value: t('info.email_value'), href: `mailto:${t('info.email_value')}` },
     { Icon: FaMapMarkerAlt, label: t('info.location'), value: t('info.location_value') },
     { Icon: FaGlobe, label: t('info.website'), value: t('info.website_value'), href: t('info.website_value') },
   ];

@@ -14,7 +14,11 @@
                 "label": "Duration"
             },
             {
-                "value": "Ages 20-30s",
+                "value": "English · Korean",
+                "label": "Language"
+            },
+            {
+                "value": "Ages 18–35",
                 "label": "Target"
             },
             {
@@ -24,7 +28,8 @@
         ],
         "director": "General Director: Rev. Junhyung Kim",
         "dept": "Department: DO DREAM TWO-GETHER International Team",
-        "org": "Organized by Vine Baptist Church"
+        "org": "Organized by Vine Baptist Church",
+        "langNote": "* Japanese, Chinese and other languages are planned for the future."
     },
     "vision": {
         "label": "VISION & VALUES",
@@ -369,81 +374,123 @@
             {
                 "time": "07:30 – 08:00",
                 "session": "Morning QT",
-                "desc": "Quiet Time with God (Personal Devotion & Prayer)",
+                "desc": "Quiet time · personal devotion",
                 "duration": "30 min"
             },
             {
                 "time": "08:00 – 09:30",
                 "session": "Breakfast",
-                "desc": "Breakfast & Personal Preparation",
+                "desc": "Breakfast and personal preparation",
                 "duration": "90 min"
             },
             {
-                "time": "09:30 – 10:30",
+                "time": "09:30 – 12:00",
                 "session": "Lecture",
-                "desc": "Main Lecture (Biblical Teaching)",
-                "duration": "60 min",
+                "desc": "Main curriculum — The Gospel of the Cross",
+                "duration": "150 min",
                 "accent": true
             },
             {
-                "time": "10:30 – 10:40",
-                "session": "Break",
-                "desc": "Short Break",
-                "duration": "10 min"
-            },
-            {
-                "time": "10:40 – 11:40",
-                "session": "Lecture",
-                "desc": "Main Lecture (Biblical Teaching)",
-                "duration": "60 min",
-                "accent": true
-            },
-            {
-                "time": "11:40 – 12:40",
+                "time": "12:00 – 14:00",
                 "session": "Lunch",
-                "desc": "Lunch & Fellowship",
-                "duration": "60 min"
+                "desc": "Lunch",
+                "duration": "120 min"
             },
             {
-                "time": "12:40 – 17:10",
+                "time": "14:00 – 17:00",
                 "session": "Ministry & Serving Time",
-                "desc": "Various ministry activities and practical experience",
-                "duration": "~270 min",
+                "desc": "Serving and training in the church community",
+                "duration": "180 min",
                 "accent": true,
                 "tags": [
-                    "Outreach",
-                    "Library Ministry",
-                    "Evangelism",
-                    "Team Ministry",
-                    "Mission Training"
+                    "Media · Video",
+                    "Sound",
+                    "Café · Barista",
+                    "Library",
+                    "Campus Chapel",
+                    "School Ministry",
+                    "Worship",
+                    "Instruments"
                 ]
             },
             {
-                "time": "17:10 – 18:10",
+                "time": "17:00 – 18:00",
                 "session": "Fellowship",
-                "desc": "Community Time & Sharing",
+                "desc": "Mentor · buddy fellowship",
                 "duration": "60 min"
             },
             {
-                "time": "18:10 – 20:00",
+                "time": "18:00 – 20:00",
                 "session": "Dinner",
-                "desc": "Dinner & Fellowship",
-                "duration": "110 min"
+                "desc": "Dinner and rest",
+                "duration": "120 min"
             },
             {
                 "time": "20:00 – 22:00",
                 "session": "Worship & Prayer",
-                "desc": "Worship, Prayer, and the Word",
+                "desc": "Isaiah 62 worship · community worship",
                 "duration": "120 min",
                 "accent": true
             },
             {
-                "time": "22:00 –",
+                "time": "22:00 – 23:00",
                 "session": "Personal Reflection & Rest",
-                "desc": "Personal Reflection & Rest",
-                "duration": "–"
+                "desc": "Winding down and closing the day",
+                "duration": "60 min"
             }
         ]
+    },
+    "churchFamily": {
+        "label": "CHURCH FAMILY",
+        "title": "Learning the Church Community Through Service",
+        "subtitle": "During the afternoon Ministry & Serving Time, you serve alongside the church's departments and learn on the field of real ministry.",
+        "areasTitle": "Areas of Service",
+        "areas": [
+            {
+                "icon": "media",
+                "name": "Video & Media Production",
+                "desc": ""
+            },
+            {
+                "icon": "sound",
+                "name": "Sound Engineering",
+                "desc": ""
+            },
+            {
+                "icon": "cafe",
+                "name": "Café & Barista",
+                "desc": ""
+            },
+            {
+                "icon": "library",
+                "name": "Library Services",
+                "desc": ""
+            },
+            {
+                "icon": "campus",
+                "name": "University Campus Chapel",
+                "desc": ""
+            },
+            {
+                "icon": "school",
+                "name": "School Ministry",
+                "desc": "Elementary · Middle · High"
+            },
+            {
+                "icon": "worship",
+                "name": "Worship Service",
+                "desc": ""
+            },
+            {
+                "icon": "music",
+                "name": "Learning an Instrument",
+                "desc": "Guitar, piano and more"
+            }
+        ],
+        "smallGroup": {
+            "title": "Young Adult Small Groups",
+            "desc": "Join small group gatherings with the young adults of the church community and share fellowship in faith."
+        }
     },
     "korea": {
         "label": "EXPERIENCE KOREA",
@@ -904,9 +951,9 @@
         "subtitle": "DO DREAM TWO-GETHER International is run by Vine Baptist Church and its mission network — a ministry with a proven track record of raising and sending the next generation.",
         "stats": [
             {
-                "value": "62",
+                "value": "66",
                 "label": "DO DREAM Intern Missionaries",
-                "note": "Young adults sent to the nations"
+                "note": "Young adults sent to the nations · as of Sep 2026"
             },
             {
                 "value": "2018~",
@@ -914,9 +961,9 @@
                 "note": "Base of youth · campus · military mission"
             },
             {
-                "value": "97",
+                "value": "100",
                 "label": "YMC Campus Staff",
-                "note": "94 universities · as of Aug 2025"
+                "note": "94 universities nationwide · as of Sep 2026"
             },
             {
                 "value": "2015~",
@@ -924,9 +971,9 @@
                 "note": "Christian alternative school (K–12)"
             },
             {
-                "value": "90+",
+                "value": "130+",
                 "label": "ROTC Mission Staff",
-                "note": "as of Oct 2024"
+                "note": "as of Sep 2026"
             },
             {
                 "value": "80+",
@@ -941,13 +988,15 @@
         "subtitle": "Where you will learn, rest, and live together for three months — see it for yourself.",
         "facilities": {
             "title": "Training Facilities",
-            "desc": "Bright hallways, dedicated classrooms, and a shared office where lectures, study, and community life take place.",
+            "desc": "A worship room for full gatherings, lecture rooms for Bible training, the DO DREAM TWO-GETHER International office, and well-kept corridors and a dining hall.",
             "captions": [
-                "Hallway, 1F",
-                "Hallway, 2F",
-                "Classroom 1",
-                "Classroom 2",
-                "Office"
+                "Worship Room",
+                "Lecture Room 1",
+                "Lecture Room 2",
+                "Office",
+                "Corridor (1F)",
+                "Corridor (2F)",
+                "Dining Hall"
             ]
         },
         "accommodation": {

@@ -1,12 +1,16 @@
 {
     "hero": {
+        "label": "Contact Us",
         "title": "Get in Touch",
-        "subtitle": "Have questions? We're here to help you on your spiritual journey."
+        "subtitle": "Have questions? We're here to help you on your spiritual journey.",
+        "cta": "Send Message"
     },
     "info": {
         "title": "Contact Information",
         "phone": "Phone",
-        "phone_value": "031-282-1001",
+        "phone_value": "031-546-8438",
+        "email": "Email",
+        "email_value": "dodreaminternational@gmail.com",
         "website": "Website",
         "website_value": "https://www.vinechurch.com/",
         "location": "Location",

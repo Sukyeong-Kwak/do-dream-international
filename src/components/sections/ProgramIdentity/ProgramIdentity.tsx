@@ -39,6 +39,10 @@ export default function ProgramIdentity() {
           ))}
         </motion.div>
 
+        <motion.p {...fadeIn} transition={{ delay: 0.15 }} className="-mt-6 mb-10 text-sm text-brand-muted">
+          {t('identity.langNote')}
+        </motion.p>
+
         <motion.div
           {...fadeIn}
           transition={{ delay: 0.2 }}

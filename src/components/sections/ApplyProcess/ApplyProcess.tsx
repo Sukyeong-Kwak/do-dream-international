@@ -7,9 +7,7 @@ export default function ApplyProcess() {
   const { t } = useTranslation('apply');
 
   const steps = [
-    { num: '01', title: t('steps.s1_title'), desc: t('steps.s1_desc') },
-    { num: '02', title: t('steps.s2_title'), desc: t('steps.s2_desc') },
-    { num: '03', title: t('steps.s3_title'), desc: t('steps.s3_desc') },
+    ...(t('steps.items', { returnObjects: true }) as { num: string; title: string; desc: string }[]),
   ].map((step, index) => {
     const color = getBrandColor(index);
     return { ...step, iconColor: color.icon, borderColor: 'border-transparent' };
