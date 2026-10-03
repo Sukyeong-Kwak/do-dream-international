@@ -8,6 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+# Vite 의존성 사전 번들 캐시 (dev 실행 시 자동 생성)
+node_modules/.vite/
 dist
 dist-ssr
 *.local
