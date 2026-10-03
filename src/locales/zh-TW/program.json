@@ -26,7 +26,7 @@
                 "label": "群體生活"
             }
         ],
-        "director": "總負責人：김준형 牧師",
+        "director": "總負責人：김준형（Junhyung Kim）牧師",
         "dept": "負責單位：DO DREAM TWO-GETHER International 團隊",
         "org": "主辦單位：葡萄樹浸信會",
         "langNote": "* 課程未來預計以日語、中文等多種語言進行。"
@@ -617,7 +617,7 @@
         "leadershipTitle": "課程領導團隊",
         "people": [
             {
-                "name": "여주봉 牧師",
+                "name": "여주봉（Daniel Yeojubong）牧師",
                 "roles": [
                     "葡萄樹浸信會主任牧師",
                     "DO DREAM TWO-GETHER International 主辦人"
@@ -625,7 +625,7 @@
                 "desc": "一位透過以福音為中心的門徒訓練、屬靈領導力與世界宣教，致力於培育下一代的牧者。"
             },
             {
-                "name": "김준형 牧師",
+                "name": "김준형（Junhyung Kim）牧師",
                 "roles": [
                     "葡萄樹浸信會青年牧區牧師"
                 ],
@@ -635,7 +635,7 @@
         "guestTitle": "客座講師",
         "guestDesc": "在課程期間，參加者將向來自韓國與世界各地經驗豐富的牧師、宣教士、神學學者與基督徒領袖學習。客座講師帶來豐富的事工經驗與實務洞見，透過多元的視角與真實的事工現場造就參加者。",
         "coordinatorTitle": "課程協調人",
-        "coordinatorName": "최유라",
+        "coordinatorName": "최유라（Youra Choi）",
         "coordinatorDesc": "課程協調人會在整個過程中陪伴您，協助新生說明會、住宿、行程、聯繫與日常生活等事項，讓您在韓國的時光安心而有意義。"
     },
     "dayInProgram": {
