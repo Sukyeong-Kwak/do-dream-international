@@ -21,8 +21,22 @@ import aboutJa from './ja/about.json';
 import applyJa from './ja/apply.json';
 import contactJa from './ja/contact.json';
 import churchJa from './ja/church.json';
+import commonZhTW from './zh-TW/common.json';
+import homeZhTW from './zh-TW/home.json';
+import programZhTW from './zh-TW/program.json';
+import aboutZhTW from './zh-TW/about.json';
+import applyZhTW from './zh-TW/apply.json';
+import contactZhTW from './zh-TW/contact.json';
+import churchZhTW from './zh-TW/church.json';
+import commonZhCN from './zh-CN/common.json';
+import homeZhCN from './zh-CN/home.json';
+import programZhCN from './zh-CN/program.json';
+import aboutZhCN from './zh-CN/about.json';
+import applyZhCN from './zh-CN/apply.json';
+import contactZhCN from './zh-CN/contact.json';
+import churchZhCN from './zh-CN/church.json';
 
-export const SUPPORTED_LANGUAGES = ['en', 'ko', 'ja'] as const;
+export const SUPPORTED_LANGUAGES = ['en', 'ko', 'ja', 'zh-TW', 'zh-CN'] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
 const LANGUAGE_STORAGE_KEY = 'dodream.language';
@@ -31,10 +45,21 @@ function isSupported(value: string | null): value is SupportedLanguage {
   return value !== null && (SUPPORTED_LANGUAGES as readonly string[]).includes(value);
 }
 
-/** 'ja-JP' 처럼 지역이 붙은 코드도 지원 언어로 맞춰 줍니다. */
+/**
+ * BCP-47 태그를 지원 언어로 맞춰 줍니다. ('ja-JP' → 'ja', 'zh-HK' → 'zh-TW')
+ * 중국어는 간체·번체가 코드만으로 갈리지 않으므로 지역과 표기 체계를 함께 봅니다.
+ */
 function normalizeLanguage(tag: string | null | undefined): SupportedLanguage | null {
   if (!tag) return null;
-  const base = tag.toLowerCase().split('-')[0];
+  const lower = tag.toLowerCase();
+  if (isSupported(tag)) return tag;
+
+  const [base, ...rest] = lower.split('-');
+  if (base === 'zh') {
+    // 번체권: 대만·홍콩·마카오 또는 Hant 표기. 그 외(중국 본토·싱가포르)는 간체.
+    const traditional = rest.some((part) => ['tw', 'hk', 'mo', 'hant'].includes(part));
+    return traditional ? 'zh-TW' : 'zh-CN';
+  }
   return isSupported(base) ? base : null;
 }
 
@@ -43,9 +68,28 @@ function readStoredLanguage(): SupportedLanguage | null {
   try {
     return normalizeLanguage(window.localStorage.getItem(LANGUAGE_STORAGE_KEY));
   } catch {
-    // 시크릿 모드 등 스토리지 접근이 차단된 환경에서는 조용히 기본값을 씁니다.
+    // 시크릿 모드 등 스토리지 접근이 차단된 환경에서는 조용히 넘어갑니다.
     return null;
   }
+}
+
+/** 브라우저(기기)에 설정된 선호 언어 중 지원하는 첫 번째 언어. */
+function detectBrowserLanguage(): SupportedLanguage | null {
+  try {
+    const preferred = navigator.languages?.length ? navigator.languages : [navigator.language];
+    for (const tag of preferred) {
+      const matched = normalizeLanguage(tag);
+      if (matched) return matched;
+    }
+  } catch {
+    // navigator를 쓸 수 없는 환경에서는 기본값으로 넘어갑니다.
+  }
+  return null;
+}
+
+/** 저장된 선택 > 브라우저 언어 > 영어 순으로 시작 언어를 정합니다. */
+function resolveInitialLanguage(): SupportedLanguage {
+  return readStoredLanguage() ?? detectBrowserLanguage() ?? 'en';
 }
 
 i18n
@@ -78,13 +122,29 @@ i18n
         apply: applyJa,
         contact: contactJa,
         church: churchJa,
+      },
+      'zh-TW': {
+        common: commonZhTW,
+        home: homeZhTW,
+        program: programZhTW,
+        about: aboutZhTW,
+        apply: applyZhTW,
+        contact: contactZhTW,
+        church: churchZhTW,
+      },
+      'zh-CN': {
+        common: commonZhCN,
+        home: homeZhCN,
+        program: programZhCN,
+        about: aboutZhCN,
+        apply: applyZhCN,
+        contact: contactZhCN,
+        church: churchZhCN,
       }
     },
-    lng: readStoredLanguage() ?? 'en',
+    lng: resolveInitialLanguage(),
     fallbackLng: 'en',
     supportedLngs: [...SUPPORTED_LANGUAGES],
-    // 'ja-JP' 같은 지역 코드가 들어와도 'ja' 리소스를 쓰게 합니다.
-    load: 'languageOnly',
     defaultNS: 'common',
     interpolation: {
       escapeValue: false, // React already escapes values

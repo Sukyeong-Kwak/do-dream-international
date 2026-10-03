@@ -1,0 +1,42 @@
+{
+    "hero": {
+        "label": "聯絡我們",
+        "title": "與我們聯絡",
+        "subtitle": "有任何疑問嗎？我們隨時準備協助您的屬靈旅程。",
+        "cta": "傳送訊息"
+    },
+    "info": {
+        "title": "聯絡資訊",
+        "phone": "電話",
+        "phone_value": "031-546-8438",
+        "email": "電子郵件",
+        "email_value": "dodreaminternational@gmail.com",
+        "website": "網站",
+        "website_value": "https://www.vinechurch.com/",
+        "location": "地址",
+        "location_value": "大韓民國 京畿道龍仁市器興區新亭路151街11-17"
+    },
+    "inquiry": {
+        "intro_title": "歡迎隨時與我們聯絡",
+        "intro_subtitle": "請填寫以下表單，我們確認後會盡快回覆您。",
+        "home_button": "前往首頁"
+    },
+    "message": {
+        "label": "聯絡我們",
+        "title": "傳送訊息",
+        "name": "姓名",
+        "email": "電子郵件",
+        "subject": "主旨",
+        "message": "內容",
+        "button": "送出",
+        "error": "傳送訊息時發生錯誤。",
+        "error_hint": "請稍後再試一次。",
+        "sending": "傳送中...",
+        "success_title": "傳送完成",
+        "success_body": "感謝您的來信。我們確認後會盡快回覆您。",
+        "ok": "確定"
+    },
+    "social": {
+        "title": "社群媒體"
+    }
+}

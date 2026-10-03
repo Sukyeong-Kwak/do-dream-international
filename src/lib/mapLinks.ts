@@ -27,6 +27,13 @@ export const PRAYER_HOUSE_PLACE: MapPlace = {
 const ua = typeof navigator !== 'undefined' ? navigator.userAgent : '';
 const isMobile = /iphone|ipad|ipod|android/i.test(ua);
 
+/** 화면 언어 → Google 지도 hl 파라미터. 없는 언어는 영어로 떨어집니다. */
+const GOOGLE_MAPS_LANG: Record<string, string> = {
+  ja: 'ja',
+  'zh-TW': 'zh-TW',
+  'zh-CN': 'zh-CN',
+};
+
 export type MapAppId = 'naver' | 'google';
 
 export interface MapApp {
@@ -39,14 +46,15 @@ export interface MapApp {
 
 /**
  * 장소와 화면 언어에 맞춰 지도 앱 목록을 만듭니다.
- * 한국어는 네이버를, 그 외(영어·일본어)는 Google Maps를 앞에 둡니다.
+ * 한국어는 네이버를, 그 외 언어는 Google Maps를 앞에 둡니다.
  */
 export function getMapApps(place: MapPlace, language: string): MapApp[] {
   const isKorean = language.startsWith('ko');
   const encoded = encodeURIComponent(place.query);
   // 네이버 앱 스킴은 호출한 서비스 이름(appname)을 요구합니다.
   const appname = typeof window !== 'undefined' ? window.location.hostname : 'dodream';
-  const hl = isKorean ? 'ko' : language.startsWith('ja') ? 'ja' : 'en';
+  // Google 지도가 알아듣는 표기 언어 코드로 맞춥니다. (중국어는 간체·번체를 구분)
+  const hl = isKorean ? 'ko' : GOOGLE_MAPS_LANG[language] ?? 'en';
 
   const googleQuery = place.coord ? `${place.coord.lat},${place.coord.lng}` : encoded;
   const googleUrl = `https://www.google.com/maps/search/?api=1&query=${googleQuery}&hl=${hl}`;

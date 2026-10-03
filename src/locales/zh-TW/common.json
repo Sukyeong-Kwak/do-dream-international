@@ -1,0 +1,104 @@
+{
+    "nav": {
+        "home": "首頁",
+        "program": "課程介紹",
+        "church": "教會介紹",
+        "apply": "報名與聯絡",
+        "about": "總覽",
+        "contact": "聯絡我們",
+        "applyNow": "立即報名"
+    },
+    "footer": {
+        "about": "總覽",
+        "description": "站立在十字架福音這穩固的根基上，享受與神深入而親密的相交。\n我們邀請您加入與世界各地青年同行的信仰旅程。",
+        "quickLinks": "快速連結",
+        "program": "課程介紹",
+        "church": "教會介紹",
+        "apply": "報名與聯絡",
+        "contact": "聯絡我們",
+        "followUs": "追蹤我們",
+        "newsletter": "電子報",
+        "newsletterPlaceholder": "請輸入電子郵件",
+        "subscribe": "訂閱",
+        "copyright": "© 2026 DO DREAM TWO-GETHER International. All rights reserved."
+    },
+    "buttons": {
+        "learnMore": "了解更多",
+        "apply": "立即報名",
+        "submit": "送出",
+        "cancel": "取消",
+        "back": "上一步",
+        "next": "下一步"
+    },
+    "lightbox": {
+        "close": "關閉（ESC）",
+        "prev": "上一張照片",
+        "next": "下一張照片"
+    },
+    "map": {
+        "copy": "複製地址",
+        "copied": "已複製",
+        "cta": "用地圖 App 查看路線",
+        "apps": {
+            "naver": "NAVER 地圖",
+            "google": "Google 地圖"
+        }
+    },
+    "cta": {
+        "title": "準備好開始這段旅程了嗎？",
+        "subtitle": "信仰的旅程需要勇敢的決定。<br />請透過以下簡單的流程，報名即將開始的訓練課程。",
+        "steps": [
+            {
+                "num": "01",
+                "title": "提交報名表",
+                "desc": "填寫並提交線上報名表（Google 表單）。"
+            },
+            {
+                "num": "02",
+                "title": "登錄文件",
+                "desc": "登錄護照影本、信仰見證與推薦函。"
+            },
+            {
+                "num": "03",
+                "title": "文件審查",
+                "desc": "我們會審閱您所提交的文件。"
+            },
+            {
+                "num": "04",
+                "title": "視訊面試",
+                "desc": "以線上視訊方式進行面試。"
+            },
+            {
+                "num": "05",
+                "title": "最終確認",
+                "desc": "通知您最終的錄取結果。"
+            }
+        ],
+        "button": "立即報名",
+        "partners": {
+            "subtitle": "合作夥伴",
+            "items": [
+                {
+                    "name": "葡萄樹浸信會",
+                    "logo": "/partners/vinechurch.png",
+                    "url": "https://www.vinechurch.com/"
+                },
+                {
+                    "name": "新浪潮宣教會",
+                    "logo": "/partners/newwave.png",
+                    "url": "https://www.newwave.or.kr/"
+                },
+                {
+                    "name": "Y Mission",
+                    "logo": "/partners/ymission.png",
+                    "url": "https://www.ymission.org/"
+                },
+                {
+                    "name": "DO DREAM\nTWO-GETHER",
+                    "logo": "/partners/dodream.png",
+                    "url": "https://www.do-dream.us/"
+                }
+            ]
+        }
+    }
+}

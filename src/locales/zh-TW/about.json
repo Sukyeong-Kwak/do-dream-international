@@ -1,0 +1,88 @@
+{
+    "hero": {
+        "title": "接受訓練，被差派成為屬靈領袖",
+        "subtitle": "為您介紹 DO DREAM TWO-GETHER International 的願景與核心價值。"
+    },
+    "overview": {
+        "title": "計畫總覽",
+        "name": "計畫名稱：DO DREAM TWO-GETHER International",
+        "organizer": "主辦單位：葡萄樹浸信會",
+        "type": "計畫性質：邀請世界各地基督徒青年的中長期駐留式靈命訓練課程",
+        "location": "舉辦地點：京畿道龍仁市器興區新亭路151街11-17",
+        "target": "對象：世界各地教會的基督徒青年（滿18〜35歲，外國籍）",
+        "duration": "期間：3個月（85天，配合簽證90天規定）"
+    },
+    "purpose": {
+        "title": "計畫目的",
+        "description": "邀請世界各地的基督徒青年，針對基督教信仰的本質進行密集教導與有系統的靈命訓練，培育下一代的教會領袖。"
+    },
+    "activities": {
+        "title": "課程內容",
+        "items": [
+            {
+                "title": "教育課程",
+                "desc": "基督教信仰基礎與靈命訓練、崇拜及群體生活、領導力訓練"
+            },
+            {
+                "title": "韓語教育",
+                "desc": "基礎韓語會話與讀寫教學"
+            },
+            {
+                "title": "文化體驗",
+                "desc": "參訪韓國觀光名勝，體驗韓國歷史與傳統文化"
+            }
+        ]
+    },
+    "vision": {
+        "title": "願景與核心價值",
+        "v_title": "Vision",
+        "v_items": [
+            "下一代的復興",
+            "向著萬國的屬靈領導力"
+        ],
+        "c_title": "Core Values",
+        "c_items": [
+            "向著萬國的屬靈領導力",
+            "活出信仰的本質",
+            "群體中的共同生活"
+        ]
+    },
+    "effects": {
+        "title": "預期成效",
+        "items": [
+            "世界各地基督徒青年的信仰成熟與領導力提升",
+            "建立國際性的信仰網絡",
+            "擴展跨文化溝通的能力"
+        ]
+    },
+    "partners": {
+        "title": "合作機構",
+        "items": [
+            {
+                "name": "葡萄樹浸信會",
+                "logo": "/partners/vinechurch.png",
+                "url": "https://www.vinechurch.com/"
+            },
+            {
+                "name": "新浪潮宣教會",
+                "logo": "/partners/newwave.png",
+                "url": "https://www.newwave.or.kr/"
+            },
+            {
+                "name": "Y Mission",
+                "logo": "/partners/ymission.png",
+                "url": "https://www.ymission.org/"
+            },
+            {
+                "name": "DO DREAM\nTWO-GETHER",
+                "logo": "/partners/dodream.png",
+                "url": "https://www.do-dream.us/"
+            }
+        ]
+    },
+    "organization": {
+        "title": "組織架構",
+        "director": "總負責人：金俊亨牧師（葡萄樹浸信會 青年牧區牧師）",
+        "dept": "負責單位：DO DREAM TWO-GETHER International 團隊"
+    }
+}

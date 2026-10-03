@@ -112,7 +112,7 @@ export default function ProgramCurriculum() {
   if (!Array.isArray(allSubjects)) return null;
 
   // 임시 숨김: "십자가의 복음" 과목만 노출 (나머지는 추후 복구)
-  const GOSPEL_OF_THE_CROSS = ['십자가의 복음', 'The Gospel of the Cross', '十字架の福音'];
+  const GOSPEL_OF_THE_CROSS = ['십자가의 복음', 'The Gospel of the Cross', '十字架の福音', '十字架的福音'];
   const subjects = allSubjects.filter((s) => GOSPEL_OF_THE_CROSS.includes(s.title));
 
   // Course materials are shared across volumes, so render them only once (first subject with volumes)

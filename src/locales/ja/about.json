@@ -6,7 +6,7 @@
     "overview": {
         "title": "事業概要",
         "name": "事業名：DO DREAM TWO-GETHER International",
-        "organizer": "運営主体：ぶどうの木教会",
+        "organizer": "運営主体：ぶどうの木バプテスト教会",
         "type": "事業の性格：世界中のクリスチャン青年を招く中・長期滞在型の霊性訓練プログラム",
         "location": "運営場所：京畿道龍仁市器興区新亭路151ギル11-17",
         "target": "対象：世界各国の教会のクリスチャン青年(満18〜35歳・外国籍)",
@@ -59,7 +59,7 @@
         "title": "協力機関",
         "items": [
             {
-                "name": "ぶどうの木教会",
+                "name": "ぶどうの木バプテスト教会",
                 "logo": "/partners/vinechurch.png",
                 "url": "https://www.vinechurch.com/"
             },
@@ -82,7 +82,7 @@
     },
     "organization": {
         "title": "運営組織",
-        "director": "総括責任者：キム・ジュニョン牧師(ぶどうの木教会 青年部担当牧師)",
+        "director": "総括責任者：キム・ジュニョン牧師(ぶどうの木バプテスト教会 青年部担当牧師)",
         "dept": "担当部署：DO DREAM TWO-GETHER International チーム"
     }
 }

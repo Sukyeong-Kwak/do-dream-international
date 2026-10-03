@@ -1,23 +1,51 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { HiMenu, HiX } from 'react-icons/hi';
+import { HiChevronDown, HiOutlineGlobeAlt } from 'react-icons/hi2';
 import { APPLY_FORM_URL } from '../../../lib/constants';
 import type { SupportedLanguage } from '../../../locales/i18n.config';
 
-/** 화면에 노출되는 언어 목록. label은 각 언어 사용자가 바로 알아볼 수 있는 표기입니다. */
-const LANGUAGES: { code: SupportedLanguage; label: string; name: string }[] = [
-  { code: 'ko', label: 'KO', name: '한국어로 보기' },
-  { code: 'en', label: 'EN', name: 'View in English' },
-  { code: 'ja', label: '日本語', name: '日本語で見る' },
+/** 각 언어를 그 언어 사용자가 바로 알아볼 수 있도록 자국어 표기로 보여줍니다. */
+const LANGUAGES: { code: SupportedLanguage; label: string }[] = [
+  { code: 'ko', label: '한국어' },
+  { code: 'en', label: 'English' },
+  { code: 'ja', label: '日本語' },
+  { code: 'zh-TW', label: '繁體中文' },
+  { code: 'zh-CN', label: '简体中文' },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const langMenuRef = useRef<HTMLDivElement>(null);
   const { t, i18n } = useTranslation('common');
   const location = useLocation();
 
-  const currentLang = LANGUAGES.find((lang) => i18n.language.startsWith(lang.code))?.code ?? 'en';
+  const current = LANGUAGES.find((lang) => lang.code === i18n.language) ?? LANGUAGES[1];
+
+  // 바깥을 클릭하거나 ESC를 누르면 언어 메뉴를 닫습니다.
+  useEffect(() => {
+    if (!langMenuOpen) return;
+    const onPointerDown = (event: MouseEvent) => {
+      if (!langMenuRef.current?.contains(event.target as Node)) setLangMenuOpen(false);
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setLangMenuOpen(false);
+    };
+    document.addEventListener('mousedown', onPointerDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', onPointerDown);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, [langMenuOpen]);
+
+  const selectLanguage = (code: SupportedLanguage) => {
+    i18n.changeLanguage(code);
+    setLangMenuOpen(false);
+    setMobileMenuOpen(false);
+  };
 
   const navigation = [
     { name: t('nav.home'), href: '/' },
@@ -51,23 +79,43 @@ export default function Header() {
               </Link>
             ))}
             <div className="flex items-center space-x-4 border-l border-gray-200 pl-4">
-              <div className="flex items-center rounded-lg border border-gray-200 overflow-hidden" role="group" aria-label="Language">
-                {LANGUAGES.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => i18n.changeLanguage(lang.code)}
-                    title={lang.name}
-                    aria-label={lang.name}
-                    aria-current={currentLang === lang.code ? 'true' : undefined}
-                    className={`px-2.5 py-1 text-xs font-semibold transition-colors ${
-                      currentLang === lang.code
-                        ? 'bg-brand-primary-teal text-white'
-                        : 'text-brand-text hover:text-brand-primary-teal'
-                    }`}
+              <div className="relative" ref={langMenuRef}>
+                <button
+                  onClick={() => setLangMenuOpen((open) => !open)}
+                  aria-haspopup="listbox"
+                  aria-expanded={langMenuOpen}
+                  aria-label="Select language"
+                  className="flex items-center gap-1.5 text-sm font-semibold text-brand-text hover:text-brand-primary-teal transition-colors"
+                >
+                  <HiOutlineGlobeAlt className="w-4 h-4" aria-hidden="true" />
+                  <span>{current.label}</span>
+                  <HiChevronDown
+                    className={`w-4 h-4 transition-transform duration-200 ${langMenuOpen ? 'rotate-180' : ''}`}
+                    aria-hidden="true"
+                  />
+                </button>
+
+                {langMenuOpen && (
+                  <ul
+                    role="listbox"
+                    className="absolute right-0 mt-2 w-36 py-1 rounded-xl bg-white border border-gray-200 shadow-lg overflow-hidden"
                   >
-                    {lang.label}
-                  </button>
-                ))}
+                    {LANGUAGES.map((lang) => (
+                      <li key={lang.code} role="option" aria-selected={lang.code === current.code}>
+                        <button
+                          onClick={() => selectLanguage(lang.code)}
+                          className={`w-full text-left px-4 py-2 text-sm transition-colors ${
+                            lang.code === current.code
+                              ? 'font-semibold text-brand-primary-teal bg-brand-bg/60'
+                              : 'text-brand-text hover:bg-gray-50'
+                          }`}
+                        >
+                          {lang.label}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
               <a
                 href={APPLY_FORM_URL}
@@ -115,22 +163,27 @@ export default function Header() {
               >
                 {t('nav.applyNow')}
               </a>
-              <div className="grid grid-cols-3 gap-2 mt-2" role="group" aria-label="Language">
-                {LANGUAGES.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => { i18n.changeLanguage(lang.code); setMobileMenuOpen(false); }}
-                    aria-label={lang.name}
-                    aria-current={currentLang === lang.code ? 'true' : undefined}
-                    className={`py-2 font-medium border rounded-lg transition-colors ${
-                      currentLang === lang.code
-                        ? 'bg-brand-primary-teal text-white border-brand-primary-teal'
-                        : 'text-brand-primary-blue border-gray-200 hover:bg-gray-50'
-                    }`}
-                  >
-                    {lang.label}
-                  </button>
-                ))}
+              <div className="pt-2 border-t border-gray-200" role="group" aria-label="Select language">
+                <p className="flex items-center gap-1.5 mb-2 text-xs font-semibold uppercase tracking-wider text-brand-muted">
+                  <HiOutlineGlobeAlt className="w-4 h-4" aria-hidden="true" />
+                  Language
+                </p>
+                <div className="grid grid-cols-2 gap-2">
+                  {LANGUAGES.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => selectLanguage(lang.code)}
+                      aria-current={lang.code === current.code ? 'true' : undefined}
+                      className={`py-2 text-sm font-medium border rounded-lg transition-colors ${
+                        lang.code === current.code
+                          ? 'bg-brand-primary-teal text-white border-brand-primary-teal'
+                          : 'text-brand-primary-blue border-gray-200 hover:bg-gray-50'
+                      }`}
+                    >
+                      {lang.label}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

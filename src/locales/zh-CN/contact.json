@@ -1,0 +1,42 @@
+{
+    "hero": {
+        "label": "联络我们",
+        "title": "与我们联络",
+        "subtitle": "有任何疑问吗？我们随时准备协助您的属灵旅程。",
+        "cta": "传送讯息"
+    },
+    "info": {
+        "title": "联络信息",
+        "phone": "电话",
+        "phone_value": "031-546-8438",
+        "email": "电子邮件",
+        "email_value": "dodreaminternational@gmail.com",
+        "website": "网站",
+        "website_value": "https://www.vinechurch.com/",
+        "location": "地址",
+        "location_value": "大韩民国 京畿道龙仁市器兴区新亭路151街11-17"
+    },
+    "inquiry": {
+        "intro_title": "欢迎随时与我们联络",
+        "intro_subtitle": "请填写以下表单，我们确认后会尽快回复您。",
+        "home_button": "前往首页"
+    },
+    "message": {
+        "label": "联络我们",
+        "title": "传送讯息",
+        "name": "姓名",
+        "email": "电子邮件",
+        "subject": "主旨",
+        "message": "内容",
+        "button": "送出",
+        "error": "传送讯息时发生错误。",
+        "error_hint": "请稍后再试一次。",
+        "sending": "传送中...",
+        "success_title": "传送完成",
+        "success_body": "感谢您的来信。我们确认后会尽快回复您。",
+        "ok": "确定"
+    },
+    "social": {
+        "title": "社群媒体"
+    }
+}

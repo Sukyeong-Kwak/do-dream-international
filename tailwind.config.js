@@ -48,7 +48,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'Pretendard', 'Noto Sans KR', 'Noto Sans JP', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Inter', 'Pretendard', 'Noto Sans KR', 'system-ui', '-apple-system', 'sans-serif'],
         serif: ['Playfair Display', 'Noto Serif KR', 'serif'],
       },
     },
