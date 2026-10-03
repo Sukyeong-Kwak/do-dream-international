@@ -3,15 +3,21 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { APPLY_FORM_URL } from '../../../lib/constants';
+import type { SupportedLanguage } from '../../../locales/i18n.config';
+
+/** 화면에 노출되는 언어 목록. label은 각 언어 사용자가 바로 알아볼 수 있는 표기입니다. */
+const LANGUAGES: { code: SupportedLanguage; label: string; name: string }[] = [
+  { code: 'ko', label: 'KO', name: '한국어로 보기' },
+  { code: 'en', label: 'EN', name: 'View in English' },
+  { code: 'ja', label: '日本語', name: '日本語で見る' },
+];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t, i18n } = useTranslation('common');
   const location = useLocation();
 
-  const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === 'ko' ? 'en' : 'ko');
-  };
+  const currentLang = LANGUAGES.find((lang) => i18n.language.startsWith(lang.code))?.code ?? 'en';
 
   const navigation = [
     { name: t('nav.home'), href: '/' },
@@ -45,13 +51,24 @@ export default function Header() {
               </Link>
             ))}
             <div className="flex items-center space-x-4 border-l border-gray-200 pl-4">
-              <button
-                onClick={toggleLanguage}
-                className="text-sm font-semibold text-brand-text hover:text-brand-primary-teal transition-colors flex items-center space-x-1"
-                aria-label="Toggle language"
-              >
-                <span>{i18n.language === 'ko' ? 'EN' : 'KO'}</span>
-              </button>
+              <div className="flex items-center rounded-lg border border-gray-200 overflow-hidden" role="group" aria-label="Language">
+                {LANGUAGES.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => i18n.changeLanguage(lang.code)}
+                    title={lang.name}
+                    aria-label={lang.name}
+                    aria-current={currentLang === lang.code ? 'true' : undefined}
+                    className={`px-2.5 py-1 text-xs font-semibold transition-colors ${
+                      currentLang === lang.code
+                        ? 'bg-brand-primary-teal text-white'
+                        : 'text-brand-text hover:text-brand-primary-teal'
+                    }`}
+                  >
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
               <a
                 href={APPLY_FORM_URL}
                 target="_blank"
@@ -98,12 +115,23 @@ export default function Header() {
               >
                 {t('nav.applyNow')}
               </a>
-              <button
-                onClick={() => { toggleLanguage(); setMobileMenuOpen(false); }}
-                className="w-full text-center py-2 text-brand-primary-blue font-medium border border-gray-200 rounded-lg mt-2 hover:bg-gray-50 transition-colors"
-              >
-                {i18n.language === 'ko' ? 'Switch to English' : '한국어로 보기'}
-              </button>
+              <div className="grid grid-cols-3 gap-2 mt-2" role="group" aria-label="Language">
+                {LANGUAGES.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => { i18n.changeLanguage(lang.code); setMobileMenuOpen(false); }}
+                    aria-label={lang.name}
+                    aria-current={currentLang === lang.code ? 'true' : undefined}
+                    className={`py-2 font-medium border rounded-lg transition-colors ${
+                      currentLang === lang.code
+                        ? 'bg-brand-primary-teal text-white border-brand-primary-teal'
+                        : 'text-brand-primary-blue border-gray-200 hover:bg-gray-50'
+                    }`}
+                  >
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         )}

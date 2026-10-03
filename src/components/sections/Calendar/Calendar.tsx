@@ -8,34 +8,34 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 const calendarData = [
     {
         id: 'month-1',
-        name: { en: 'April', ko: '4월' },
+        name: { en: 'April', ko: '4월', ja: '4月' },
         days: 30,
         startDay: 3, // Assuming April starts on Wednesday (0=Sun, 1=Mon, ..., 6=Sat)
         highlights: [
-            { day: 1, type: 'start', text: { en: 'Opening Ceremony', ko: '개강 예배' } },
-            { day: 15, type: 'lecture', text: { en: 'Our Great Salvation', ko: '우리의 위대한 구원' } },
-            { day: 28, type: 'activity', text: { en: 'Seoul Cultural Tour', ko: '서울 문화 탐방' } },
+            { day: 1, type: 'start', text: { en: 'Opening Ceremony', ko: '개강 예배', ja: '開講礼拝' } },
+            { day: 15, type: 'lecture', text: { en: 'Our Great Salvation', ko: '우리의 위대한 구원', ja: '私たちの偉大な救い' } },
+            { day: 28, type: 'activity', text: { en: 'Seoul Cultural Tour', ko: '서울 문화 탐방', ja: 'ソウル文化探訪' } },
         ]
     },
     {
         id: 'month-2',
-        name: { en: 'May', ko: '5월' },
+        name: { en: 'May', ko: '5월', ja: '5月' },
         days: 31,
         startDay: 5, // May starts on Friday
         highlights: [
-            { day: 5, type: 'lecture', text: { en: 'The Gospel of the Cross', ko: '십자가의 복음 초집중' } },
-            { day: 20, type: 'activity', text: { en: 'Local Church Visit', ko: '지역 교회 탐방' } },
+            { day: 5, type: 'lecture', text: { en: 'The Gospel of the Cross', ko: '십자가의 복음 초집중', ja: '十字架の福音 集中講義' } },
+            { day: 20, type: 'activity', text: { en: 'Local Church Visit', ko: '지역 교회 탐방', ja: '地域教会の訪問' } },
         ]
     },
     {
         id: 'month-3',
-        name: { en: 'June', ko: '6월' },
+        name: { en: 'June', ko: '6월', ja: '6月' },
         days: 30,
         startDay: 1, // June starts on Monday
         highlights: [
-            { day: 10, type: 'lecture', text: { en: 'Missional Church', ko: '선교적 교회 실습' } },
-            { day: 20, type: 'lecture', text: { en: 'Spiritual Leadership', ko: '영적 리더십 훈련' } },
-            { day: 30, type: 'end', text: { en: 'Graduation / Sending Service', ko: '수료 및 파송 예배' } },
+            { day: 10, type: 'lecture', text: { en: 'Missional Church', ko: '선교적 교회 실습', ja: '宣教的教会の実習' } },
+            { day: 20, type: 'lecture', text: { en: 'Spiritual Leadership', ko: '영적 리더십 훈련', ja: '霊的リーダーシップ訓練' } },
+            { day: 30, type: 'end', text: { en: 'Graduation / Sending Service', ko: '수료 및 파송 예배', ja: '修了・派遣礼拝' } },
         ]
     }
 ];
@@ -44,7 +44,7 @@ export default function Calendar() {
     const { i18n } = useTranslation('program');
     const [currentMonthIndex, setCurrentMonthIndex] = useState(0);
 
-    const lang = i18n.language === 'ko' ? 'ko' : 'en';
+    const lang = i18n.language === 'ko' ? 'ko' : i18n.language.startsWith('ja') ? 'ja' : 'en';
     const currentMonth = calendarData[currentMonthIndex];
 
     const handlePrev = () => {
@@ -90,19 +90,23 @@ export default function Calendar() {
     const allCells = [...blanks, ...days];
     const weekDays = lang === 'ko'
         ? ['일', '월', '화', '수', '목', '금', '토']
-        : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        : lang === 'ja'
+            ? ['日', '月', '火', '水', '木', '金', '土']
+            : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
     return (
         <section className="section-padding bg-gray-50 border-t border-gray-200">
             <div className="container-custom">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-brand-primary-blue mb-4">
-                        {lang === 'ko' ? '주요 일정 캘린더' : 'Training Calendar Overview'}
+                        {lang === 'ko' ? '주요 일정 캘린더' : lang === 'ja' ? '主要スケジュール・カレンダー' : 'Training Calendar Overview'}
                     </h2>
                     <p className="text-lg text-brand-text max-w-2xl mx-auto">
                         {lang === 'ko'
                             ? '전체 훈련 기간 동안의 핵심 강의와 특별 활동 일정을 한눈에 확인하세요.'
-                            : 'Get a bird\'s-eye view of our core lectures and special activities throughout the training period.'}
+                            : lang === 'ja'
+                                ? '訓練期間全体の主要な講義と特別活動の日程を、一目でご確認ください。'
+                                : 'Get a bird\'s-eye view of our core lectures and special activities throughout the training period.'}
                     </p>
                 </div>
 
@@ -117,7 +121,7 @@ export default function Calendar() {
                             <HiChevronLeft className="w-6 h-6" />
                         </button>
                         <h3 className="text-2xl font-extrabold text-brand-primary-teal tracking-tight">
-                            {currentMonth.name[lang]} {lang === 'en' ? 'Phase' : '여정'}
+                            {currentMonth.name[lang]} {lang === 'en' ? 'Phase' : lang === 'ja' ? 'の歩み' : '여정'}
                         </h3>
                         <button
                             onClick={handleNext}

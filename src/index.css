@@ -14,10 +14,11 @@
   --color-brand-muted: #64748B;
   /* Slate 500 */
 
-  --font-heading: 'Pretendard', 'Inter', system-ui, sans-serif;
+  /* Pretendard covers Latin/Hangul; 'Noto Sans JP' picks up kana and kanji */
+  --font-heading: 'Pretendard', 'Inter', 'Noto Sans JP', system-ui, sans-serif;
   /* Modern sans-serif */
-  --font-body: 'Pretendard', 'Inter', system-ui, sans-serif;
-  --font-sans: 'Pretendard', 'Inter', system-ui, sans-serif;
+  --font-body: 'Pretendard', 'Inter', 'Noto Sans JP', system-ui, sans-serif;
+  --font-sans: 'Pretendard', 'Inter', 'Noto Sans JP', system-ui, sans-serif;
   --font-serif: 'Playfair Display', 'Noto Serif KR', serif;
 
   --radius-xl: 12px;

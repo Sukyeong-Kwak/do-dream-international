@@ -1,0 +1,42 @@
+{
+    "hero": {
+        "label": "お問い合わせ",
+        "title": "お問い合わせ",
+        "subtitle": "ご不明な点はありませんか？あなたの霊的な旅をお手伝いするため、お待ちしています。",
+        "cta": "メッセージを送る"
+    },
+    "info": {
+        "title": "連絡先",
+        "phone": "電話番号",
+        "phone_value": "031-546-8438",
+        "email": "メール",
+        "email_value": "dodreaminternational@gmail.com",
+        "website": "ウェブサイト",
+        "website_value": "https://www.vinechurch.com/",
+        "location": "アクセス",
+        "location_value": "大韓民国 京畿道龍仁市器興区新亭路151ギル11-17"
+    },
+    "inquiry": {
+        "intro_title": "どんなことでもお気軽にお問い合わせください",
+        "intro_subtitle": "下記のフォームにご記入いただければ、確認のうえ早めにご返信いたします。",
+        "home_button": "ホームページへ"
+    },
+    "message": {
+        "label": "お問い合わせ",
+        "title": "メッセージを送る",
+        "name": "お名前",
+        "email": "メールアドレス",
+        "subject": "件名",
+        "message": "内容",
+        "button": "送信",
+        "error": "メッセージの送信中にエラーが発生しました。",
+        "error_hint": "しばらくしてからもう一度お試しください。",
+        "sending": "送信中...",
+        "success_title": "送信完了",
+        "success_body": "お問い合わせいただきありがとうございます。確認のうえ、早めにご返信いたします。",
+        "ok": "確認"
+    },
+    "social": {
+        "title": "ソーシャルメディア"
+    }
+}

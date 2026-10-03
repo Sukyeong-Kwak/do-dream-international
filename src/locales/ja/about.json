@@ -1,0 +1,88 @@
+{
+    "hero": {
+        "title": "霊的リーダーとして訓練され、派遣されます",
+        "subtitle": "DO DREAM TWO-GETHER International のビジョンと核心価値をご紹介します。"
+    },
+    "overview": {
+        "title": "事業概要",
+        "name": "事業名：DO DREAM TWO-GETHER International",
+        "organizer": "運営主体：ぶどうの木教会",
+        "type": "事業の性格：世界中のクリスチャン青年を招く中・長期滞在型の霊性訓練プログラム",
+        "location": "運営場所：京畿道龍仁市器興区新亭路151ギル11-17",
+        "target": "対象：世界各国の教会のクリスチャン青年(満18〜35歳・外国籍)",
+        "duration": "期間：3か月(85日間、ビザの90日を考慮)"
+    },
+    "purpose": {
+        "title": "事業目的",
+        "description": "世界中のクリスチャン青年を招き、キリスト教信仰の本質についての集中教育と体系的な霊性訓練を行うことで、次世代の教会リーダーを育成します。"
+    },
+    "activities": {
+        "title": "運営内容",
+        "items": [
+            {
+                "title": "教育プログラム",
+                "desc": "キリスト教信仰の基礎と霊性訓練、礼拝および共同体活動、リーダーシップ訓練"
+            },
+            {
+                "title": "韓国語教育",
+                "desc": "基礎的な韓国語会話と読み書きの教育"
+            },
+            {
+                "title": "文化体験",
+                "desc": "韓国の観光名所の訪問、韓国の歴史と伝統文化の体験"
+            }
+        ]
+    },
+    "vision": {
+        "title": "ビジョンと核心価値",
+        "v_title": "Vision",
+        "v_items": [
+            "次世代のリバイバル",
+            "諸国に向かう霊的リーダーシップ"
+        ],
+        "c_title": "Core Values",
+        "c_items": [
+            "諸国に向かう霊的リーダーシップ",
+            "信仰の本質を生きること",
+            "共同体としての生活"
+        ]
+    },
+    "effects": {
+        "title": "期待される効果",
+        "items": [
+            "世界各国のクリスチャン青年の信仰的成熟とリーダーシップの強化",
+            "国際的な信仰のネットワークの形成",
+            "グローバルなコミュニケーション力の拡大"
+        ]
+    },
+    "partners": {
+        "title": "協力機関",
+        "items": [
+            {
+                "name": "ぶどうの木教会",
+                "logo": "/partners/vinechurch.png",
+                "url": "https://www.vinechurch.com/"
+            },
+            {
+                "name": "ニューウェーブ宣教会",
+                "logo": "/partners/newwave.png",
+                "url": "https://www.newwave.or.kr/"
+            },
+            {
+                "name": "Y Mission",
+                "logo": "/partners/ymission.png",
+                "url": "https://www.ymission.org/"
+            },
+            {
+                "name": "DO DREAM\nTWO-GETHER",
+                "logo": "/partners/dodream.png",
+                "url": "https://www.do-dream.us/"
+            }
+        ]
+    },
+    "organization": {
+        "title": "運営組織",
+        "director": "総括責任者：キム・ジュニョン牧師(ぶどうの木教会 青年部担当牧師)",
+        "dept": "担当部署：DO DREAM TWO-GETHER International チーム"
+    }
+}

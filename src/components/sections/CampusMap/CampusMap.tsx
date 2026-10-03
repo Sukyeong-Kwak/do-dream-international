@@ -11,6 +11,8 @@ import { PRAYER_HOUSE_PLACE } from '../../../lib/mapLinks';
 interface Building {
   ko: string;
   en: string;
+  /** 일본어 로케일에서만 채워집니다. 없으면 영문 이름을 씁니다. */
+  ja?: string;
   desc: string;
 }
 
@@ -21,6 +23,10 @@ export default function CampusMap() {
   const [open, setOpen] = useState<number | null>(null);
 
   const isKorean = i18n.language === 'ko';
+  const isJapanese = i18n.language.startsWith('ja');
+  /** 주 이름은 화면 언어로, 보조 이름은 지도 이미지에 적힌 표기로 보여줍니다. */
+  const primaryName = (b: Building) => (isKorean ? b.ko : isJapanese ? b.ja ?? b.en : b.en);
+  const secondaryName = (b: Building) => (isKorean || isJapanese ? b.en : b.ko);
   const mapSrc = t('map.image');
   const mapAlt = t('map.imageAlt');
 
@@ -70,9 +76,9 @@ export default function CampusMap() {
                 >
                   <div className="flex items-baseline gap-2 mb-2">
                     <h3 className="text-base font-bold text-brand-primary-blue">
-                      {isKorean ? building.ko : building.en}
+                      {primaryName(building)}
                     </h3>
-                    <span className="text-xs text-brand-muted">{isKorean ? building.en : building.ko}</span>
+                    <span className="text-xs text-brand-muted">{secondaryName(building)}</span>
                   </div>
                   <p className="text-sm text-brand-text/70 leading-relaxed">{building.desc}</p>
                 </motion.div>

@@ -39,14 +39,14 @@ export interface MapApp {
 
 /**
  * 장소와 화면 언어에 맞춰 지도 앱 목록을 만듭니다.
- * 한국어는 네이버를, 영어는 Google Maps를 앞에 둡니다.
+ * 한국어는 네이버를, 그 외(영어·일본어)는 Google Maps를 앞에 둡니다.
  */
 export function getMapApps(place: MapPlace, language: string): MapApp[] {
   const isKorean = language.startsWith('ko');
   const encoded = encodeURIComponent(place.query);
   // 네이버 앱 스킴은 호출한 서비스 이름(appname)을 요구합니다.
   const appname = typeof window !== 'undefined' ? window.location.hostname : 'dodream';
-  const hl = isKorean ? 'ko' : 'en';
+  const hl = isKorean ? 'ko' : language.startsWith('ja') ? 'ja' : 'en';
 
   const googleQuery = place.coord ? `${place.coord.lat},${place.coord.lng}` : encoded;
   const googleUrl = `https://www.google.com/maps/search/?api=1&query=${googleQuery}&hl=${hl}`;
