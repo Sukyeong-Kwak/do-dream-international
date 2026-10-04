@@ -27,7 +27,7 @@
         "name": "Your Name",
         "email": "Email Address",
         "subject": "Subject",
-        "message": "Context",
+        "message": "Message",
         "button": "Send Message",
         "error": "An error occurred while sending your message.",
         "error_hint": "Please try again later.",

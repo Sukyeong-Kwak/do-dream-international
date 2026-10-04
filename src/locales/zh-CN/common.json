@@ -3,29 +3,29 @@
         "home": "首页",
         "program": "课程介绍",
         "church": "教会介绍",
-        "apply": "报名与联络",
+        "apply": "报名与联系",
         "about": "总览",
-        "contact": "联络我们",
+        "contact": "联系我们",
         "applyNow": "立即报名"
     },
     "footer": {
         "about": "总览",
         "description": "站立在十字架福音这稳固的根基上，享受与神深入而亲密的相交。\n我们邀请您加入与世界各地青年同行的信仰旅程。",
-        "quickLinks": "快速连结",
+        "quickLinks": "快速链接",
         "program": "课程介绍",
         "church": "教会介绍",
-        "apply": "报名与联络",
-        "contact": "联络我们",
-        "followUs": "追踪我们",
+        "apply": "报名与联系",
+        "contact": "联系我们",
+        "followUs": "关注我们",
         "newsletter": "电子邮件订阅",
-        "newsletterPlaceholder": "请输入电子邮件",
+        "newsletterPlaceholder": "请输入邮箱地址",
         "subscribe": "订阅",
         "copyright": "© 2026 DO DREAM TWO-GETHER International. All rights reserved."
     },
     "buttons": {
         "learnMore": "了解更多",
         "apply": "立即报名",
-        "submit": "送出",
+        "submit": "提交",
         "cancel": "取消",
         "back": "上一步",
         "next": "下一步"
@@ -38,7 +38,7 @@
     "map": {
         "copy": "复制地址",
         "copied": "已复制",
-        "cta": "用地图 App 查看路线",
+        "cta": "用地图应用查看路线",
         "apps": {
             "naver": "NAVER 地图",
             "google": "Google 地图"
@@ -46,7 +46,7 @@
     },
     "cta": {
         "title": "准备好开始这段旅程了吗？",
-        "subtitle": "信仰的旅程需要勇敢的决定。<br />请透过以下简单的流程，报名即将开始的训练课程。",
+        "subtitle": "信仰的旅程需要勇敢的决定。<br />请通过以下简单的流程，报名即将开始的训练课程。",
         "steps": [
             {
                 "num": "01",
@@ -55,23 +55,23 @@
             },
             {
                 "num": "02",
-                "title": "登录文件",
-                "desc": "登录护照复印件、信仰见证与推荐信。"
+                "title": "提交文件",
+                "desc": "提交护照复印件、信仰见证与推荐信。"
             },
             {
                 "num": "03",
                 "title": "文件审查",
-                "desc": "我们会审阅您所提交的文件。"
+                "desc": "我们会审核您所提交的文件。"
             },
             {
                 "num": "04",
                 "title": "视频面试",
-                "desc": "以线上视讯方式进行面试。"
+                "desc": "以线上视频方式进行面试。"
             },
             {
                 "num": "05",
                 "title": "最终确认",
-                "desc": "通知您最终的录取结果。"
+                "desc": "通知您最终结果。"
             }
         ],
         "button": "立即报名",
